@@ -4,7 +4,7 @@ This repository contains the code, prospective registrations, saved model output
 tests, figures, and manuscript sources for:
 
 > Ihor Kendiukhov. *Patching only changed tokens can match patching all
-> tokens across dozens of transformer components.* Submitted to
+> tokens across dozens of transformer components.* Prepared for submission to
 > *Scientific Reports*.
 
 The paper tests a simple question: if an activation patch is restricted to the
@@ -24,12 +24,8 @@ paper's scientific summaries from the saved per-example outputs.
 git clone https://github.com/Biodyn-AI/causal-interfaces.git
 cd causal-interfaces
 
-python3.12 -m venv .venv
-.venv/bin/python -m pip install --upgrade pip
-.venv/bin/python -m pip install -r requirements.txt
-
-.venv/bin/python repro/e29_14/replay_scores.py --repository-root "$PWD"
-.venv/bin/python repro/e33_1/replay_score.py --repository "$PWD"
+make setup
+make replay
 ```
 
 Successful output includes:
@@ -37,28 +33,33 @@ Successful output includes:
 ```text
 "all_replays_match_published_scientific_fields": true
 "all_artifact_hashes_match": true
-"exact_saved_label_score_match": true
+"saved_label_score_match_within_declared_tolerance": true
 ```
 
 Run the 143 portable publication tests with:
 
 ```bash
-.venv/bin/python -m pytest -q
+make test
 ```
 
 The test suite and score replay make no network requests and no model calls.
-The GPT-2 Medium replay requires exact structure and exact non-floating values;
+Both saved-label replays require exact structure and exact non-floating values;
 floating-point values must agree within absolute and relative tolerances of
-`1e-12`. The GPT-2 Small saved-label replay is exact. Eleven additional
+`1e-12`. Eleven additional
 historical custody tests are marked `original_checkout`
 because their sealed expected values contain immutable absolute paths from the
 acquisition machine. They passed in that original checkout and are excluded in
 a clone; see [docs/PROVENANCE.md](docs/PROVENANCE.md).
 
+The make targets remove macOS AppleDouble (`._*`) sidecar files from the
+disposable `.venv` before imports. These metadata files can otherwise appear on
+external drives and be mistaken for Python source files. Repository source and
+evidence files are never removed.
+
 ## Regenerate the figures
 
 ```bash
-.venv/bin/python paper/make_figures.py
+make figures
 ```
 
 The script reads sealed score JSON files rather than reimplementing the

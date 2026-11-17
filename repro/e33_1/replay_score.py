@@ -1,4 +1,4 @@
-"""Verify E33.1 custody and exactly replay its saved-label score."""
+"""Verify E33.1 custody and replay its saved-label score portably."""
 
 from __future__ import annotations
 
@@ -44,6 +44,12 @@ def main() -> None:
         raise RuntimeError(f"artifact SHA-256 mismatch: {failed}")
 
     sys.path.insert(0, str(repository))
+    from repro.e29_14.replay_scores import (  # noqa: PLC0415
+        NUMERIC_ABSOLUTE_TOLERANCE,
+        NUMERIC_RELATIVE_TOLERANCE,
+        _canonical_json,
+        _scientific_values_match,
+    )
     from experiments.e33_ioi_scope_replication.scoring_json_repair import (  # noqa: PLC0415
         score_json_context_records,
     )
@@ -52,8 +58,8 @@ def main() -> None:
     replayed_score = score_json_context_records(labels["context_records"])
     replayed_score.update(manifest["registered_scoring_provenance"])
     published_score = load_object(repository / manifest["artifacts"]["score"]["path"])
-    exact_match = replayed_score == published_score
-    if not exact_match:
+    exact_match = _canonical_json(replayed_score) == _canonical_json(published_score)
+    if not _scientific_values_match(replayed_score, published_score):
         raise RuntimeError("replayed scientific score differs from the published score")
 
     json.dump(
@@ -62,7 +68,12 @@ def main() -> None:
             "all_registered_gates_passed": replayed_score[
                 "all_registered_gates_passed"
             ],
-            "exact_saved_label_score_match": True,
+            "saved_label_score_match_within_declared_tolerance": True,
+            "exact_saved_label_score_match": exact_match,
+            "numeric_comparison": {
+                "relative_tolerance": NUMERIC_RELATIVE_TOLERANCE,
+                "absolute_tolerance": NUMERIC_ABSOLUTE_TOLERANCE,
+            },
             "verified_artifacts": sorted(verified_hashes),
         },
         sys.stdout,

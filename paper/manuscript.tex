@@ -98,7 +98,8 @@ Table~\ref{tab:scale}). Tests with 24 and 32 components contain sets both with
 and without the first MLP. We focus on sets without it because they avoid a
 near-ceiling response. The mean absolute difference between changed-position
 and all-position patching is 0.01342 with 24 components and 0.00947 with 32.
-The joint 95\% uncertainty bound is 0.01517, below the registered 0.03 limit.
+The equal-weight pooled 95\% upper bound across the two scales is 0.01517,
+below the registered 0.03 limit.
 Every prompt example, template, and component set without the first MLP passes
 its registered check.
 
@@ -112,7 +113,8 @@ In a further prospectively specified test, we patch 36, 40, 44, or 47 components
 leaving the first MLP unchanged. We use 47 balanced, nested component sets at
 36, 40, and 44 components, followed by the one possible 47-component set. The
 mean difference between changed-position and all-position patching falls from
-0.00668 to 0.00440, 0.00201, and 0. The joint uncertainty bound is 0.00420. At
+0.00668 to 0.00440, 0.00201, and 0. The equal-weight pooled 95\% upper bound
+across the four scales is 0.00420. At
 36 components the model is still 0.10032 from the donor output (95\% lower
 bound 0.08614), so this agreement cannot be explained only by a ceiling
 effect. At 47 components both patches reach 0.98071 of the donor score.
@@ -256,7 +258,8 @@ disjoint one-token content words. The expected next token is \texttt{d}. Each
 confirmation cohort contains 12 prompt pairs, three per template, and 96
 content words not used in earlier cohorts. Before patching, both prompts must
 prefer their own correct next token. The complete templates and tokenization
-rules are provided in Supplementary Note 4.
+rules are provided in the Supplementary Note on exact prompts and changed-token
+positions.
 
 \subsection{Activation patching and answer score}
 
@@ -350,10 +353,9 @@ All published summary values were recomputed from saved per-example outputs.
 The release verifies registrations, model revisions, source files, labels,
 scores, and summaries with SHA-256 hashes. Portable score replay makes no model
 calls; optional fresh inference downloads the pinned GPT-2 checkpoints from
-their original repositories. The GPT-2 Medium replay requires exact agreement
-for structure, strings, integers, and booleans, with absolute and relative
-tolerances of $10^{-12}$ for floating-point values; the cross-model GPT-2 Small
-replay is exact. Both checks pass.
+their original repositories. Both replays require exact agreement for
+structure, strings, integers, and booleans, with absolute and relative
+tolerances of $10^{-12}$ for floating-point values. Both checks pass.
 
 OpenAI Codex language-model agents were used to propose and critique
 hypotheses, assist with code development, execute predefined computational

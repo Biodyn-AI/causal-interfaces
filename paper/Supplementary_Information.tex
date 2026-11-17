@@ -13,6 +13,9 @@
 \hypersetup{colorlinks=true,urlcolor=blue,linkcolor=blue}
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcommand{\suppnote}[1]{%
+  \section*{Supplementary Note: #1}%
+  \addcontentsline{toc}{section}{Supplementary Note: #1}}
 
 \title{Supplementary Information\\[0.7em]
 \large Patching only changed tokens can match patching all tokens across dozens of transformer components}
@@ -26,7 +29,7 @@
 \tableofcontents
 \clearpage
 
-\section{Supplementary Note 1: Evidence behind each claim}
+\suppnote{Evidence behind each claim}
 
 Table~\ref{tab:claim-ledger} links each main claim to its confirmation status,
 evidence, and explicit boundary. ``Fixed in advance'' means that prompts,
@@ -60,8 +63,8 @@ GPT-2 Small indirect-object pairs; both directions; unchanged-position,
 attention, and equal-energy controls; 12 and 24 components; full-distribution
 score & Not universal across model families, minimal, or an identified abstract
 variable \\
-Artifact replay and fresh-run reproduction & Pass with stated scope & Exact
-saved-label score replay for E29.14a--d; exact fresh inference-to-score match
+Artifact replay and fresh-run reproduction & Pass with stated scope & Strict
+cross-platform saved-label replay for E29.14a--d; exact fresh inference-to-score match
 for E29.14a/b; 143 portable tests passed in the release checkout, and 11
 path-bound custody tests passed in the original acquisition checkout &
 E29.14c/d inference was not rerun in the first release audit \\
@@ -69,7 +72,7 @@ E29.14c/d inference was not rerun in the first release audit \\
 \end{tabularx}
 \end{table}
 
-\section{Supplementary Note 2: Model-call accounting and integrity}
+\suppnote{Model-call accounting and integrity}
 
 \begin{table}[ht]
 \centering
@@ -102,7 +105,7 @@ are inert provenance fields. They are preserved byte-for-byte because changing
 them would invalidate the registered SHA-256 hashes. The public replay
 manifests use portable repository-relative paths.
 
-\section{Supplementary Note 3: Reproducibility release}
+\suppnote{Reproducibility release}
 
 The release at
 \url{https://github.com/Biodyn-AI/causal-interfaces/releases/tag/v1.0.0}
@@ -126,7 +129,8 @@ outputs, scoring repair, and
 final score are, respectively, \texttt{39a5a589678c},
 \texttt{2af40febecf9}, \texttt{ed2a268cddad}, and
 \texttt{fe8a834c7434}. Its integrity record also hashes the checkpoint,
-data-collection code, and scoring code.
+data-collection code, and scoring code. Its saved-label replay uses the same
+strict cross-platform comparison policy.
 
 The portable score replay makes no model calls. Optional fresh-inference
 commands download exact GPT-2 checkpoint revisions from Hugging Face and write
@@ -134,7 +138,7 @@ to a new output directory. They never overwrite the published evidence. The
 repository README and \texttt{docs/REPRODUCIBILITY.md} give step-by-step
 commands and expected success fields.
 
-\section{Supplementary Note 4: Exact prompts and changed-token positions}
+\suppnote{Exact prompts and changed-token positions}
 
 The four sequence-completion templates are:
 \begin{enumerate}
@@ -155,7 +159,7 @@ The cross-model and cross-task replication uses four fixed indirect-object templ
 positions. The complete prompt panel and token records are stored in the
 prospective registration and saved labels in the public release.
 
-\section{Supplementary Note 5: Why agreement is not only a ceiling effect}
+\suppnote{Why agreement is not only a ceiling effect}
 
 Two patches can appear to agree because both have pushed the output as far as
 it can go. Three checks address this concern. First, the 24- and 32-component
@@ -168,7 +172,7 @@ many component sets and reports checks by example, prompt template, and
 component set. The 47-component point is presented only as a final backup and
 position check, not as evidence of varied output behavior.
 
-\section{Supplementary Note 6: Transparent repair history}
+\suppnote{Transparent repair history}
 
 The E29.14c registration was revised before output creation, attempt
 consumption, model loading, or response because its first version did not link

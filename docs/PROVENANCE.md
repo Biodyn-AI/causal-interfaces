@@ -19,9 +19,9 @@ verify every sealed publication artifact and recompute all reported scores.
 The repository distinguishes three operations:
 
 1. **Saved-output replay** verifies hashes and recomputes the scientific
-   summaries without model calls. The GPT-2 Medium gate is exact for structure
-   and non-floating values and uses `1e-12` absolute and relative tolerances for
-   floats; the GPT-2 Small gate is exact.
+   summaries without model calls. Both gates are exact for structure and
+   non-floating values and use `1e-12` absolute and relative tolerances for
+   floats.
 2. **Fresh inference** downloads the pinned checkpoint and creates new output
    in an empty directory. It tests scientific portability but does not extend
    the historical custody chain.

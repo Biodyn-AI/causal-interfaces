@@ -29,9 +29,9 @@ any byte differs.
 
 This verifies the registration, scoring addendum, sealed labels, final score,
 protocol note, and results note against `manifest.json`. It then runs the
-registered calculations over the saved per-context labels and requires exact
-equality with every field of the published score. It makes no model calls and
-writes no files.
+registered calculations over the saved per-context labels. It requires exact
+structure and non-floating values and `1e-12` absolute and relative agreement
+for floating-point values. It makes no model calls and writes no files.
 
 Expected terminal fields are:
 
@@ -39,7 +39,7 @@ Expected terminal fields are:
 {
   "all_artifact_hashes_match": true,
   "all_registered_gates_passed": true,
-  "exact_saved_label_score_match": true
+  "saved_label_score_match_within_declared_tolerance": true
 }
 ```
 

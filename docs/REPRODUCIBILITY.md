@@ -6,22 +6,21 @@ The submission release was validated with Python 3.12.15, PyTorch 2.13.0,
 NumPy 2.5.1, Transformers 5.14.1, Safetensors 0.8.0, Einops 0.8.2,
 Matplotlib 3.11.1, and Pytest 9.1.1.
 
-## Exact saved-output replay
+## Strict saved-output replay
 
 From the repository root:
 
 ```bash
-python3.12 -m venv .venv
-.venv/bin/python -m pip install --upgrade pip
-.venv/bin/python -m pip install -r requirements.txt
-
-.venv/bin/python repro/e29_14/replay_scores.py --repository-root "$PWD"
-.venv/bin/python repro/e33_1/replay_score.py --repository "$PWD"
-.venv/bin/python -m pytest -q
+make setup
+make replay
+make test
 ```
 
 The replay validates all registered artifact hashes before calculating scores.
 It never overwrites sealed material.
+The make targets also remove macOS AppleDouble (`._*`) sidecars from the
+disposable `.venv` before imports; no repository source or evidence file is
+removed.
 
 ## GPT-2 Medium fresh inference
 

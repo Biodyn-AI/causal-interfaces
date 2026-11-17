@@ -1,21 +1,25 @@
 SYSTEM_PYTHON ?= python3.12
 PYTHON ?= .venv/bin/python
 
-.PHONY: setup replay test figures paper verify
+.PHONY: setup remove-appledouble replay test figures paper verify
 
 setup:
 	$(SYSTEM_PYTHON) -m venv .venv
 	.venv/bin/python -m pip install --upgrade pip
 	.venv/bin/python -m pip install -r requirements.txt
+	$(MAKE) remove-appledouble
 
-replay:
+remove-appledouble:
+	@if [ -d .venv ]; then find .venv -type f -name '._*' -delete; fi
+
+replay: remove-appledouble
 	$(PYTHON) repro/e29_14/replay_scores.py --repository-root "$(CURDIR)"
 	$(PYTHON) repro/e33_1/replay_score.py --repository "$(CURDIR)"
 
-test:
+test: remove-appledouble
 	$(PYTHON) -m pytest -q
 
-figures:
+figures: remove-appledouble
 	$(PYTHON) paper/make_figures.py
 	cp paper/figures/fig_micro.pdf paper/Fig1.pdf
 	cp paper/figures/fig_scale.pdf paper/Fig2.pdf
