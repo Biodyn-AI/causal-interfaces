@@ -16,4 +16,6 @@ paper/*.log
 paper/*.out
 paper/*.synctex.gz
 paper/*.toc
+paper/manuscript.pdf
+paper/Supplementary_Information.pdf
 

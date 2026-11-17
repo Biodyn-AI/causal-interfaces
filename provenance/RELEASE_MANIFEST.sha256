@@ -2,7 +2,7 @@
 # Verify from the repository root with: shasum -a 256 -c provenance/RELEASE_MANIFEST.sha256
 1363c636f32eb93fcac812305d23d2b6ddf4d9219fb8cee647542ac234fd4cc3  .gitattributes
 6850cba9c0e8fe9b8c802a3181106d49b64ce9cb86428599cef37e20cee3b8ee  .github/workflows/tests.yml
-8f8f3626b5147f2ad1875e1c11a75ab80fe33b94ea22e10bb4230a16cb818bec  .gitignore
+627a627953f7a1aeca608b0f0b796edad74f1ddc97863008c3a8921a7b31c81d  .gitignore
 efa91035f0f4a9369044c504ef005213eae25666938c658b88050ac733c46fb9  CHANGELOG.md
 151c5500de523ebc6f5283e7f4ecce2a3347c39f0f9368d7049abc859861fcd7  CITATION.cff
 5a0b20a733dec85638043a9323c1ea36bcd0d435c599b7361152a46d7f645d9d  CONTRIBUTING.md
