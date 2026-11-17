@@ -17,6 +17,10 @@ test:
 
 figures:
 	$(PYTHON) paper/make_figures.py
+	cp paper/figures/fig_micro.pdf paper/Fig1.pdf
+	cp paper/figures/fig_scale.pdf paper/Fig2.pdf
+	cp paper/figures/fig_backup.pdf paper/Fig3.pdf
+	cp paper/figures/fig_replication.pdf paper/Fig4.pdf
 
 paper: figures
 	cd paper && latexmk -pdf -interaction=nonstopmode -halt-on-error manuscript.tex

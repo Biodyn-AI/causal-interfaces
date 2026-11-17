@@ -7,7 +7,9 @@ PyTorch 2.13.0, Transformers 5.14.1, Safetensors 0.8.0, and macOS 27.0.1.
 
 `replay_scores.py` hash-verified and rescored E29.14a, E29.14b, E29.14c, and
 E29.14d. Every replayed scientific field exactly matched its published JSON
-summary.
+summary on the release platform. The portable gate additionally supports Linux
+by requiring exact structure and non-floating values and `1e-12` absolute and
+relative agreement for floating-point values.
 
 ## Fresh model inference
 
@@ -25,7 +27,8 @@ an OS/Python patch-version change without claiming a new prospective seal.
 
 ## Tests
 
-The focused E29.14 release and protocol suite completed with `146 passed`.
-The portable CLI was additionally invoked from `/tmp`, outside the repository,
+The release-wide portable suite completed with `143 passed` and 11
+original-checkout custody tests deselected. The portable CLI was additionally
+invoked from `/tmp`, outside the repository,
 and resolved all repository inputs through `--repository-root`.
 

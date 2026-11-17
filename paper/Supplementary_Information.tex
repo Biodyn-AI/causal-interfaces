@@ -62,7 +62,7 @@ score & Not universal across model families, minimal, or an identified abstract
 variable \\
 Artifact replay and fresh-run reproduction & Pass with stated scope & Exact
 saved-label score replay for E29.14a--d; exact fresh inference-to-score match
-for E29.14a/b; 142 portable tests passed in the release checkout, and 11
+for E29.14a/b; 143 portable tests passed in the release checkout, and 11
 path-bound custody tests passed in the original acquisition checkout &
 E29.14c/d inference was not rerun in the first release audit \\
 \bottomrule
@@ -111,11 +111,14 @@ scientific summaries, integrity manifests, focused tests, figure generator,
 and manuscript sources.
 
 All four GPT-2 Medium summaries were recomputed from saved per-example outputs.
-Every reported scientific value matched exactly. Fresh model inference and
+They matched exactly on the release platform. To accommodate last-bit CPU
+rounding differences across operating systems, the portable gate requires
+exact structure, strings, integers, and booleans, and absolute and relative
+tolerances of $10^{-12}$ for floating-point values. Fresh model inference and
 scoring for E29.14a and E29.14b were also repeated on Python 3.12.15 and macOS
-27 rather than the historical Python 3.12.9/macOS 26.3 environment, and again
-matched exactly. The longer E29.14c and E29.14d model runs were not repeated in
-that audit, although their saved outputs rescore exactly.
+27 rather than the historical Python 3.12.9/macOS 26.3 environment, and matched
+exactly. The longer E29.14c and E29.14d model runs were not repeated in that
+audit, although their saved outputs pass the strict portable replay.
 
 The cross-model and cross-task GPT-2 Small replication has a separate fixed
 record. SHA-256 prefixes for its active prospective registration, saved

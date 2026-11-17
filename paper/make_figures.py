@@ -50,7 +50,12 @@ def _style() -> None:
 
 def _save(fig: plt.Figure, filename: str) -> None:
     FIGURE_DIR.mkdir(parents=True, exist_ok=True)
-    fig.savefig(FIGURE_DIR / filename, bbox_inches="tight", pad_inches=0.03)
+    fig.savefig(
+        FIGURE_DIR / filename,
+        bbox_inches="tight",
+        pad_inches=0.03,
+        metadata={"CreationDate": None, "ModDate": None},
+    )
     fig.savefig(
         (FIGURE_DIR / filename).with_suffix(".png"),
         dpi=300,

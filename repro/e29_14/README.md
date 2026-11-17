@@ -6,8 +6,9 @@ unchanged.
 
 1. **Score replay** is portable and makes no model calls. It verifies every
    registration, label, protocol, and published-summary digest, invokes the
-   original pure scientific scorers, and requires exact agreement with every
-   published scientific field.
+   original pure scientific scorers, and requires exact agreement for structure
+   and non-floating values plus `1e-12` absolute and relative agreement for
+   floating-point values.
 2. **Independent inference reproduction** verifies the pinned GPT-2 Medium
    checkpoint, reacquires the frozen panels on CPU in float64, and writes new
    labels and scores. It does not claim to extend the historical prospective
@@ -38,7 +39,8 @@ the sealed registrations but are intentionally not required for score replay.
 Success prints
 `"all_replays_match_published_scientific_fields": true`. The optional output
 directory contains newly serialized scientific scores and never overwrites a
-sealed artifact.
+sealed artifact. The output also reports whether each replay was byte-for-byte
+identical after canonical JSON serialization.
 
 ## Independent inference-to-score reproduction
 

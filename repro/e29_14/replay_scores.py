@@ -2,10 +2,10 @@
 """Hash-verify and replay E29.14a--d scoring without model calls.
 
 The historical custody scorers intentionally require the exact acquisition
-machine and contain absolute paths.  This publication wrapper leaves those
-sealed files untouched.  It verifies the immutable inputs by digest, invokes
-the same pure scientific scorers, and checks that every replayed field equals
-the corresponding field in the published summary.
+machine and contain absolute paths. This publication wrapper leaves those
+sealed files untouched. It verifies the immutable inputs by digest, invokes
+the same pure scientific scorers, and compares every replayed field with the
+corresponding field in the published summary under a declared strict policy.
 """
 
 from __future__ import annotations
@@ -13,14 +13,18 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import math
 import sys
 from collections.abc import Mapping, Sequence
+from numbers import Real
 from pathlib import Path
 from typing import Any
 
 
 EXPERIMENT_IDS = ("a", "b", "c", "d")
 MANIFEST_PATH = Path(__file__).with_name("manifest.json")
+NUMERIC_RELATIVE_TOLERANCE = 1e-12
+NUMERIC_ABSOLUTE_TOLERANCE = 1e-12
 
 
 def sha256(path: Path) -> str:
@@ -60,6 +64,45 @@ def _canonical_json(value: Any) -> str:
         separators=(",", ":"),
         allow_nan=False,
     )
+
+
+def _scientific_values_match(expected: Any, observed: Any) -> bool:
+    """Compare scientific output while allowing negligible platform rounding.
+
+    Structure, strings, integers, and booleans must match exactly. Floating-point
+    values use a deliberately tight tolerance because PyTorch reductions can differ
+    in their final bits between macOS and Linux even with identical float64 inputs.
+    """
+    if isinstance(expected, bool) or isinstance(observed, bool):
+        return type(expected) is type(observed) and expected == observed
+    if isinstance(expected, int) or isinstance(observed, int):
+        return type(expected) is type(observed) and expected == observed
+    if isinstance(expected, Real) and isinstance(observed, Real):
+        expected_float = float(expected)
+        observed_float = float(observed)
+        if not math.isfinite(expected_float) or not math.isfinite(observed_float):
+            return expected_float == observed_float
+        return math.isclose(
+            expected_float,
+            observed_float,
+            rel_tol=NUMERIC_RELATIVE_TOLERANCE,
+            abs_tol=NUMERIC_ABSOLUTE_TOLERANCE,
+        )
+    if isinstance(expected, Mapping) and isinstance(observed, Mapping):
+        return expected.keys() == observed.keys() and all(
+            _scientific_values_match(expected[key], observed[key]) for key in expected
+        )
+    if (
+        isinstance(expected, Sequence)
+        and isinstance(observed, Sequence)
+        and not isinstance(expected, (str, bytes, bytearray))
+        and not isinstance(observed, (str, bytes, bytearray))
+    ):
+        return len(expected) == len(observed) and all(
+            _scientific_values_match(expected_item, observed_item)
+            for expected_item, observed_item in zip(expected, observed, strict=True)
+        )
+    return type(expected) is type(observed) and expected == observed
 
 
 def _load_inputs(
@@ -164,7 +207,7 @@ def replay_experiment(
     *,
     output_directory: Path | None = None,
 ) -> dict[str, Any]:
-    """Replay one experiment and require exact agreement with its publication."""
+    """Replay one experiment and require strict agreement with its publication."""
     manifest = load_manifest()
     record = manifest["experiments"][experiment_id]
     registration, labels, published = _load_inputs(
@@ -174,11 +217,14 @@ def replay_experiment(
         repository_root, experiment_id, record, registration, labels
     )
     published_scientific_fields = {key: published[key] for key in replayed}
-    if _canonical_json(replayed) != _canonical_json(published_scientific_fields):
+    exact_json_match = _canonical_json(replayed) == _canonical_json(
+        published_scientific_fields
+    )
+    if not _scientific_values_match(replayed, published_scientific_fields):
         mismatches = [
             key
             for key, value in replayed.items()
-            if _canonical_json(value) != _canonical_json(published.get(key))
+            if not _scientific_values_match(value, published.get(key))
         ]
         raise RuntimeError(
             f"E29.14{experiment_id} replay differs from publication: {mismatches}"
@@ -197,6 +243,7 @@ def replay_experiment(
         "labels_sha256": record["labels_sha256"],
         "published_summary_sha256": record["published_summary_sha256"],
         "published_scientific_fields_match": True,
+        "published_scientific_fields_exact_json_match": exact_json_match,
     }
 
 
@@ -219,6 +266,10 @@ def replay_all(
     ]
     return {
         "schema_version": "e29_14_portable_score_replay_v1",
+        "numeric_comparison": {
+            "relative_tolerance": NUMERIC_RELATIVE_TOLERANCE,
+            "absolute_tolerance": NUMERIC_ABSOLUTE_TOLERANCE,
+        },
         "all_replays_match_published_scientific_fields": all(
             result["published_scientific_fields_match"] for result in results
         ),

@@ -40,14 +40,17 @@ Successful output includes:
 "exact_saved_label_score_match": true
 ```
 
-Run the 142 portable publication tests with:
+Run the 143 portable publication tests with:
 
 ```bash
 .venv/bin/python -m pytest -q
 ```
 
 The test suite and score replay make no network requests and no model calls.
-Eleven additional historical custody tests are marked `original_checkout`
+The GPT-2 Medium replay requires exact structure and exact non-floating values;
+floating-point values must agree within absolute and relative tolerances of
+`1e-12`. The GPT-2 Small saved-label replay is exact. Eleven additional
+historical custody tests are marked `original_checkout`
 because their sealed expected values contain immutable absolute paths from the
 acquisition machine. They passed in that original checkout and are excluded in
 a clone; see [docs/PROVENANCE.md](docs/PROVENANCE.md).

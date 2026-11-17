@@ -12,14 +12,16 @@ reproduction uses the relative paths in `repro/e29_14/manifest.json` and
 The default test command excludes 11 tests marked `original_checkout`. Those
 tests reconstruct registrations or custody objects whose expected values
 intentionally include the original absolute paths; they therefore pass only in
-the acquisition checkout. The release runs 142 portable tests instead. This is
+the acquisition checkout. The release runs 143 portable tests instead. This is
 a portability boundary, not a waiver of scientific checks: the replay tools
 verify every sealed publication artifact and recompute all reported scores.
 
 The repository distinguishes three operations:
 
-1. **Saved-output replay** verifies hashes and recomputes the exact scientific
-   summaries without model calls.
+1. **Saved-output replay** verifies hashes and recomputes the scientific
+   summaries without model calls. The GPT-2 Medium gate is exact for structure
+   and non-floating values and uses `1e-12` absolute and relative tolerances for
+   floats; the GPT-2 Small gate is exact.
 2. **Fresh inference** downloads the pinned checkpoint and creates new output
    in an empty directory. It tests scientific portability but does not extend
    the historical custody chain.

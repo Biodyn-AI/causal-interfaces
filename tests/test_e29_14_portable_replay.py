@@ -7,19 +7,46 @@ from pathlib import Path
 
 import pytest
 
-from repro.e29_14.replay_scores import EXPERIMENT_IDS, load_manifest, replay_all
+from repro.e29_14.replay_scores import (
+    EXPERIMENT_IDS,
+    _scientific_values_match,
+    load_manifest,
+    replay_all,
+)
 from repro.e29_14.reproduce_inference import verify_checkpoint
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 
 
-def test_all_scientific_scores_replay_exactly() -> None:
+def test_all_scientific_scores_replay_with_declared_tolerance() -> None:
     replay = replay_all(REPOSITORY_ROOT)
     assert replay["all_replays_match_published_scientific_fields"] is True
     assert tuple(record["experiment"] for record in replay["experiments"]) == tuple(
         f"E29.14{experiment_id}" for experiment_id in EXPERIMENT_IDS
     )
+
+
+def test_cross_platform_numeric_comparison_is_strict() -> None:
+    expected = {
+        "score": 0.25,
+        "nested": [1, {"bound": 0.125}],
+        "passed": True,
+    }
+    within_tolerance = {
+        "score": 0.25 + 5e-14,
+        "nested": [1, {"bound": 0.125 - 5e-14}],
+        "passed": True,
+    }
+    outside_tolerance = {
+        "score": 0.25 + 1e-8,
+        "nested": [1, {"bound": 0.125}],
+        "passed": True,
+    }
+
+    assert _scientific_values_match(expected, within_tolerance)
+    assert not _scientific_values_match(expected, outside_tolerance)
+    assert not _scientific_values_match(expected, {**expected, "passed": 1})
 
 
 def test_manifest_uses_relative_publication_paths() -> None:

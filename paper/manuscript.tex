@@ -350,8 +350,10 @@ All published summary values were recomputed from saved per-example outputs.
 The release verifies registrations, model revisions, source files, labels,
 scores, and summaries with SHA-256 hashes. Portable score replay makes no model
 calls; optional fresh inference downloads the pinned GPT-2 checkpoints from
-their original repositories. The GPT-2 Medium score replay and the cross-model
-GPT-2 Small replay both reproduce every published scientific field exactly.
+their original repositories. The GPT-2 Medium replay requires exact agreement
+for structure, strings, integers, and booleans, with absolute and relative
+tolerances of $10^{-12}$ for floating-point values; the cross-model GPT-2 Small
+replay is exact. Both checks pass.
 
 OpenAI Codex language-model agents were used to propose and critique
 hypotheses, assist with code development, execute predefined computational
