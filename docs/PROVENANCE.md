@@ -12,9 +12,12 @@ reproduction uses the relative paths in `repro/e29_14/manifest.json` and
 The default test command excludes 11 tests marked `original_checkout`. Those
 tests reconstruct registrations or custody objects whose expected values
 intentionally include the original absolute paths; they therefore pass only in
-the acquisition checkout. The release runs 143 portable tests instead. This is
-a portability boundary, not a waiver of scientific checks: the replay tools
-verify every sealed publication artifact and recompute all reported scores.
+the acquisition checkout. The release selects 143 portable tests instead. A
+clean public runner reports 140 passed and three skipped because the optional
+pinned GPT-2 Medium tokenizer snapshot is absent; all 143 pass when that
+snapshot is locally available. This is a portability boundary, not a waiver of
+scientific checks: the replay tools verify every sealed publication artifact
+and recompute all reported scores.
 
 The repository distinguishes three operations:
 

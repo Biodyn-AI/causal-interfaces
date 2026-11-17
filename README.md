@@ -36,7 +36,7 @@ Successful output includes:
 "saved_label_score_match_within_declared_tolerance": true
 ```
 
-Run the 143 portable publication tests with:
+Run the portable publication suite (143 selected tests) with:
 
 ```bash
 make test
@@ -45,7 +45,10 @@ make test
 The test suite and score replay make no network requests and no model calls.
 Both saved-label replays require exact structure and exact non-floating values;
 floating-point values must agree within absolute and relative tolerances of
-`1e-12`. Eleven additional
+`1e-12`. In a clean clone without a local GPT-2 Medium tokenizer snapshot,
+Pytest reports `140 passed, 3 skipped, 11 deselected`. The three skipped tests
+check prompt-token alignment against the pinned tokenizer; all 143 selected
+tests pass when that optional snapshot is locally available. Eleven additional
 historical custody tests are marked `original_checkout`
 because their sealed expected values contain immutable absolute paths from the
 acquisition machine. They passed in that original checkout and are excluded in
