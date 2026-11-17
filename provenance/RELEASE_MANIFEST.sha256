@@ -1,4 +1,6 @@
-# SHA-256 manifest for every file in release v1.0.0 except this manifest.\n+# Verify from the repository root with: shasum -a 256 -c provenance/RELEASE_MANIFEST.sha256\n+1363c636f32eb93fcac812305d23d2b6ddf4d9219fb8cee647542ac234fd4cc3  .gitattributes
+# SHA-256 manifest for every file in release v1.0.0 except this manifest.
+# Verify from the repository root with: shasum -a 256 -c provenance/RELEASE_MANIFEST.sha256
+1363c636f32eb93fcac812305d23d2b6ddf4d9219fb8cee647542ac234fd4cc3  .gitattributes
 6850cba9c0e8fe9b8c802a3181106d49b64ce9cb86428599cef37e20cee3b8ee  .github/workflows/tests.yml
 8f8f3626b5147f2ad1875e1c11a75ab80fe33b94ea22e10bb4230a16cb818bec  .gitignore
 fa5ab2a732903fe00c61b05cced09dbfc3c37aeaa1ac25068047b200ff8b84ef  CHANGELOG.md
