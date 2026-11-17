@@ -29,24 +29,42 @@
 
 \section{Introduction}\label{sec:introduction}
 
-Researchers can often explain a very small part of a language model in detail,
-or study many parts only roughly. It is much harder to keep a precise
-explanation while scaling it to a large part of the network. This matters
-because model components interact: an internal change that is easy to
-interpret in one component may behave differently when many other components
-are changed at the same time.
+Modern language models organize computation as stacks of attention and
+feed-forward blocks \citep{vaswani2017attention,radford2019language}.
+Mechanistic interpretability tries to explain how those blocks work together
+as a computation \citep{elhage2021mathematical}. Researchers can often explain
+a very small part of a model in detail, or study many parts only roughly. It is
+much harder to keep a precise explanation while scaling it to a large part of
+the network. This matters because model components interact: an internal
+change that is easy to interpret in one component may behave differently when
+many other components are changed at the same time.
 
 Activation patching tests causal hypotheses by copying an internal value from
-one prompt into a run on another prompt. It and related methods have been used
-to study factual recall, indirect-object identification, and induction
-\citep{meng2022locating,wang2022ioi,olsson2022induction}. Automated methods can
-search over components more efficiently \citep{conmy2023acdc,kramar2024atp},
-and other work asks whether internal directions represent interpretable
-variables \citep{geiger2023causal,geiger2024das}. Position-aware circuit
-discovery further shows that combining all token positions can hide a faithful
-circuit \citep{haklay2025position}. These approaches leave a scale question:
-when a precise position-level intervention works in one component, does the
-same rule remain informative when dozens of components are changed together?
+one prompt into a run on another prompt. It is closely related to
+counterfactual mediation and interchange interventions
+\citep{pearl2001direct,imai2010general,vig2020causal,geiger2021causalabstractions}.
+Patching and path-patching variants have been used to study factual recall,
+indirect-object identification, induction, and information flow through
+feed-forward blocks
+\citep{meng2022locating,wang2022ioi,olsson2022induction,goldowskydill2023path,geva2021transformer,geva2022transformer,geva2023dissecting};
+open tooling also supports controlled interventions in PyTorch models
+\citep{wu2024pyvene}. At the same time, studies of patching methodology show
+that corruption choices, metrics, and hidden interactions can change the
+conclusion
+\citep{zhang2024activation,heimersheim2024activation,hase2023localization,makelov2024subspace,mueller2024missed,miller2024faithfulness}.
+
+Automated methods can search over components more efficiently
+\citep{conmy2023acdc,kramar2024atp,syed2024attribution}, and circuit analysis
+has been tested in much larger models \citep{lieberum2023circuitsscale}.
+Other work asks whether internal directions represent interpretable variables
+\citep{geiger2023causal,geiger2024das,park2024linear}. Sparse feature methods
+provide another route from individual activations toward larger causal graphs
+\citep{elhage2022superposition,huben2024sparse,templeton2024scaling,marks2025sparsecircuits}.
+Position-aware circuit discovery further shows that combining all token
+positions can hide a faithful circuit \citep{haklay2025position}. These
+approaches leave a scale question: when a precise position-level intervention
+works in one component, does the same rule remain informative when dozens of
+components are changed together?
 
 We compare two versions of the same patch. The first copies a component output
 at every aligned token position. The second copies it only where the words
@@ -204,18 +222,22 @@ The result complements work on position-aware circuit discovery
 \citep{haklay2025position} and on how local changes spread through a model
 \citep{olivieri2026field}. It also fits evidence that measured component
 effects depend on the surrounding intervention \citep{vaidyanathan2026mediators}
-and that backup pathways can appear when a main route is removed
-\citep{gong2026coax,vaidyanathan2026hydra}. Here the first MLP can drive the
-effect in small sets, but a distributed set of other components can replace
-it. The stable object is therefore the changed-token intervention rule, not a
-claim that one component is always necessary.
+and that attention components can be redundant or compensate when another
+route is removed
+\citep{michel2019sixteen,mcgrath2023hydra,gong2026coax,vaidyanathan2026hydra}.
+Here the first MLP can drive the effect in small sets, but a distributed set of
+other components can replace it. The stable object is therefore the
+changed-token intervention rule, not a claim that one component is always
+necessary.
 
 Activation patching creates an artificial hybrid run. Matching the donor
 output does not prove that the unchanged model naturally uses the same route,
-and learned interventions can exploit cancellation elsewhere in a model
-\citep{tanyel2026whose}. Our comparison is narrower: changed-position and
-all-position versions of a fixed patch have nearly the same measured output
-effect. Hidden pathways may still contribute.
+and localization, learned interventions, or particular faithfulness scores can
+mislead when other pathways or cancellations are present
+\citep{heimersheim2024activation,hase2023localization,makelov2024subspace,mueller2024missed,miller2024faithfulness,tanyel2026whose}.
+Our comparison is narrower: changed-position and all-position versions of a
+fixed patch have nearly the same measured output effect. Hidden pathways may
+still contribute.
 
 The main limitations are scope and measurement. The full 47-component and
 backup tests use GPT-2 Medium on controlled sequence completion; GPT-2 Small
@@ -241,6 +263,7 @@ the next step.
 \subsection{Models and sequence-completion task}
 
 The main study uses the 24-layer, 355-million-parameter GPT-2 Medium checkpoint
+\citep{radford2019language}
 (Hugging Face repository \texttt{openai-community/gpt2-medium}, revision
 \texttt{6dcaa7a952f72f9298047fd5137cd6e4f05f41da}). Each transformer layer has
 an attention sublayer and an MLP sublayer. We treat their 48 outputs as
@@ -303,11 +326,14 @@ and component sets chosen without inspecting their responses. E29.14c tests
 larger component sets after E29.14b passes. E29.14d turns an exploratory backup
 hypothesis into direct add-one and remove-one tests on fresh examples. Before
 each stage, the prompts, condition order, thresholds, code hashes, and maximum
-number of model examples were fixed. Runs wrote attempt, result, and integrity
+number of model examples were fixed, following the general principle of
+separating prospective confirmation from exploratory discovery
+\citep{nosek2018preregistration}. Runs wrote attempt, result, and integrity
 records once.
 
-Uncertainty in E29.14a--c uses 5,000 paired bootstrap resamples; E29.14d uses
-10,000. Examples are resampled separately within each of four prompt
+Uncertainty in E29.14a--c uses 5,000 paired bootstrap resamples
+\citep{efron1979bootstrap}; E29.14d uses 10,000. Examples are resampled
+separately within each of four prompt
 templates. For the 24--44-component tests, matched component sets are also
 resampled while each all-position and changed-position pair stays together.
 The 47-component test has only one possible set, so its interval resamples
@@ -341,7 +367,8 @@ F=1-\frac{\operatorname{JS}(p_{\mathrm{patch}},p_{\mathrm{donor}})}
 {\operatorname{JS}(p_{\mathrm{recipient}},p_{\mathrm{donor}})},
 \label{eq:js}
 \end{equation}
-where $\operatorname{JS}$ is Jensen--Shannon divergence. A score of zero
+where $\operatorname{JS}$ is Jensen--Shannon divergence
+\citep{lin1991divergence}. A score of zero
 matches the clean recipient distribution and one matches the clean donor
 distribution. In each direction, registered minimum mean fidelity scores were
 0.80, 0.94,
@@ -356,6 +383,9 @@ calls; optional fresh inference downloads the pinned GPT-2 checkpoints from
 their original repositories. Both replays require exact agreement for
 structure, strings, integers, and booleans, with absolute and relative
 tolerances of $10^{-12}$ for floating-point values. Both checks pass.
+These controls follow broader recommendations to expose computational details
+and account explicitly for sources of benchmark variance
+\citep{pineau2021improving,bouthillier2021accounting}.
 
 OpenAI Codex language-model agents were used to propose and critique
 hypotheses, assist with code development, execute predefined computational
@@ -369,7 +399,7 @@ and integrity of the work. Generative AI systems are not listed as authors.
 The prospective registrations, fixed prompt panels, saved per-example model outputs,
 scoring artifacts, integrity records, and figure source data supporting this
 study are publicly available in the versioned release at
-\url{https://github.com/Biodyn-AI/causal-interfaces/releases/tag/v1.0.0}.
+\url{https://github.com/Biodyn-AI/causal-interfaces/releases/tag/v1.0.1}.
 The release verifies publication inputs by SHA-256. Model checkpoints are
 obtained from the original Hugging Face repositories at the exact revisions
 listed in Methods and are not redistributed.
@@ -380,7 +410,7 @@ Experiment code, portable score-replay tools, optional fresh-inference
 workflows, focused tests, figure-generation code, and manuscript sources are
 available under an open-source license at
 \url{https://github.com/Biodyn-AI/causal-interfaces}. The submission snapshot
-is tagged \texttt{v1.0.0}; its exact commit identifier is recorded in the
+is tagged \texttt{v1.0.1}; its exact commit identifier is recorded in the
 repository release metadata and submission manifest.
 
 \bibliography{references}

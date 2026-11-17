@@ -28,9 +28,9 @@ an OS/Python patch-version change without claiming a new prospective seal.
 ## Tests
 
 On the release platform, where the pinned GPT-2 Medium tokenizer snapshot was
-available, the portable suite completed with `143 passed` and 11
+available, the portable suite completed with `145 passed` and 11
 original-checkout custody tests deselected. In a clean public runner without
-that optional snapshot, the same suite reports `140 passed, 3 skipped, 11
+that optional snapshot, the same suite reports `142 passed, 3 skipped, 11
 deselected`; the skipped tests are tokenizer-alignment checks. The portable CLI
 was additionally invoked from `/tmp`, outside the repository,
 and resolved all repository inputs through `--repository-root`.

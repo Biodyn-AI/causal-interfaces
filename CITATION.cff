@@ -2,14 +2,14 @@ cff-version: 1.2.0
 message: "Please cite this versioned research release and the accompanying manuscript."
 type: software
 title: "Patching only changed tokens can match patching all tokens across dozens of transformer components"
-version: 1.0.0
+version: 1.0.1
 date-released: '2026-11-17'
 authors:
   - family-names: Kendiukhov
     given-names: Ihor
     orcid: 'https://orcid.org/0000-0001-5342-1499'
 repository-code: 'https://github.com/Biodyn-AI/causal-interfaces'
-url: 'https://github.com/Biodyn-AI/causal-interfaces/releases/tag/v1.0.0'
+url: 'https://github.com/Biodyn-AI/causal-interfaces/releases/tag/v1.0.1'
 license:
   - MIT
   - CC-BY-4.0
