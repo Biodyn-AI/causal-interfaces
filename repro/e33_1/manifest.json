@@ -1,0 +1,55 @@
+{
+  "schema_version": "e33_1_publication_repro_manifest_v1",
+  "experiment": "E33.1 independent IOI position-scope replication",
+  "claim_boundary": "Fixed 16-context GPT-2 Small panel; independent checkpoint-and-behavior replication, not model universality or a minimal circuit.",
+  "environment": {
+    "python": "3.12.15",
+    "torch": "2.13.0",
+    "transformers": "5.14.1",
+    "platform_at_registration": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "model": {
+    "id": "gpt2",
+    "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e"
+  },
+  "artifacts": {
+    "registration": {
+      "path": "notes/E33.1-IOI-SCOPE-REGISTRATION-V2.json",
+      "sha256": "39a5a589678c76d51da022e1847a99463a6e289e0ba39ebe94bd0a91756d583e"
+    },
+    "scoring_repair_registration": {
+      "path": "notes/E33.1-SCORING-REPAIR-REGISTRATION.json",
+      "sha256": "ed2a268cddadf61d48905f3d665b22b5267375c36047a941c6a9255519ae9e9c"
+    },
+    "labels": {
+      "path": "runs/e33_1_ioi_scope_replication_v1/labels.json",
+      "sha256": "2af40febecf96230ecad38ff39ef3913fc62558a22e6804308c971e8d93f8ee0"
+    },
+    "score": {
+      "path": "runs/e33_1_ioi_scope_replication_v1/score.json",
+      "sha256": "fe8a834c7434007fa265cecf61d6039a0b04e1e0444dd0f36183034bf84984d3"
+    },
+    "protocol_note": {
+      "path": "notes/E33.1-IOI-SCOPE-PROTOCOL.md",
+      "sha256": "eedbb21c50ca26e79faceb62f5c1c39c2fb632de8c2950e7f579a87289a95faf"
+    },
+    "results_note": {
+      "path": "notes/E33.1-IOI-SCOPE-RESULTS.md",
+      "sha256": "cf88b97c96577c92057672f269cef7da92cf65457f140922ccad771aa1ff2cd0"
+    }
+  },
+  "query_accounting": {
+    "clean_examples": 32,
+    "patched_examples": 352,
+    "logical_model_examples": 384
+  },
+  "registered_scoring_provenance": {
+    "parent_registration_sha256": "39a5a589678c76d51da022e1847a99463a6e289e0ba39ebe94bd0a91756d583e",
+    "scoring_repair_registration_sha256": "ed2a268cddadf61d48905f3d665b22b5267375c36047a941c6a9255519ae9e9c",
+    "labels_sha256": "2af40febecf96230ecad38ff39ef3913fc62558a22e6804308c971e8d93f8ee0"
+  },
+  "custody_notes": [
+    "Registration V1 was superseded before output creation, attempt consumption, model load, or response because a tuple/list JSON round-trip validation failed.",
+    "After labels were sealed, an outcome-blind registered adapter restored registered condition order before delegating unchanged calculations and gates to the original scorer."
+  ]
+}

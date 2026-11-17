@@ -1,0 +1,23 @@
+{
+  "attempt_sha256": "97f22be92dd9c6339c3a05cd64afbdc9b04c65a1146c2e47213248f283794285",
+  "completed_unix_time": 1794855435.700505,
+  "labels_sha256": "2af40febecf96230ecad38ff39ef3913fc62558a22e6804308c971e8d93f8ee0",
+  "model_files_sha256": {
+    "config.json": "0daed7749b4f02b8f76240d5444551d7b08712dab4d0adb8239c56ba823bb7b4",
+    "generation_config.json": "ed0b32ac72c0f5f44a719abb2d7786ea5146c871f83717b7f2018065954de02b",
+    "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+    "model.safetensors": "248dfc3911869ec493c76e65bf2fcf7f615828b0254c12b473182f0f81d3a707",
+    "tokenizer.json": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6",
+    "tokenizer_config.json": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f",
+    "vocab.json": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783"
+  },
+  "registration_sha256": "39a5a589678c76d51da022e1847a99463a6e289e0ba39ebe94bd0a91756d583e",
+  "schema_version": "e33_1_ioi_scope_custody_v1",
+  "source_files_sha256": {
+    "protocol.py": "df3f84a2b0d86b837ce7f7354155eb1f295bbdf2428ceff578aee938773a790a",
+    "runner.py": "6aff51e903e9e6bee37a323f81395118efd81f11f208992370b9f25970a30fde",
+    "scoring.py": "dfb65ee0448d0668242f7809bf3aa2558bee6fa654245f0a17f8d2bd8afbbda8",
+    "workflow.py": "ce807a34f7748229ab7ba00ae7f4e21abedcd660ea24501f4b05822014871662"
+  },
+  "status": "confirmation_labels_acquired_write_once"
+}

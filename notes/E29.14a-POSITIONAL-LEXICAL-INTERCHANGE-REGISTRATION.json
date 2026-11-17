@@ -1,0 +1,1434 @@
+{
+  "schema_version": "e29_14a_position_registration_v1",
+  "status": "prospective_sealed_before_any_e29_14a_model_response",
+  "question": "Does GPT-2-medium's layer-0 MLP act as a component-specific, bidirectional lexical-state switch localized to differing token positions?",
+  "prospective_scope": "fresh lexical contexts; fixed forward-12 and reverse-4 condition manifests; no adaptive conditions or response-dependent fitting",
+  "parent_e29_13_registration": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/notes/E29.13-ABSORBING-HUB-CONFIRMATION-REGISTRATION.json",
+  "parent_e29_13_registration_sha256": "5ac67250844bfa84797b7fbb1263a290f371a96b47446415523a6e3a444b5b4d",
+  "development_evidence": {
+    "position_semantics_posthoc": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/runs/e29_13_absorbing_hub_confirmation_v1/e29_13_position_semantics_posthoc.json",
+    "position_semantics_posthoc_sha256": "9874f22dc28fc749ff47584695f5ec97997144dd71a9efd96210c9787e9232e3",
+    "schema_version": "e29_13_position_semantics_posthoc_v1",
+    "status": "posthoc_development_only_new_queries_on_opened_e29_13_prompts",
+    "confirmatory_status": "not_confirmatory_and_cannot_change_any_sealed_e29_13_verdict"
+  },
+  "protocol_note": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/notes/E29.14a-POSITIONAL-LEXICAL-INTERCHANGE-PROTOCOL-DRAFT.md",
+  "protocol_note_sha256": "1256e742adc425417d561bddb9672e02955d612b744d237c03e9c6583e194177",
+  "model_snapshot": "/Users/ihorkendiukhov/.cache/huggingface/hub/models--openai-community--gpt2-medium/snapshots/6dcaa7a952f72f9298047fd5137cd6e4f05f41da",
+  "model_revision": "6dcaa7a952f72f9298047fd5137cd6e4f05f41da",
+  "checkpoint_sha256": {
+    "config.json": "ef1a44d889ad1a0acc7731c78134f1b87d2d222f110e97dd10fd4117331caf22",
+    "generation_config.json": "b90eadacf585a743a30ea51e8b5c88b8d282a2a34dc0c7e556d0987cdbd68805",
+    "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+    "model.safetensors": "fc5a354a19255ad494f3d71549390baca1ccf61d1d822b9408971705c687c9cd",
+    "tokenizer_config.json": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f",
+    "tokenizer.json": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6",
+    "vocab.json": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783"
+  },
+  "environment": {
+    "python": "3.12.9",
+    "torch": "2.13.0",
+    "transformers": "5.14.1",
+    "safetensors": "0.8.0",
+    "platform": "macOS-26.3-arm64-arm-64bit"
+  },
+  "execution": {
+    "device": "cpu",
+    "model_dtype": "float64",
+    "attention_implementation": "eager",
+    "batch_size": 32,
+    "torch_num_threads_during_fitting": 1
+  },
+  "component_map": [
+    [
+      0,
+      "attention"
+    ],
+    [
+      0,
+      "mlp"
+    ],
+    [
+      1,
+      "attention"
+    ],
+    [
+      1,
+      "mlp"
+    ],
+    [
+      2,
+      "attention"
+    ],
+    [
+      2,
+      "mlp"
+    ],
+    [
+      3,
+      "attention"
+    ],
+    [
+      3,
+      "mlp"
+    ],
+    [
+      4,
+      "attention"
+    ],
+    [
+      4,
+      "mlp"
+    ],
+    [
+      5,
+      "attention"
+    ],
+    [
+      5,
+      "mlp"
+    ],
+    [
+      6,
+      "attention"
+    ],
+    [
+      6,
+      "mlp"
+    ],
+    [
+      7,
+      "attention"
+    ],
+    [
+      7,
+      "mlp"
+    ],
+    [
+      8,
+      "attention"
+    ],
+    [
+      8,
+      "mlp"
+    ],
+    [
+      9,
+      "attention"
+    ],
+    [
+      9,
+      "mlp"
+    ],
+    [
+      10,
+      "attention"
+    ],
+    [
+      10,
+      "mlp"
+    ],
+    [
+      11,
+      "attention"
+    ],
+    [
+      11,
+      "mlp"
+    ],
+    [
+      12,
+      "attention"
+    ],
+    [
+      12,
+      "mlp"
+    ],
+    [
+      13,
+      "attention"
+    ],
+    [
+      13,
+      "mlp"
+    ],
+    [
+      14,
+      "attention"
+    ],
+    [
+      14,
+      "mlp"
+    ],
+    [
+      15,
+      "attention"
+    ],
+    [
+      15,
+      "mlp"
+    ],
+    [
+      16,
+      "attention"
+    ],
+    [
+      16,
+      "mlp"
+    ],
+    [
+      17,
+      "attention"
+    ],
+    [
+      17,
+      "mlp"
+    ],
+    [
+      18,
+      "attention"
+    ],
+    [
+      18,
+      "mlp"
+    ],
+    [
+      19,
+      "attention"
+    ],
+    [
+      19,
+      "mlp"
+    ],
+    [
+      20,
+      "attention"
+    ],
+    [
+      20,
+      "mlp"
+    ],
+    [
+      21,
+      "attention"
+    ],
+    [
+      21,
+      "mlp"
+    ],
+    [
+      22,
+      "attention"
+    ],
+    [
+      22,
+      "mlp"
+    ],
+    [
+      23,
+      "attention"
+    ],
+    [
+      23,
+      "mlp"
+    ]
+  ],
+  "hub_component": 1,
+  "control_component": 0,
+  "patch_semantics": {
+    "forward": "base_recipient_plus_donor_minus_base_component_update",
+    "reverse": "donor_recipient_plus_base_minus_donor_component_update",
+    "position_scope": "registered_aligned_token_position_boolean_mask",
+    "dose": "recipient_update_plus_alpha_times_source_minus_recipient_update",
+    "response": "recipient_wrong_minus_correct_logit_improvement"
+  },
+  "prompt_records": [
+    {
+      "template": "Replay the sequence: {a} {b} {c} {d} | {a} {b} {c}",
+      "base_prompt": "Replay the sequence: crimson coral olive bright | crimson coral olive",
+      "donor_prompt": "Replay the sequence: elephant donkey dolphin spider | elephant donkey dolphin",
+      "base_target": "bright",
+      "donor_target": "spider"
+    },
+    {
+      "template": "Replay the sequence: {a} {b} {c} {d} | {a} {b} {c}",
+      "base_prompt": "Replay the sequence: onion garlic carrot potato | onion garlic carrot",
+      "donor_prompt": "Replay the sequence: carpet curtain blanket basket | carpet curtain blanket",
+      "base_target": "potato",
+      "donor_target": "basket"
+    },
+    {
+      "template": "Replay the sequence: {a} {b} {c} {d} | {a} {b} {c}",
+      "base_prompt": "Replay the sequence: January March June August | January March June",
+      "donor_prompt": "Replay the sequence: ceramic granite ivory carbon | ceramic granite ivory",
+      "base_target": "August",
+      "donor_target": "carbon"
+    },
+    {
+      "template": "Loop example: {a} {b} {c} {d}; continue {a} {b} {c}",
+      "base_prompt": "Loop example: heat rainbow smoke dust; continue heat rainbow smoke",
+      "donor_prompt": "Loop example: finger thumb chest waist; continue finger thumb chest",
+      "base_target": "dust",
+      "donor_target": "waist"
+    },
+    {
+      "template": "Loop example: {a} {b} {c} {d}; continue {a} {b} {c}",
+      "base_prompt": "Loop example: captain officer manager worker; continue captain officer manager",
+      "donor_prompt": "Loop example: bacon cookie beef pork; continue bacon cookie beef",
+      "base_target": "worker",
+      "donor_target": "pork"
+    },
+    {
+      "template": "Loop example: {a} {b} {c} {d}; continue {a} {b} {c}",
+      "base_prompt": "Loop example: library museum airport station; continue library museum airport",
+      "donor_prompt": "Loop example: jeans cap tie robe; continue jeans cap tie",
+      "base_target": "station",
+      "donor_target": "robe"
+    },
+    {
+      "template": "After {a} {b} {c} {d}, repeat {a} {b} {c}",
+      "base_prompt": "After sedan motor rail jet, repeat sedan motor rail",
+      "donor_prompt": "After sword blade gun pipe, repeat sword blade gun",
+      "base_target": "jet",
+      "donor_target": "pipe"
+    },
+    {
+      "template": "After {a} {b} {c} {d}, repeat {a} {b} {c}",
+      "base_prompt": "After football basketball volleyball skiing, repeat football basketball volleyball",
+      "donor_prompt": "After today tomorrow daily annual, repeat today tomorrow daily",
+      "base_target": "skiing",
+      "donor_target": "annual"
+    },
+    {
+      "template": "After {a} {b} {c} {d}, repeat {a} {b} {c}",
+      "base_prompt": "After speak listen touch hold, repeat speak listen touch",
+      "donor_prompt": "After honor trust faith mercy, repeat honor trust faith",
+      "base_target": "hold",
+      "donor_target": "mercy"
+    },
+    {
+      "template": "Pattern: {a} {b} {c} {d}. Continue: {a} {b} {c}",
+      "base_prompt": "Pattern: ink oil wax foam. Continue: ink oil wax",
+      "donor_prompt": "Pattern: coast harbor creek jungle. Continue: coast harbor creek",
+      "base_target": "foam",
+      "donor_target": "jungle"
+    },
+    {
+      "template": "Pattern: {a} {b} {c} {d}. Continue: {a} {b} {c}",
+      "base_prompt": "Pattern: melody rhythm choir tune. Continue: melody rhythm choir",
+      "donor_prompt": "Pattern: family friend neighbor guest. Continue: family friend neighbor",
+      "base_target": "tune",
+      "donor_target": "guest"
+    },
+    {
+      "template": "Pattern: {a} {b} {c} {d}. Continue: {a} {b} {c}",
+      "base_prompt": "Pattern: zero nine fifty dozen. Continue: zero nine fifty",
+      "donor_prompt": "Pattern: dry wet rough smooth. Continue: dry wet rough",
+      "base_target": "dozen",
+      "donor_target": "smooth"
+    }
+  ],
+  "prompt_checks": [
+    {
+      "context_index": 0,
+      "token_length": 13,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "bright",
+          "target_token_id": 6016,
+          "demonstration_target_position": 8,
+          "prediction_position": 13,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "crimson": 1,
+            "coral": 1,
+            "olive": 1,
+            "bright": 1
+          }
+        },
+        "donor": {
+          "target": "spider",
+          "target_token_id": 19230,
+          "demonstration_target_position": 8,
+          "prediction_position": 13,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "elephant": 1,
+            "donkey": 1,
+            "dolphin": 1,
+            "spider": 1
+          }
+        }
+      },
+      "template": "Replay the sequence: {a} {b} {c} {d} | {a} {b} {c}",
+      "base_words": [
+        "crimson",
+        "coral",
+        "olive",
+        "bright"
+      ],
+      "donor_words": [
+        "elephant",
+        "donkey",
+        "dolphin",
+        "spider"
+      ],
+      "base_prompt": "Replay the sequence: crimson coral olive bright | crimson coral olive",
+      "donor_prompt": "Replay the sequence: elephant donkey dolphin spider | elephant donkey dolphin",
+      "base_target": "bright",
+      "donor_target": "spider"
+    },
+    {
+      "context_index": 1,
+      "token_length": 13,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "potato",
+          "target_token_id": 21219,
+          "demonstration_target_position": 8,
+          "prediction_position": 13,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "onion": 1,
+            "garlic": 1,
+            "carrot": 1,
+            "potato": 1
+          }
+        },
+        "donor": {
+          "target": "basket",
+          "target_token_id": 7988,
+          "demonstration_target_position": 8,
+          "prediction_position": 13,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "carpet": 1,
+            "curtain": 1,
+            "blanket": 1,
+            "basket": 1
+          }
+        }
+      },
+      "template": "Replay the sequence: {a} {b} {c} {d} | {a} {b} {c}",
+      "base_words": [
+        "onion",
+        "garlic",
+        "carrot",
+        "potato"
+      ],
+      "donor_words": [
+        "carpet",
+        "curtain",
+        "blanket",
+        "basket"
+      ],
+      "base_prompt": "Replay the sequence: onion garlic carrot potato | onion garlic carrot",
+      "donor_prompt": "Replay the sequence: carpet curtain blanket basket | carpet curtain blanket",
+      "base_target": "potato",
+      "donor_target": "basket"
+    },
+    {
+      "context_index": 2,
+      "token_length": 13,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "August",
+          "target_token_id": 2932,
+          "demonstration_target_position": 8,
+          "prediction_position": 13,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "January": 1,
+            "March": 1,
+            "June": 1,
+            "August": 1
+          }
+        },
+        "donor": {
+          "target": "carbon",
+          "target_token_id": 6588,
+          "demonstration_target_position": 8,
+          "prediction_position": 13,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "ceramic": 1,
+            "granite": 1,
+            "ivory": 1,
+            "carbon": 1
+          }
+        }
+      },
+      "template": "Replay the sequence: {a} {b} {c} {d} | {a} {b} {c}",
+      "base_words": [
+        "January",
+        "March",
+        "June",
+        "August"
+      ],
+      "donor_words": [
+        "ceramic",
+        "granite",
+        "ivory",
+        "carbon"
+      ],
+      "base_prompt": "Replay the sequence: January March June August | January March June",
+      "donor_prompt": "Replay the sequence: ceramic granite ivory carbon | ceramic granite ivory",
+      "base_target": "August",
+      "donor_target": "carbon"
+    },
+    {
+      "context_index": 3,
+      "token_length": 12,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "dust",
+          "target_token_id": 8977,
+          "demonstration_target_position": 6,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "heat": 1,
+            "rainbow": 1,
+            "smoke": 1,
+            "dust": 1
+          }
+        },
+        "donor": {
+          "target": "waist",
+          "target_token_id": 16139,
+          "demonstration_target_position": 6,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "finger": 1,
+            "thumb": 1,
+            "chest": 1,
+            "waist": 1
+          }
+        }
+      },
+      "template": "Loop example: {a} {b} {c} {d}; continue {a} {b} {c}",
+      "base_words": [
+        "heat",
+        "rainbow",
+        "smoke",
+        "dust"
+      ],
+      "donor_words": [
+        "finger",
+        "thumb",
+        "chest",
+        "waist"
+      ],
+      "base_prompt": "Loop example: heat rainbow smoke dust; continue heat rainbow smoke",
+      "donor_prompt": "Loop example: finger thumb chest waist; continue finger thumb chest",
+      "base_target": "dust",
+      "donor_target": "waist"
+    },
+    {
+      "context_index": 4,
+      "token_length": 12,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "worker",
+          "target_token_id": 8383,
+          "demonstration_target_position": 6,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "captain": 1,
+            "officer": 1,
+            "manager": 1,
+            "worker": 1
+          }
+        },
+        "donor": {
+          "target": "pork",
+          "target_token_id": 18128,
+          "demonstration_target_position": 6,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "bacon": 1,
+            "cookie": 1,
+            "beef": 1,
+            "pork": 1
+          }
+        }
+      },
+      "template": "Loop example: {a} {b} {c} {d}; continue {a} {b} {c}",
+      "base_words": [
+        "captain",
+        "officer",
+        "manager",
+        "worker"
+      ],
+      "donor_words": [
+        "bacon",
+        "cookie",
+        "beef",
+        "pork"
+      ],
+      "base_prompt": "Loop example: captain officer manager worker; continue captain officer manager",
+      "donor_prompt": "Loop example: bacon cookie beef pork; continue bacon cookie beef",
+      "base_target": "worker",
+      "donor_target": "pork"
+    },
+    {
+      "context_index": 5,
+      "token_length": 12,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "station",
+          "target_token_id": 4429,
+          "demonstration_target_position": 6,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "library": 1,
+            "museum": 1,
+            "airport": 1,
+            "station": 1
+          }
+        },
+        "donor": {
+          "target": "robe",
+          "target_token_id": 33192,
+          "demonstration_target_position": 6,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "jeans": 1,
+            "cap": 1,
+            "tie": 1,
+            "robe": 1
+          }
+        }
+      },
+      "template": "Loop example: {a} {b} {c} {d}; continue {a} {b} {c}",
+      "base_words": [
+        "library",
+        "museum",
+        "airport",
+        "station"
+      ],
+      "donor_words": [
+        "jeans",
+        "cap",
+        "tie",
+        "robe"
+      ],
+      "base_prompt": "Loop example: library museum airport station; continue library museum airport",
+      "donor_prompt": "Loop example: jeans cap tie robe; continue jeans cap tie",
+      "base_target": "station",
+      "donor_target": "robe"
+    },
+    {
+      "context_index": 6,
+      "token_length": 10,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "jet",
+          "target_token_id": 12644,
+          "demonstration_target_position": 4,
+          "prediction_position": 10,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "sedan": 1,
+            "motor": 1,
+            "rail": 1,
+            "jet": 1
+          }
+        },
+        "donor": {
+          "target": "pipe",
+          "target_token_id": 12656,
+          "demonstration_target_position": 4,
+          "prediction_position": 10,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "sword": 1,
+            "blade": 1,
+            "gun": 1,
+            "pipe": 1
+          }
+        }
+      },
+      "template": "After {a} {b} {c} {d}, repeat {a} {b} {c}",
+      "base_words": [
+        "sedan",
+        "motor",
+        "rail",
+        "jet"
+      ],
+      "donor_words": [
+        "sword",
+        "blade",
+        "gun",
+        "pipe"
+      ],
+      "base_prompt": "After sedan motor rail jet, repeat sedan motor rail",
+      "donor_prompt": "After sword blade gun pipe, repeat sword blade gun",
+      "base_target": "jet",
+      "donor_target": "pipe"
+    },
+    {
+      "context_index": 7,
+      "token_length": 10,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "skiing",
+          "target_token_id": 41348,
+          "demonstration_target_position": 4,
+          "prediction_position": 10,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "football": 1,
+            "basketball": 1,
+            "volleyball": 1,
+            "skiing": 1
+          }
+        },
+        "donor": {
+          "target": "annual",
+          "target_token_id": 5079,
+          "demonstration_target_position": 4,
+          "prediction_position": 10,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "today": 1,
+            "tomorrow": 1,
+            "daily": 1,
+            "annual": 1
+          }
+        }
+      },
+      "template": "After {a} {b} {c} {d}, repeat {a} {b} {c}",
+      "base_words": [
+        "football",
+        "basketball",
+        "volleyball",
+        "skiing"
+      ],
+      "donor_words": [
+        "today",
+        "tomorrow",
+        "daily",
+        "annual"
+      ],
+      "base_prompt": "After football basketball volleyball skiing, repeat football basketball volleyball",
+      "donor_prompt": "After today tomorrow daily annual, repeat today tomorrow daily",
+      "base_target": "skiing",
+      "donor_target": "annual"
+    },
+    {
+      "context_index": 8,
+      "token_length": 10,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "hold",
+          "target_token_id": 1745,
+          "demonstration_target_position": 4,
+          "prediction_position": 10,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "speak": 1,
+            "listen": 1,
+            "touch": 1,
+            "hold": 1
+          }
+        },
+        "donor": {
+          "target": "mercy",
+          "target_token_id": 17703,
+          "demonstration_target_position": 4,
+          "prediction_position": 10,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "honor": 1,
+            "trust": 1,
+            "faith": 1,
+            "mercy": 1
+          }
+        }
+      },
+      "template": "After {a} {b} {c} {d}, repeat {a} {b} {c}",
+      "base_words": [
+        "speak",
+        "listen",
+        "touch",
+        "hold"
+      ],
+      "donor_words": [
+        "honor",
+        "trust",
+        "faith",
+        "mercy"
+      ],
+      "base_prompt": "After speak listen touch hold, repeat speak listen touch",
+      "donor_prompt": "After honor trust faith mercy, repeat honor trust faith",
+      "base_target": "hold",
+      "donor_target": "mercy"
+    },
+    {
+      "context_index": 9,
+      "token_length": 12,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "foam",
+          "target_token_id": 19828,
+          "demonstration_target_position": 5,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "ink": 1,
+            "oil": 1,
+            "wax": 1,
+            "foam": 1
+          }
+        },
+        "donor": {
+          "target": "jungle",
+          "target_token_id": 20712,
+          "demonstration_target_position": 5,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "coast": 1,
+            "harbor": 1,
+            "creek": 1,
+            "jungle": 1
+          }
+        }
+      },
+      "template": "Pattern: {a} {b} {c} {d}. Continue: {a} {b} {c}",
+      "base_words": [
+        "ink",
+        "oil",
+        "wax",
+        "foam"
+      ],
+      "donor_words": [
+        "coast",
+        "harbor",
+        "creek",
+        "jungle"
+      ],
+      "base_prompt": "Pattern: ink oil wax foam. Continue: ink oil wax",
+      "donor_prompt": "Pattern: coast harbor creek jungle. Continue: coast harbor creek",
+      "base_target": "foam",
+      "donor_target": "jungle"
+    },
+    {
+      "context_index": 10,
+      "token_length": 12,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "tune",
+          "target_token_id": 14009,
+          "demonstration_target_position": 5,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "melody": 1,
+            "rhythm": 1,
+            "choir": 1,
+            "tune": 1
+          }
+        },
+        "donor": {
+          "target": "guest",
+          "target_token_id": 8319,
+          "demonstration_target_position": 5,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "family": 1,
+            "friend": 1,
+            "neighbor": 1,
+            "guest": 1
+          }
+        }
+      },
+      "template": "Pattern: {a} {b} {c} {d}. Continue: {a} {b} {c}",
+      "base_words": [
+        "melody",
+        "rhythm",
+        "choir",
+        "tune"
+      ],
+      "donor_words": [
+        "family",
+        "friend",
+        "neighbor",
+        "guest"
+      ],
+      "base_prompt": "Pattern: melody rhythm choir tune. Continue: melody rhythm choir",
+      "donor_prompt": "Pattern: family friend neighbor guest. Continue: family friend neighbor",
+      "base_target": "tune",
+      "donor_target": "guest"
+    },
+    {
+      "context_index": 11,
+      "token_length": 12,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "dozen",
+          "target_token_id": 8667,
+          "demonstration_target_position": 5,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "zero": 1,
+            "nine": 1,
+            "fifty": 1,
+            "dozen": 1
+          }
+        },
+        "donor": {
+          "target": "smooth",
+          "target_token_id": 7209,
+          "demonstration_target_position": 5,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "dry": 1,
+            "wet": 1,
+            "rough": 1,
+            "smooth": 1
+          }
+        }
+      },
+      "template": "Pattern: {a} {b} {c} {d}. Continue: {a} {b} {c}",
+      "base_words": [
+        "zero",
+        "nine",
+        "fifty",
+        "dozen"
+      ],
+      "donor_words": [
+        "dry",
+        "wet",
+        "rough",
+        "smooth"
+      ],
+      "base_prompt": "Pattern: zero nine fifty dozen. Continue: zero nine fifty",
+      "donor_prompt": "Pattern: dry wet rough smooth. Continue: dry wet rough",
+      "base_target": "dozen",
+      "donor_target": "smooth"
+    }
+  ],
+  "prompt_panel_sha256": "a45e8dfeefa3e9bb1df4a7b838e3225777e9d9972f9a9e50241abd7cc09412e8",
+  "position_protocol": {
+    "schema_version": "e29_14a_position_semantics_response_blind_v1",
+    "context_count": 12,
+    "hub_component": 1,
+    "control_component": 0,
+    "position_scope_names": [
+      "all_positions",
+      "differing_lexical_positions",
+      "shared_static_positions",
+      "demonstration_target_position",
+      "demonstration_prefix_positions",
+      "repeated_query_positions",
+      "differing_except_demonstration_target"
+    ],
+    "forward_conditions": [
+      {
+        "name": "hub_all_positions_alpha1",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_differing_lexical_alpha1",
+        "component": 1,
+        "scope": "differing_lexical_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_shared_static_alpha1",
+        "component": 1,
+        "scope": "shared_static_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_demonstration_target_alpha1",
+        "component": 1,
+        "scope": "demonstration_target_position",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_demonstration_prefix_alpha1",
+        "component": 1,
+        "scope": "demonstration_prefix_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_repeated_query_alpha1",
+        "component": 1,
+        "scope": "repeated_query_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_differing_except_target_alpha1",
+        "component": 1,
+        "scope": "differing_except_demonstration_target",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_all_positions_alpha025",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 0.25
+      },
+      {
+        "name": "hub_all_positions_alpha050",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 0.5
+      },
+      {
+        "name": "hub_all_positions_alpha075",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 0.75
+      },
+      {
+        "name": "control_all_positions_alpha1",
+        "component": 0,
+        "scope": "all_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "control_differing_lexical_alpha1",
+        "component": 0,
+        "scope": "differing_lexical_positions",
+        "alpha": 1.0
+      }
+    ],
+    "reverse_conditions": [
+      {
+        "name": "hub_all_positions_alpha1",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_differing_lexical_alpha1",
+        "component": 1,
+        "scope": "differing_lexical_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_shared_static_alpha1",
+        "component": 1,
+        "scope": "shared_static_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_demonstration_target_alpha1",
+        "component": 1,
+        "scope": "demonstration_target_position",
+        "alpha": 1.0
+      }
+    ],
+    "template_strata": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        6,
+        7,
+        8
+      ],
+      [
+        9,
+        10,
+        11
+      ]
+    ],
+    "bootstrap": {
+      "seed": 29141,
+      "replicates": 5000,
+      "resampling": "contexts_within_four_fixed_template_strata",
+      "upper_quantile_one_sided": 0.95,
+      "lower_quantile_descriptive": 0.025
+    },
+    "scoring_gates": {
+      "replication": {
+        "forward_all_mean_min": 0.985,
+        "forward_endpoint_absolute_gap_bootstrap_upper_max": 0.03
+      },
+      "forward_lexical_localization": {
+        "paired_absolute_gap_bootstrap_upper_max": 0.03,
+        "shared_static_mean_absolute_max": 0.02
+      },
+      "component_specificity_control": {
+        "maximum_control_mean_absolute_max": 0.05
+      },
+      "bidirectional_switch": {
+        "reverse_all_mean_min": 0.985,
+        "reverse_endpoint_absolute_gap_bootstrap_upper_max": 0.03,
+        "forward_reverse_absolute_gap_bootstrap_upper_max": 0.04
+      },
+      "bidirectional_lexical_localization": {
+        "reverse_lexical_absolute_gap_bootstrap_upper_max": 0.03,
+        "reverse_shared_static_mean_absolute_max": 0.02
+      },
+      "graded_dose_response": {
+        "minimum_strictly_monotone_contexts": 10,
+        "midpoint_mean_min_exclusive": 0.2,
+        "midpoint_mean_max_exclusive": 0.8
+      }
+    },
+    "query_accounting": {
+      "contexts": 12,
+      "forward_condition_rows_per_context": 12,
+      "reverse_condition_rows_per_context": 4,
+      "patched_context_condition_cells": 192,
+      "clean_forward_examples": 24,
+      "maximum_logical_queries": 216
+    },
+    "alpha_zero_role": "derived_clean_recipient_not_a_patched_query"
+  },
+  "position_protocol_sha256": "9c5a1dc07be6881965146d4c2a2a51cea3f2cfb70692bc2bdbfbb9d233fb95fc",
+  "condition_manifest": {
+    "forward": [
+      {
+        "name": "hub_all_positions_alpha1",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_differing_lexical_alpha1",
+        "component": 1,
+        "scope": "differing_lexical_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_shared_static_alpha1",
+        "component": 1,
+        "scope": "shared_static_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_demonstration_target_alpha1",
+        "component": 1,
+        "scope": "demonstration_target_position",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_demonstration_prefix_alpha1",
+        "component": 1,
+        "scope": "demonstration_prefix_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_repeated_query_alpha1",
+        "component": 1,
+        "scope": "repeated_query_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_differing_except_target_alpha1",
+        "component": 1,
+        "scope": "differing_except_demonstration_target",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_all_positions_alpha025",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 0.25
+      },
+      {
+        "name": "hub_all_positions_alpha050",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 0.5
+      },
+      {
+        "name": "hub_all_positions_alpha075",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 0.75
+      },
+      {
+        "name": "control_all_positions_alpha1",
+        "component": 0,
+        "scope": "all_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "control_differing_lexical_alpha1",
+        "component": 0,
+        "scope": "differing_lexical_positions",
+        "alpha": 1.0
+      }
+    ],
+    "reverse": [
+      {
+        "name": "hub_all_positions_alpha1",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_differing_lexical_alpha1",
+        "component": 1,
+        "scope": "differing_lexical_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_shared_static_alpha1",
+        "component": 1,
+        "scope": "shared_static_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_demonstration_target_alpha1",
+        "component": 1,
+        "scope": "demonstration_target_position",
+        "alpha": 1.0
+      }
+    ]
+  },
+  "bootstrap": {
+    "seed": 29141,
+    "replicates": 5000,
+    "resampling": "contexts_within_four_fixed_template_strata",
+    "upper_quantile_one_sided": 0.95,
+    "lower_quantile_descriptive": 0.025
+  },
+  "scoring_gates": {
+    "replication": {
+      "forward_all_mean_min": 0.985,
+      "forward_endpoint_absolute_gap_bootstrap_upper_max": 0.03
+    },
+    "forward_lexical_localization": {
+      "paired_absolute_gap_bootstrap_upper_max": 0.03,
+      "shared_static_mean_absolute_max": 0.02
+    },
+    "component_specificity_control": {
+      "maximum_control_mean_absolute_max": 0.05
+    },
+    "bidirectional_switch": {
+      "reverse_all_mean_min": 0.985,
+      "reverse_endpoint_absolute_gap_bootstrap_upper_max": 0.03,
+      "forward_reverse_absolute_gap_bootstrap_upper_max": 0.04
+    },
+    "bidirectional_lexical_localization": {
+      "reverse_lexical_absolute_gap_bootstrap_upper_max": 0.03,
+      "reverse_shared_static_mean_absolute_max": 0.02
+    },
+    "graded_dose_response": {
+      "minimum_strictly_monotone_contexts": 10,
+      "midpoint_mean_min_exclusive": 0.2,
+      "midpoint_mean_max_exclusive": 0.8
+    }
+  },
+  "query_accounting": {
+    "contexts": 12,
+    "forward_condition_rows_per_context": 12,
+    "reverse_condition_rows_per_context": 4,
+    "patched_context_condition_cells": 192,
+    "clean_forward_examples": 24,
+    "maximum_logical_queries": 216
+  },
+  "physical_query_accounting": {
+    "contexts": 12,
+    "forward_condition_rows_per_context": 12,
+    "reverse_condition_rows_per_context": 4,
+    "patched_context_condition_cells": 192,
+    "clean_forward_examples": 24,
+    "maximum_logical_queries": 216,
+    "batch_smoke_unique_condition_rows": 16,
+    "batch_smoke_physical_condition_cells": 32,
+    "maximum_physical_model_examples": 248
+  },
+  "batch_invariance": {
+    "context_index": 0,
+    "directions": [
+      "forward",
+      "reverse"
+    ],
+    "forward_conditions": [
+      {
+        "name": "hub_all_positions_alpha1",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_differing_lexical_alpha1",
+        "component": 1,
+        "scope": "differing_lexical_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_shared_static_alpha1",
+        "component": 1,
+        "scope": "shared_static_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_demonstration_target_alpha1",
+        "component": 1,
+        "scope": "demonstration_target_position",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_demonstration_prefix_alpha1",
+        "component": 1,
+        "scope": "demonstration_prefix_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_repeated_query_alpha1",
+        "component": 1,
+        "scope": "repeated_query_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_differing_except_target_alpha1",
+        "component": 1,
+        "scope": "differing_except_demonstration_target",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_all_positions_alpha025",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 0.25
+      },
+      {
+        "name": "hub_all_positions_alpha050",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 0.5
+      },
+      {
+        "name": "hub_all_positions_alpha075",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 0.75
+      },
+      {
+        "name": "control_all_positions_alpha1",
+        "component": 0,
+        "scope": "all_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "control_differing_lexical_alpha1",
+        "component": 0,
+        "scope": "differing_lexical_positions",
+        "alpha": 1.0
+      }
+    ],
+    "reverse_conditions": [
+      {
+        "name": "hub_all_positions_alpha1",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_differing_lexical_alpha1",
+        "component": 1,
+        "scope": "differing_lexical_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_shared_static_alpha1",
+        "component": 1,
+        "scope": "shared_static_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_demonstration_target_alpha1",
+        "component": 1,
+        "scope": "demonstration_target_position",
+        "alpha": 1.0
+      }
+    ],
+    "reference_batch_size": 1,
+    "candidate_batch_size": 32,
+    "absolute_tolerance": 1e-09,
+    "relative_tolerance": 1e-09,
+    "smoke_outputs_enter_scientific_labels": false
+  },
+  "numerical_gates": {
+    "clean_logits_finite": true,
+    "clean_logit_absolute_max": 10000.0,
+    "response_finite": true,
+    "response_absolute_max": 10000.0,
+    "batch_size_smoke_reference": 1,
+    "batch_size_smoke_candidate": 32,
+    "batch_size_smoke_atol": 1e-09,
+    "batch_size_smoke_rtol": 1e-09
+  },
+  "outcome_custody": {
+    "registration_sha_required_before_acquisition": true,
+    "write_once_attempt_marker_created_before_model_load": true,
+    "any_attempt_marker_blocks_silent_rerun": true,
+    "all_16_conditions_acquired_nonadaptively_per_context": true,
+    "forward_and_reverse_acquired_in_one_uninterrupted_stage": true,
+    "batch_smoke_runs_before_scientific_label_write": true,
+    "batch_smoke_outputs_excluded_from_scientific_labels": true,
+    "clean_and_numerical_gates_required_before_label_write": true,
+    "attempt_labels_and_custody_are_write_once": true
+  },
+  "source_code_sha256": {
+    "acquire_e29_14a_position.py": "b2f0d47aec2d21756cfe5d6c874f384ca2d88768fe93b444e1845a6cee57e8b4",
+    "e29_10_custody.py": "caee9d82e9f83625af799872db9b1dcb0bf525ed03994d3966eaaf213d258b88",
+    "e29_10_float64_protocol.py": "c387c3ad19e0e8fb2f438ac61292b4124c973a1bfee725b9d06929d6347b4e3e",
+    "e29_11_custody.py": "df22655ecc237cbfb30a39a6d0a0282edab37060955a143978dd2ac9964b5bc3",
+    "e29_11_fitting.py": "af728d3c2858791776c7ac1a53868e6075e57ddd0cf7cdc06aec16aba7835271",
+    "e29_11_multiscale_protocol.py": "cc1dcf7b88edf30cb701824b48d8f77749e407ce31f36224d2c60e5099ad3b99",
+    "e29_12_custody.py": "e510350850803cf69e1b5103fc5eaf3dcfe57c75c0d0aa85225b7029c5bd5d21",
+    "e29_12_endpoint_protocol.py": "a8d2419342ef68e3a9a48457208bff120e7b3714bad62bbfb376e1792831aa87",
+    "e29_12_fitting.py": "1c67fcb9ac57d7e357a4b6838fc82b77a99d3f53618ecee01b6322c534158aa7",
+    "e29_12_prompt_panel.py": "8f98203b88966c4cabae1bccd146f94dea17382c82277427251f3c4e2cdaed6a",
+    "e29_13_absorbing_hub_fitting.py": "fc202c5ced1ddc141da0c829a7c07e6d434ce0ef9d88942400b2c79234d851f2",
+    "e29_13_absorbing_hub_protocol.py": "5028a63bb68fc5aae9a252ffead87a9108f5e0dc0d3f5da58fe35692ab7d553c",
+    "e29_13_custody.py": "a50380485a3d1db4e58816cd487d6ababe433755577ffbcf6876667810f3baa3",
+    "e29_13_prompt_panel.py": "fb3314ac496943c74650b736a41f8c0e66ad12a3e192b05de64fdc91937c84ad",
+    "e29_14a_prompt_panel.py": "7fc61a8cac6ea843dd76ea8734805d29f2fea012d252d1660687c23aea6edca6",
+    "e29_14a_position_protocol.py": "a868366f93afa307a009fc4e6985c4e3711433ada5f93579496eaa5e29e36226",
+    "e29_14a_position_runner.py": "c7c32cd20c3e2a4c2196c511576e2e4b186e4a61059f83f17b89442aa0bcd60d",
+    "e29_14a_position_custody.py": "f52e955ab4d1f947a6e46cebf1cf2993f51f88766e6de501e3961e371c69f6b2",
+    "e29_8_prompt_panel.py": "68983938f80fd9dcb507ea23801af4fe74f4bfcebebb33f024703e9ec0f263a6",
+    "e29_8_scaleup_protocol.py": "99f33ea43bf83f41af7d56af6137341161c99629b3c69fd6694279d75587739c",
+    "e29_9_custody.py": "b9974465c54756e70f55e54113edb7520b887adfc54c9136811f92395b942f74",
+    "e29_9_seven_gate_protocol.py": "1686ca75b8f6bff63044c272366986cf1871465d10d4ddd540ba27a0dd269cd0",
+    "e29_9_transfer_fitting.py": "30463b1fe1000c0215121e087a7454ed369002089c2fd3c282026a40e3868401",
+    "register_e29_14a_position.py": "136bcfa8757eb90b8624604bd6882f0e0e305fd5d4a7a45be79554381715719c",
+    "scaled_tensor_response.py": "a41cfb3f8d83e0678f517eb39d0af0e2c34353c3c77aa3cff2bf7a7eb62166c7",
+    "score_e29_14a_position.py": "7107fc90abc96dea7e0cf736e630d6260848bde2f24f59a428ea90f9716baeed",
+    "source_model_fitting.py": "60e0bb321e7c7a80ec7dfae019522f26e50a8a4eb7110fb4a5401e802070e5ec",
+    "tensor_train_response.py": "4449f086c52c8779818ae320818a077c6fea9aab40716ca43d63bcb6b823b319"
+  },
+  "protocol_deviations": []
+}

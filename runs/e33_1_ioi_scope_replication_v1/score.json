@@ -1,0 +1,334 @@
+{
+  "all_registered_gates_passed": true,
+  "claim_boundary": "GPT-2-small IOI panel only; no universality, minimality, or abstract-variable identification claim.",
+  "clean_summary": {
+    "forward": {
+      "mean_endpoint": 14.103231049961344,
+      "minimum_endpoint": 10.554030001127913,
+      "pairwise_correct_contexts": 16,
+      "recipient_target_top1_contexts": 11,
+      "source_target_top1_contexts": 11
+    },
+    "reverse": {
+      "mean_endpoint": 14.103231049961344,
+      "minimum_endpoint": 10.554030001127913,
+      "pairwise_correct_contexts": 16,
+      "recipient_target_top1_contexts": 11,
+      "source_target_top1_contexts": 11
+    }
+  },
+  "condition_metrics": {
+    "forward": {
+      "all24_all": {
+        "counterfactual_pairwise_wins": 16,
+        "counterfactual_target_top1": 11,
+        "maximum_normalized_transfer": 1.0,
+        "mean_absolute_normalized_transfer": 1.0,
+        "mean_js_fidelity": 1.0,
+        "mean_normalized_transfer": 1.0,
+        "minimum_js_fidelity": 0.9999999999999999,
+        "minimum_normalized_transfer": 1.0
+      },
+      "all24_lexical": {
+        "counterfactual_pairwise_wins": 16,
+        "counterfactual_target_top1": 11,
+        "maximum_normalized_transfer": 0.9987489091133439,
+        "mean_absolute_normalized_transfer": 0.9784125010808047,
+        "mean_js_fidelity": 0.989870766933076,
+        "mean_normalized_transfer": 0.9784125010808047,
+        "minimum_js_fidelity": 0.9603028590709553,
+        "minimum_normalized_transfer": 0.9564181468709597
+      },
+      "attention0_lexical": {
+        "counterfactual_pairwise_wins": 0,
+        "counterfactual_target_top1": 0,
+        "maximum_normalized_transfer": 0.21883649051414297,
+        "mean_absolute_normalized_transfer": 0.15233722570305935,
+        "mean_js_fidelity": 0.08597046286462981,
+        "mean_normalized_transfer": 0.15233722570305935,
+        "minimum_js_fidelity": -0.09403879162168138,
+        "minimum_normalized_transfer": 0.07595700287073785
+      },
+      "first12_all": {
+        "counterfactual_pairwise_wins": 16,
+        "counterfactual_target_top1": 11,
+        "maximum_normalized_transfer": 0.9972288798487349,
+        "mean_absolute_normalized_transfer": 0.9862562227091384,
+        "mean_js_fidelity": 0.9982514381831575,
+        "mean_normalized_transfer": 0.9862562227091384,
+        "minimum_js_fidelity": 0.98671591291527,
+        "minimum_normalized_transfer": 0.9606072926874326
+      },
+      "first12_lexical": {
+        "counterfactual_pairwise_wins": 16,
+        "counterfactual_target_top1": 11,
+        "maximum_normalized_transfer": 1.006619600432415,
+        "mean_absolute_normalized_transfer": 0.9790116445423305,
+        "mean_js_fidelity": 0.9900594994546132,
+        "mean_normalized_transfer": 0.9790116445423305,
+        "minimum_js_fidelity": 0.95687985779449,
+        "minimum_normalized_transfer": 0.9499704437167432
+      },
+      "mlp0_all": {
+        "counterfactual_pairwise_wins": 16,
+        "counterfactual_target_top1": 8,
+        "maximum_normalized_transfer": 0.9403178421567909,
+        "mean_absolute_normalized_transfer": 0.7788290625578617,
+        "mean_js_fidelity": 0.9033212476640837,
+        "mean_normalized_transfer": 0.7788290625578617,
+        "minimum_js_fidelity": 0.6769398291069331,
+        "minimum_normalized_transfer": 0.6415488015304147
+      },
+      "mlp0_lexical": {
+        "counterfactual_pairwise_wins": 16,
+        "counterfactual_target_top1": 9,
+        "maximum_normalized_transfer": 0.9359946138798442,
+        "mean_absolute_normalized_transfer": 0.7765209551323793,
+        "mean_js_fidelity": 0.8959283969106421,
+        "mean_normalized_transfer": 0.7765209551323793,
+        "minimum_js_fidelity": 0.6680475586705223,
+        "minimum_normalized_transfer": 0.6410813728969934
+      },
+      "mlp0_lexical_energy_scrambled": {
+        "counterfactual_pairwise_wins": 0,
+        "counterfactual_target_top1": 0,
+        "maximum_normalized_transfer": 0.19951825034200146,
+        "mean_absolute_normalized_transfer": 0.053321331886501025,
+        "mean_js_fidelity": 0.08474186334325119,
+        "mean_normalized_transfer": 0.053232617069657484,
+        "minimum_js_fidelity": -0.032799920429422036,
+        "minimum_normalized_transfer": -0.0007097185347483574
+      },
+      "mlp0_matched_static_a": {
+        "counterfactual_pairwise_wins": 0,
+        "counterfactual_target_top1": 0,
+        "maximum_normalized_transfer": 0.0038999353494845648,
+        "mean_absolute_normalized_transfer": 0.0020213950137075104,
+        "mean_js_fidelity": 0.0001090910210607629,
+        "mean_normalized_transfer": -0.00010692776441213346,
+        "minimum_js_fidelity": -0.016808984515761294,
+        "minimum_normalized_transfer": -0.012497585791660111
+      },
+      "mlp0_matched_static_b": {
+        "counterfactual_pairwise_wins": 0,
+        "counterfactual_target_top1": 0,
+        "maximum_normalized_transfer": 0.0060998137449651746,
+        "mean_absolute_normalized_transfer": 0.0029573108359050217,
+        "mean_js_fidelity": -0.003780643632749138,
+        "mean_normalized_transfer": -0.0005676586958827633,
+        "minimum_js_fidelity": -0.027857646933421965,
+        "minimum_normalized_transfer": -0.013760907263275118
+      },
+      "mlp0_shared_static": {
+        "counterfactual_pairwise_wins": 0,
+        "counterfactual_target_top1": 0,
+        "maximum_normalized_transfer": 0.012676753305015402,
+        "mean_absolute_normalized_transfer": 0.006221267524991704,
+        "mean_js_fidelity": -0.0042388376308766865,
+        "mean_normalized_transfer": 0.00030017359090650595,
+        "minimum_js_fidelity": -0.04987148282037901,
+        "minimum_normalized_transfer": -0.02809968709587056
+      }
+    },
+    "reverse": {
+      "all24_all": {
+        "counterfactual_pairwise_wins": 16,
+        "counterfactual_target_top1": 11,
+        "maximum_normalized_transfer": 1.0,
+        "mean_absolute_normalized_transfer": 1.0,
+        "mean_js_fidelity": 1.0,
+        "mean_normalized_transfer": 1.0,
+        "minimum_js_fidelity": 1.0,
+        "minimum_normalized_transfer": 1.0
+      },
+      "all24_lexical": {
+        "counterfactual_pairwise_wins": 16,
+        "counterfactual_target_top1": 11,
+        "maximum_normalized_transfer": 1.007340005878027,
+        "mean_absolute_normalized_transfer": 0.9781019997706738,
+        "mean_js_fidelity": 0.9914008176917948,
+        "mean_normalized_transfer": 0.9781019997706738,
+        "minimum_js_fidelity": 0.9674134094973491,
+        "minimum_normalized_transfer": 0.9572707098353445
+      },
+      "attention0_lexical": {
+        "counterfactual_pairwise_wins": 0,
+        "counterfactual_target_top1": 0,
+        "maximum_normalized_transfer": 0.2634240044420809,
+        "mean_absolute_normalized_transfer": 0.1622356193350545,
+        "mean_js_fidelity": 0.09706866137614376,
+        "mean_normalized_transfer": 0.1622356193350545,
+        "minimum_js_fidelity": -0.09090940112837465,
+        "minimum_normalized_transfer": 0.0805620073979276
+      },
+      "first12_all": {
+        "counterfactual_pairwise_wins": 16,
+        "counterfactual_target_top1": 11,
+        "maximum_normalized_transfer": 0.9960152050920278,
+        "mean_absolute_normalized_transfer": 0.9860064144171922,
+        "mean_js_fidelity": 0.9986841192967961,
+        "mean_normalized_transfer": 0.9860064144171922,
+        "minimum_js_fidelity": 0.9961714431238397,
+        "minimum_normalized_transfer": 0.9769806122696985
+      },
+      "first12_lexical": {
+        "counterfactual_pairwise_wins": 16,
+        "counterfactual_target_top1": 11,
+        "maximum_normalized_transfer": 1.0152317169773604,
+        "mean_absolute_normalized_transfer": 0.9791522635366336,
+        "mean_js_fidelity": 0.9919935729468561,
+        "mean_normalized_transfer": 0.9791522635366336,
+        "minimum_js_fidelity": 0.9636401704347118,
+        "minimum_normalized_transfer": 0.9501456569721032
+      },
+      "mlp0_all": {
+        "counterfactual_pairwise_wins": 16,
+        "counterfactual_target_top1": 11,
+        "maximum_normalized_transfer": 0.8568895088428988,
+        "mean_absolute_normalized_transfer": 0.7966009380758821,
+        "mean_js_fidelity": 0.9325892635809195,
+        "mean_normalized_transfer": 0.7966009380758821,
+        "minimum_js_fidelity": 0.7878318835269209,
+        "minimum_normalized_transfer": 0.7279688401981692
+      },
+      "mlp0_lexical": {
+        "counterfactual_pairwise_wins": 16,
+        "counterfactual_target_top1": 11,
+        "maximum_normalized_transfer": 0.8798472850160914,
+        "mean_absolute_normalized_transfer": 0.7954461483512126,
+        "mean_js_fidelity": 0.9267033276436125,
+        "mean_normalized_transfer": 0.7954461483512126,
+        "minimum_js_fidelity": 0.7767076408388792,
+        "minimum_normalized_transfer": 0.7341428443163608
+      },
+      "mlp0_lexical_energy_scrambled": {
+        "counterfactual_pairwise_wins": 0,
+        "counterfactual_target_top1": 0,
+        "maximum_normalized_transfer": 0.15425333489691784,
+        "mean_absolute_normalized_transfer": 0.06161770074117691,
+        "mean_js_fidelity": 0.07483197394709189,
+        "mean_normalized_transfer": 0.0531829537279079,
+        "minimum_js_fidelity": -0.09578250167170799,
+        "minimum_normalized_transfer": -0.04409196664651064
+      },
+      "mlp0_matched_static_a": {
+        "counterfactual_pairwise_wins": 0,
+        "counterfactual_target_top1": 0,
+        "maximum_normalized_transfer": 0.006288852892938367,
+        "mean_absolute_normalized_transfer": 0.002901700219757077,
+        "mean_js_fidelity": 0.003406080144599047,
+        "mean_normalized_transfer": 0.00041895940299108635,
+        "minimum_js_fidelity": -0.013642530254331264,
+        "minimum_normalized_transfer": -0.0057354677179409655
+      },
+      "mlp0_matched_static_b": {
+        "counterfactual_pairwise_wins": 0,
+        "counterfactual_target_top1": 0,
+        "maximum_normalized_transfer": 0.007102659297549328,
+        "mean_absolute_normalized_transfer": 0.0025143395154310667,
+        "mean_js_fidelity": 0.009112757164269673,
+        "mean_normalized_transfer": 0.0014563411118315253,
+        "minimum_js_fidelity": -0.007115775748917086,
+        "minimum_normalized_transfer": -0.0022046510777167074
+      },
+      "mlp0_shared_static": {
+        "counterfactual_pairwise_wins": 0,
+        "counterfactual_target_top1": 0,
+        "maximum_normalized_transfer": 0.018984826056822775,
+        "mean_absolute_normalized_transfer": 0.006045496292506615,
+        "mean_js_fidelity": 0.009611639981136524,
+        "mean_normalized_transfer": 0.0018169554356508772,
+        "minimum_js_fidelity": -0.10400915042894332,
+        "minimum_normalized_transfer": -0.01025376931048597
+      }
+    }
+  },
+  "context_count": 16,
+  "gap_metrics": {
+    "forward": {
+      "all24_lexical_endpoint_bootstrap_upper": 0.02602260263042279,
+      "all24_lexical_endpoint_mean_absolute_gap": 0.02158749891919543,
+      "first12_lexical_vs_all_bootstrap_upper": 0.011115572824303676,
+      "first12_lexical_vs_all_mean_absolute_gap": 0.009373888170700721,
+      "mlp0_lexical_vs_all_bootstrap_upper": 0.006540543802051767,
+      "mlp0_lexical_vs_all_mean_absolute_gap": 0.004881466179710352,
+      "mlp0_minus_attention0_mean_transfer": 0.62418372942932,
+      "mlp0_minus_scrambled_mean_transfer": 0.7232883380627217
+    },
+    "reverse": {
+      "all24_lexical_endpoint_bootstrap_upper": 0.028315736587528558,
+      "all24_lexical_endpoint_mean_absolute_gap": 0.022889519064049527,
+      "first12_lexical_vs_all_bootstrap_upper": 0.013869838910821601,
+      "first12_lexical_vs_all_mean_absolute_gap": 0.01090539626020317,
+      "mlp0_lexical_vs_all_bootstrap_upper": 0.008129375861631842,
+      "mlp0_lexical_vs_all_mean_absolute_gap": 0.005593856647358043,
+      "mlp0_minus_attention0_mean_transfer": 0.6332105290161582,
+      "mlp0_minus_scrambled_mean_transfer": 0.7422631946233047
+    }
+  },
+  "gates": {
+    "clean_viability": {
+      "forward_all_contexts_pairwise_correct": true,
+      "forward_minimum_endpoint": true,
+      "reverse_all_contexts_pairwise_correct": true,
+      "reverse_minimum_endpoint": true
+    },
+    "counterfactual_answer": {
+      "forward_all24": true,
+      "forward_mlp0": true,
+      "reverse_all24": true,
+      "reverse_mlp0": true
+    },
+    "energy_matched_control": {
+      "forward_contrast": true,
+      "forward_scrambled_absolute": true,
+      "reverse_contrast": true,
+      "reverse_scrambled_absolute": true
+    },
+    "full_distribution": {
+      "forward_all24_lexical": true,
+      "forward_first12_lexical": true,
+      "forward_mlp0_lexical": true,
+      "reverse_all24_lexical": true,
+      "reverse_first12_lexical": true,
+      "reverse_mlp0_lexical": true
+    },
+    "matched_static_controls": {
+      "forward_a": true,
+      "forward_b": true,
+      "reverse_a": true,
+      "reverse_b": true
+    },
+    "mesoscale_all24": {
+      "forward_endpoint_gap": true,
+      "forward_mean_transfer": true,
+      "reverse_endpoint_gap": true,
+      "reverse_mean_transfer": true
+    },
+    "mesoscale_first12": {
+      "forward_mean_transfer": true,
+      "forward_scope_gap": true,
+      "reverse_mean_transfer": true,
+      "reverse_scope_gap": true
+    },
+    "mlp0_scope_equivalence": {
+      "forward_all_mean_transfer": true,
+      "forward_lexical_mean_transfer": true,
+      "forward_lexical_vs_all_gap": true,
+      "forward_shared_static": true,
+      "reverse_all_mean_transfer": true,
+      "reverse_lexical_mean_transfer": true,
+      "reverse_lexical_vs_all_gap": true,
+      "reverse_shared_static": true
+    },
+    "neighbor_component_control": {
+      "forward": true,
+      "reverse": true
+    }
+  },
+  "labels_sha256": "2af40febecf96230ecad38ff39ef3913fc62558a22e6804308c971e8d93f8ee0",
+  "parent_registration_sha256": "39a5a589678c76d51da022e1847a99463a6e289e0ba39ebe94bd0a91756d583e",
+  "recommended_interpretation": "Independent model-and-behavior replication of token-position scope equivalence across a focal early MLP and 12/24-sublayer compositions.",
+  "schema_version": "e33_1_ioi_scope_replication_score_v1",
+  "scoring_repair_registration_sha256": "ed2a268cddadf61d48905f3d665b22b5267375c36047a941c6a9255519ae9e9c"
+}

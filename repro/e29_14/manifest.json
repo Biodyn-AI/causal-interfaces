@@ -1,0 +1,56 @@
+{
+  "schema_version": "e29_14_portable_reproduction_manifest_v1",
+  "model": {
+    "repository_id": "openai-community/gpt2-medium",
+    "revision": "6dcaa7a952f72f9298047fd5137cd6e4f05f41da",
+    "checkpoint_files": {
+      "config.json": "ef1a44d889ad1a0acc7731c78134f1b87d2d222f110e97dd10fd4117331caf22",
+      "generation_config.json": "b90eadacf585a743a30ea51e8b5c88b8d282a2a34dc0c7e556d0987cdbd68805",
+      "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "model.safetensors": "fc5a354a19255ad494f3d71549390baca1ccf61d1d822b9408971705c687c9cd",
+      "tokenizer_config.json": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f",
+      "tokenizer.json": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6",
+      "vocab.json": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783"
+    }
+  },
+  "experiments": {
+    "a": {
+      "registration": "notes/E29.14a-POSITIONAL-LEXICAL-INTERCHANGE-REGISTRATION.json",
+      "registration_sha256": "f6ef1755bd6a4c3345a78fe180f00d7dd5e98086319348f34d9a1d9592ee23df",
+      "labels": "runs/e29_14a_position_lexical_interchange_v1/position_labels.pt",
+      "labels_sha256": "4be512fce2f59822f305eb86c9a439b91912136c68c0b1841bec38913fdfe609",
+      "published_summary": "runs/e29_14a_position_lexical_interchange_v1/position_semantics_summary.json",
+      "published_summary_sha256": "e5a307c981c0c72e9997ad08378f60e44e61afca91c670c09308006cfb624f9a"
+    },
+    "b": {
+      "registration": "notes/E29.14b-COMPONENT-POSITION-COMMUTATION-REGISTRATION.json",
+      "registration_sha256": "74f9a32093e50dec829f9a4d93da93b5d1db5e5f4f5a1c54e8a507d3deee18ad",
+      "labels": "runs/e29_14b_component_position_commutation_v1/component_position_labels.pt",
+      "labels_sha256": "a58620152b15148207f8c8942500f68d679ebfaacb2668a3c4088430f877c0a5",
+      "published_summary": "runs/e29_14b_component_position_commutation_v1/component_position_bridge_summary.json",
+      "published_summary_sha256": "fa7ae4d61ae4dd520901f4863f8790f6d9d85d8a4372c43d9e1fd74b3e64157f",
+      "protocol_artifact": "runs/e29_13_absorbing_hub_confirmation_v1/protocol_masks.pt",
+      "protocol_artifact_sha256": "014b87e0ddf2cf913ff745e41e12bb6444420716753d0eb712bd465eaa0c83fd"
+    },
+    "c": {
+      "registration": "notes/E29.14c-HUB-OFF-SCALE-LADDER-REGISTRATION-V2.json",
+      "registration_sha256": "bc2a6766b8741f0d9427daebe480c261532a7b1832daa049e98a4e6f16005476",
+      "labels": "runs/e29_14c_hub_off_scale_ladder_v2/scale_scope_labels.pt",
+      "labels_sha256": "7bcb635fb127cb0a96079ff323f84b3daf9b7ff0a4aff9d4fcfefafa0f60c257",
+      "published_summary": "runs/e29_14c_hub_off_scale_ladder_v2/scale_scope_summary.json",
+      "published_summary_sha256": "0da2fff7fb113c8cfc9ee50cac564b9eb85c01f20846019769fcdc556ff4d33a",
+      "protocol_artifact": "runs/e29_14c_hub_off_scale_ladder_v2/protocol_masks.pt",
+      "protocol_artifact_sha256": "440bb944c2b35801bdb2f93ffa7adab616214574743e552d1ab7821f077a6c25"
+    },
+    "d": {
+      "registration": "notes/E29.14d-DIRECT-CAUSAL-CARRIER-REGISTRATION.json",
+      "registration_sha256": "3eceee73e1cc3633c610eb1be5a1d3ed4e2c2d4724b8680840d61ba89f9a7467",
+      "labels": "runs/e29_14d_direct_backup_v1/direct_backup_labels.pt",
+      "labels_sha256": "53f5013a40b9ed32ac6d6229ad6844cea33c2231be9a2f8b1f642401ffd465a7",
+      "published_summary": "runs/e29_14d_direct_backup_v1/direct_backup_summary.json",
+      "published_summary_sha256": "08069c5b6ff4d4c100e0e259b3debec455951e5e673c853404b19457edd17a49",
+      "protocol_artifact": "runs/e29_14d_direct_backup_v1/protocol_conditions.pt",
+      "protocol_artifact_sha256": "a60c1bf4a2d83d8735dac2dd878fc415f7b3fd75af65b08b3574b530ddf4923b"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "e33_1_registration_supersession_v1",
+  "superseded_registration": "notes/E33.1-IOI-SCOPE-REGISTRATION.json",
+  "superseded_registration_sha256": "a9b6f80675b7d70991856411b10050508369b8bc98dd9fea8b08105fb5d4375b",
+  "status": "superseded_before_attempt_marker_or_model_load",
+  "reason": "The registration serialized the immutable conditions tuple to a JSON list, while the verifier compared it to an in-memory tuple. Verification failed before output-directory creation, attempt consumption, model load, or any clean/patched response.",
+  "scientific_design_changed": false,
+  "scientific_gates_changed": false,
+  "prompt_panel_changed": false,
+  "replacement_requirement": "Add a JSON round-trip test and seal a new registration against the corrected canonical JSON protocol."
+}

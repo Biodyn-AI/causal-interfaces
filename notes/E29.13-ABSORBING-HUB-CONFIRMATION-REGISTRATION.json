@@ -1,0 +1,1115 @@
+{
+  "schema_version": "e29_13_absorbing_hub_registration_v1",
+  "status": "sealed_before_any_e29_13_response",
+  "question": "On twelve fresh lexical contexts and fresh balanced c24/c32 masks, does the prospectively fixed layer-0 MLP gate-plus-shape model predict the causal patch response and confirm an absorbing hub?",
+  "prospective_scope": {
+    "experiment_type": "fresh_context_absorbing_hub_confirmation",
+    "new_prompt_contexts": 12,
+    "new_words": 96,
+    "fresh_held_masks": true,
+    "source_mask_rows": 283,
+    "held_mask_rows": 96,
+    "diagnostic_mask_rows": 2,
+    "all_methods_frozen_after_source_labels_before_held_labels": true,
+    "all_minus_hub_is_report_only": true
+  },
+  "parent_e29_12_registration": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/notes/E29.12-ENDPOINT-BOUNDARY-CONFIRMATION-REGISTRATION.json",
+  "parent_e29_12_registration_sha256": "1f7661cd643d37d1abd8b785a170acc0699216420f77f0e248fbb12b776dc078",
+  "parent_e29_12_results": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/notes/E29.12-ENDPOINT-BOUNDARY-CONFIRMATION-RESULTS.md",
+  "parent_e29_12_results_sha256": "d02848f4be09d61833234fe52a4c90f7013fe3d6b896d722d8405c216b34bfd9",
+  "development_evidence": {
+    "absorbing_hub_posthoc": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/runs/e29_12_endpoint_boundary_confirmation_v1/e29_12_absorbing_hub_posthoc.json",
+    "absorbing_hub_posthoc_sha256": "fe354dad636617f4d37950cddd3565f89f5ee484789e525525c3d57b2e94e7b9",
+    "schema_version": "e29_12_absorbing_hub_posthoc_v1",
+    "status": "exploratory_posthoc_after_E29.12_completion_not_confirmatory",
+    "focal_component": {
+      "index": 1,
+      "layer": 0,
+      "kind": "mlp"
+    },
+    "posthoc_choices_frozen_prospectively_here": true
+  },
+  "prior_mask_artifacts": {
+    "e29_8": {
+      "path": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/runs/e29_8_gpt2_medium_tensor_scaleup_v1/protocol_masks.pt",
+      "sha256": "fb0720a00efeda09ca239b57baddb81a372d56fa9bd9a21c657a8a1d9018d4ce"
+    },
+    "e29_9": {
+      "path": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/runs/e29_9_gpt2_medium_adaptive_transfer_v1/protocol_masks.pt",
+      "sha256": "3d9e2612a71741eb83697303577fd3846cc6cd99f0841000e9ac0a202428a95a"
+    },
+    "e29_11": {
+      "path": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/runs/e29_11_gpt2_medium_scale_ladder_v1/protocol_masks.pt",
+      "sha256": "c239215507b20ec55482ca90cba9dc4ecb015f42b58a2b399a7b72acd9b6e961"
+    },
+    "e29_12": {
+      "path": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/runs/e29_12_endpoint_boundary_confirmation_v1/protocol_masks.pt",
+      "sha256": "ea4dd31f27735edfefd8f50d41110c2ced4d78a71f2830938b877f6b26eca6be"
+    }
+  },
+  "model_snapshot": "/Users/ihorkendiukhov/.cache/huggingface/hub/models--openai-community--gpt2-medium/snapshots/6dcaa7a952f72f9298047fd5137cd6e4f05f41da",
+  "model_revision": "6dcaa7a952f72f9298047fd5137cd6e4f05f41da",
+  "checkpoint_sha256": {
+    "config.json": "ef1a44d889ad1a0acc7731c78134f1b87d2d222f110e97dd10fd4117331caf22",
+    "generation_config.json": "b90eadacf585a743a30ea51e8b5c88b8d282a2a34dc0c7e556d0987cdbd68805",
+    "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+    "model.safetensors": "fc5a354a19255ad494f3d71549390baca1ccf61d1d822b9408971705c687c9cd",
+    "tokenizer_config.json": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f",
+    "tokenizer.json": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6",
+    "vocab.json": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783"
+  },
+  "environment": {
+    "python": "3.12.9",
+    "torch": "2.13.0",
+    "transformers": "5.14.1",
+    "safetensors": "0.8.0",
+    "platform": "macOS-26.3-arm64-arm-64bit"
+  },
+  "execution": {
+    "device": "cpu",
+    "model_dtype": "float64",
+    "attention_implementation": "eager",
+    "batch_size": 32,
+    "torch_num_threads_during_fitting": 1
+  },
+  "component_map": [
+    [
+      0,
+      "attention"
+    ],
+    [
+      0,
+      "mlp"
+    ],
+    [
+      1,
+      "attention"
+    ],
+    [
+      1,
+      "mlp"
+    ],
+    [
+      2,
+      "attention"
+    ],
+    [
+      2,
+      "mlp"
+    ],
+    [
+      3,
+      "attention"
+    ],
+    [
+      3,
+      "mlp"
+    ],
+    [
+      4,
+      "attention"
+    ],
+    [
+      4,
+      "mlp"
+    ],
+    [
+      5,
+      "attention"
+    ],
+    [
+      5,
+      "mlp"
+    ],
+    [
+      6,
+      "attention"
+    ],
+    [
+      6,
+      "mlp"
+    ],
+    [
+      7,
+      "attention"
+    ],
+    [
+      7,
+      "mlp"
+    ],
+    [
+      8,
+      "attention"
+    ],
+    [
+      8,
+      "mlp"
+    ],
+    [
+      9,
+      "attention"
+    ],
+    [
+      9,
+      "mlp"
+    ],
+    [
+      10,
+      "attention"
+    ],
+    [
+      10,
+      "mlp"
+    ],
+    [
+      11,
+      "attention"
+    ],
+    [
+      11,
+      "mlp"
+    ],
+    [
+      12,
+      "attention"
+    ],
+    [
+      12,
+      "mlp"
+    ],
+    [
+      13,
+      "attention"
+    ],
+    [
+      13,
+      "mlp"
+    ],
+    [
+      14,
+      "attention"
+    ],
+    [
+      14,
+      "mlp"
+    ],
+    [
+      15,
+      "attention"
+    ],
+    [
+      15,
+      "mlp"
+    ],
+    [
+      16,
+      "attention"
+    ],
+    [
+      16,
+      "mlp"
+    ],
+    [
+      17,
+      "attention"
+    ],
+    [
+      17,
+      "mlp"
+    ],
+    [
+      18,
+      "attention"
+    ],
+    [
+      18,
+      "mlp"
+    ],
+    [
+      19,
+      "attention"
+    ],
+    [
+      19,
+      "mlp"
+    ],
+    [
+      20,
+      "attention"
+    ],
+    [
+      20,
+      "mlp"
+    ],
+    [
+      21,
+      "attention"
+    ],
+    [
+      21,
+      "mlp"
+    ],
+    [
+      22,
+      "attention"
+    ],
+    [
+      22,
+      "mlp"
+    ],
+    [
+      23,
+      "attention"
+    ],
+    [
+      23,
+      "mlp"
+    ]
+  ],
+  "patch_scope": "all_aligned_token_positions",
+  "component_semantics": "attention_then_mlp_residual_update_per_block",
+  "protocol_note": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/notes/E29.13-ABSORBING-HUB-CONFIRMATION-PROTOCOL-DRAFT.md",
+  "protocol_note_sha256": "e04a078bfabd5f13c312a567be50d717bf3a127ef60b789d046eb0ba365e0587",
+  "protocol_masks": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/runs/e29_13_absorbing_hub_confirmation_v1/protocol_masks.pt",
+  "protocol_masks_sha256": "014b87e0ddf2cf913ff745e41e12bb6444420716753d0eb712bd465eaa0c83fd",
+  "protocol_masks_schema": "e29_13_absorbing_hub_protocol_artifact_v1",
+  "mask_panel_order": [
+    "source_fit",
+    "confirmation_size24",
+    "confirmation_size32",
+    "all_components",
+    "all_minus_hub"
+  ],
+  "mask_shapes": {
+    "source_fit": [
+      283,
+      48
+    ],
+    "confirmation_size24": [
+      48,
+      48
+    ],
+    "confirmation_size32": [
+      48,
+      48
+    ],
+    "all_components": [
+      1,
+      48
+    ],
+    "all_minus_hub": [
+      1,
+      48
+    ]
+  },
+  "source_strata": [
+    "calibration_low",
+    "calibration_size8",
+    "bridge_size16",
+    "all_singletons",
+    "hub_incident_pairs",
+    "control_incident_pairs"
+  ],
+  "prompt_checks": [
+    {
+      "context_index": 0,
+      "token_length": 13,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "yellow",
+          "target_token_id": 7872,
+          "demonstration_target_position": 8,
+          "prediction_position": 13,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "red": 1,
+            "blue": 1,
+            "green": 1,
+            "yellow": 1
+          }
+        },
+        "donor": {
+          "target": "tiger",
+          "target_token_id": 26241,
+          "demonstration_target_position": 8,
+          "prediction_position": 13,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "wolf": 1,
+            "bear": 1,
+            "lion": 1,
+            "tiger": 1
+          }
+        }
+      },
+      "template": "Replay the sequence: {a} {b} {c} {d} | {a} {b} {c}",
+      "base_words": [
+        "red",
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "donor_words": [
+        "wolf",
+        "bear",
+        "lion",
+        "tiger"
+      ],
+      "base_prompt": "Replay the sequence: red blue green yellow | red blue green",
+      "donor_prompt": "Replay the sequence: wolf bear lion tiger | wolf bear lion",
+      "base_target": "yellow",
+      "donor_target": "tiger"
+    },
+    {
+      "context_index": 1,
+      "token_length": 13,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "grape",
+          "target_token_id": 30777,
+          "demonstration_target_position": 8,
+          "prediction_position": 13,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "apple": 1,
+            "pear": 1,
+            "peach": 1,
+            "grape": 1
+          }
+        },
+        "donor": {
+          "target": "lamp",
+          "target_token_id": 20450,
+          "demonstration_target_position": 8,
+          "prediction_position": 13,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "table": 1,
+            "chair": 1,
+            "desk": 1,
+            "lamp": 1
+          }
+        }
+      },
+      "template": "Replay the sequence: {a} {b} {c} {d} | {a} {b} {c}",
+      "base_words": [
+        "apple",
+        "pear",
+        "peach",
+        "grape"
+      ],
+      "donor_words": [
+        "table",
+        "chair",
+        "desk",
+        "lamp"
+      ],
+      "base_prompt": "Replay the sequence: apple pear peach grape | apple pear peach",
+      "donor_prompt": "Replay the sequence: table chair desk lamp | table chair desk",
+      "base_target": "grape",
+      "donor_target": "lamp"
+    },
+    {
+      "context_index": 2,
+      "token_length": 13,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "winter",
+          "target_token_id": 7374,
+          "demonstration_target_position": 8,
+          "prediction_position": 13,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "spring": 1,
+            "summer": 1,
+            "autumn": 1,
+            "winter": 1
+          }
+        },
+        "donor": {
+          "target": "nickel",
+          "target_token_id": 30666,
+          "demonstration_target_position": 8,
+          "prediction_position": 13,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "gold": 1,
+            "lead": 1,
+            "tin": 1,
+            "nickel": 1
+          }
+        }
+      },
+      "template": "Replay the sequence: {a} {b} {c} {d} | {a} {b} {c}",
+      "base_words": [
+        "spring",
+        "summer",
+        "autumn",
+        "winter"
+      ],
+      "donor_words": [
+        "gold",
+        "lead",
+        "tin",
+        "nickel"
+      ],
+      "base_prompt": "Replay the sequence: spring summer autumn winter | spring summer autumn",
+      "donor_prompt": "Replay the sequence: gold lead tin nickel | gold lead tin",
+      "base_target": "winter",
+      "donor_target": "nickel"
+    },
+    {
+      "context_index": 3,
+      "token_length": 12,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "wind",
+          "target_token_id": 2344,
+          "demonstration_target_position": 6,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "rain": 1,
+            "snow": 1,
+            "cloud": 1,
+            "wind": 1
+          }
+        },
+        "donor": {
+          "target": "head",
+          "target_token_id": 1182,
+          "demonstration_target_position": 6,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "hand": 1,
+            "foot": 1,
+            "arm": 1,
+            "head": 1
+          }
+        }
+      },
+      "template": "Loop example: {a} {b} {c} {d}; continue {a} {b} {c}",
+      "base_words": [
+        "rain",
+        "snow",
+        "cloud",
+        "wind"
+      ],
+      "donor_words": [
+        "hand",
+        "foot",
+        "arm",
+        "head"
+      ],
+      "base_prompt": "Loop example: rain snow cloud wind; continue rain snow cloud",
+      "donor_prompt": "Loop example: hand foot arm head; continue hand foot arm",
+      "base_target": "wind",
+      "donor_target": "head"
+    },
+    {
+      "context_index": 4,
+      "token_length": 12,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "dancer",
+          "target_token_id": 38619,
+          "demonstration_target_position": 6,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "doctor": 1,
+            "nurse": 1,
+            "editor": 1,
+            "dancer": 1
+          }
+        },
+        "donor": {
+          "target": "cheese",
+          "target_token_id": 9891,
+          "demonstration_target_position": 6,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "bread": 1,
+            "rice": 1,
+            "salad": 1,
+            "cheese": 1
+          }
+        }
+      },
+      "template": "Loop example: {a} {b} {c} {d}; continue {a} {b} {c}",
+      "base_words": [
+        "doctor",
+        "nurse",
+        "editor",
+        "dancer"
+      ],
+      "donor_words": [
+        "bread",
+        "rice",
+        "salad",
+        "cheese"
+      ],
+      "base_prompt": "Loop example: doctor nurse editor dancer; continue doctor nurse editor",
+      "donor_prompt": "Loop example: bread rice salad cheese; continue bread rice salad",
+      "base_target": "dancer",
+      "donor_target": "cheese"
+    },
+    {
+      "context_index": 5,
+      "token_length": 12,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "factory",
+          "target_token_id": 8860,
+          "demonstration_target_position": 6,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "hospital": 1,
+            "prison": 1,
+            "garage": 1,
+            "factory": 1
+          }
+        },
+        "donor": {
+          "target": "shoe",
+          "target_token_id": 17292,
+          "demonstration_target_position": 6,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "shirt": 1,
+            "coat": 1,
+            "sock": 1,
+            "shoe": 1
+          }
+        }
+      },
+      "template": "Loop example: {a} {b} {c} {d}; continue {a} {b} {c}",
+      "base_words": [
+        "hospital",
+        "prison",
+        "garage",
+        "factory"
+      ],
+      "donor_words": [
+        "shirt",
+        "coat",
+        "sock",
+        "shoe"
+      ],
+      "base_prompt": "Loop example: hospital prison garage factory; continue hospital prison garage",
+      "donor_prompt": "Loop example: shirt coat sock shoe; continue shirt coat sock",
+      "base_target": "factory",
+      "donor_target": "shoe"
+    },
+    {
+      "context_index": 6,
+      "token_length": 10,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "plane",
+          "target_token_id": 6614,
+          "demonstration_target_position": 4,
+          "prediction_position": 10,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "train": 1,
+            "bus": 1,
+            "car": 1,
+            "plane": 1
+          }
+        },
+        "donor": {
+          "target": "brush",
+          "target_token_id": 14093,
+          "demonstration_target_position": 4,
+          "prediction_position": 10,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "pen": 1,
+            "key": 1,
+            "ruler": 1,
+            "brush": 1
+          }
+        }
+      },
+      "template": "After {a} {b} {c} {d}, repeat {a} {b} {c}",
+      "base_words": [
+        "train",
+        "bus",
+        "car",
+        "plane"
+      ],
+      "donor_words": [
+        "pen",
+        "key",
+        "ruler",
+        "brush"
+      ],
+      "base_prompt": "After train bus car plane, repeat train bus car",
+      "donor_prompt": "After pen key ruler brush, repeat pen key ruler",
+      "base_target": "plane",
+      "donor_target": "brush"
+    },
+    {
+      "context_index": 7,
+      "token_length": 10,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "hunting",
+          "target_token_id": 10988,
+          "demonstration_target_position": 4,
+          "prediction_position": 10,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "cricket": 1,
+            "poker": 1,
+            "racing": 1,
+            "hunting": 1
+          }
+        },
+        "donor": {
+          "target": "day",
+          "target_token_id": 1110,
+          "demonstration_target_position": 4,
+          "prediction_position": 10,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "morning": 1,
+            "evening": 1,
+            "night": 1,
+            "day": 1
+          }
+        }
+      },
+      "template": "After {a} {b} {c} {d}, repeat {a} {b} {c}",
+      "base_words": [
+        "cricket",
+        "poker",
+        "racing",
+        "hunting"
+      ],
+      "donor_words": [
+        "morning",
+        "evening",
+        "night",
+        "day"
+      ],
+      "base_prompt": "After cricket poker racing hunting, repeat cricket poker racing",
+      "donor_prompt": "After morning evening night day, repeat morning evening night",
+      "base_target": "hunting",
+      "donor_target": "day"
+    },
+    {
+      "context_index": 8,
+      "token_length": 10,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "dance",
+          "target_token_id": 9280,
+          "demonstration_target_position": 4,
+          "prediction_position": 10,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "walk": 1,
+            "run": 1,
+            "jump": 1,
+            "dance": 1
+          }
+        },
+        "donor": {
+          "target": "love",
+          "target_token_id": 1842,
+          "demonstration_target_position": 4,
+          "prediction_position": 10,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "anger": 1,
+            "fear": 1,
+            "hope": 1,
+            "love": 1
+          }
+        }
+      },
+      "template": "After {a} {b} {c} {d}, repeat {a} {b} {c}",
+      "base_words": [
+        "walk",
+        "run",
+        "jump",
+        "dance"
+      ],
+      "donor_words": [
+        "anger",
+        "fear",
+        "hope",
+        "love"
+      ],
+      "base_prompt": "After walk run jump dance, repeat walk run jump",
+      "donor_prompt": "After anger fear hope love, repeat anger fear hope",
+      "base_target": "dance",
+      "donor_target": "love"
+    },
+    {
+      "context_index": 9,
+      "token_length": 12,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "paper",
+          "target_token_id": 3348,
+          "demonstration_target_position": 5,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "wood": 1,
+            "glass": 1,
+            "stone": 1,
+            "paper": 1
+          }
+        },
+        "donor": {
+          "target": "beach",
+          "target_token_id": 10481,
+          "demonstration_target_position": 5,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "river": 1,
+            "lake": 1,
+            "ocean": 1,
+            "beach": 1
+          }
+        }
+      },
+      "template": "Pattern: {a} {b} {c} {d}. Continue: {a} {b} {c}",
+      "base_words": [
+        "wood",
+        "glass",
+        "stone",
+        "paper"
+      ],
+      "donor_words": [
+        "river",
+        "lake",
+        "ocean",
+        "beach"
+      ],
+      "base_prompt": "Pattern: wood glass stone paper. Continue: wood glass stone",
+      "donor_prompt": "Pattern: river lake ocean beach. Continue: river lake ocean",
+      "base_target": "paper",
+      "donor_target": "beach"
+    },
+    {
+      "context_index": 10,
+      "token_length": 12,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "blues",
+          "target_token_id": 25570,
+          "demonstration_target_position": 5,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "opera": 1,
+            "jazz": 1,
+            "rock": 1,
+            "blues": 1
+          }
+        },
+        "donor": {
+          "target": "princess",
+          "target_token_id": 21752,
+          "demonstration_target_position": 5,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "king": 1,
+            "queen": 1,
+            "prince": 1,
+            "princess": 1
+          }
+        }
+      },
+      "template": "Pattern: {a} {b} {c} {d}. Continue: {a} {b} {c}",
+      "base_words": [
+        "opera",
+        "jazz",
+        "rock",
+        "blues"
+      ],
+      "donor_words": [
+        "king",
+        "queen",
+        "prince",
+        "princess"
+      ],
+      "base_prompt": "Pattern: opera jazz rock blues. Continue: opera jazz rock",
+      "donor_prompt": "Pattern: king queen prince princess. Continue: king queen prince",
+      "base_target": "blues",
+      "donor_target": "princess"
+    },
+    {
+      "context_index": 11,
+      "token_length": 12,
+      "target_positions_aligned": true,
+      "sides": {
+        "base": {
+          "target": "four",
+          "target_token_id": 1440,
+          "demonstration_target_position": 5,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "one": 1,
+            "two": 1,
+            "three": 1,
+            "four": 1
+          }
+        },
+        "donor": {
+          "target": "fresh",
+          "target_token_id": 4713,
+          "demonstration_target_position": 5,
+          "prediction_position": 12,
+          "next_token_append_valid": true,
+          "word_token_lengths": {
+            "hot": 1,
+            "cold": 1,
+            "warm": 1,
+            "fresh": 1
+          }
+        }
+      },
+      "template": "Pattern: {a} {b} {c} {d}. Continue: {a} {b} {c}",
+      "base_words": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ],
+      "donor_words": [
+        "hot",
+        "cold",
+        "warm",
+        "fresh"
+      ],
+      "base_prompt": "Pattern: one two three four. Continue: one two three",
+      "donor_prompt": "Pattern: hot cold warm fresh. Continue: hot cold warm",
+      "base_target": "four",
+      "donor_target": "fresh"
+    }
+  ],
+  "prompt_panel_sha256": "37192d1c99a239d693e7060c68c7f4e4cccc2cc5a360908086c423ed2058e345",
+  "e29_8_feature_artifact": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/runs/e29_8_gpt2_medium_tensor_scaleup_v1/source_feature_models.pt",
+  "e29_8_feature_artifact_sha256": "93e0b4c9b4cd26ebe46f93f484a8e341d47898d62ab42520f9cd85a593d8b5ed",
+  "hub_component": {
+    "index": 1,
+    "spec": [
+      0,
+      "mlp"
+    ]
+  },
+  "control_component": {
+    "index": 0,
+    "spec": [
+      0,
+      "attention"
+    ]
+  },
+  "saturation_constants": {
+    "a": 1.1823081383,
+    "b": 3.5185046296,
+    "p": 2.780029132,
+    "D_over_A": 0.9942213374,
+    "reference_rows": 8192
+  },
+  "method_manifest": [
+    "mlp7_unbounded_ridge10",
+    "additive_unbounded_ridge10",
+    "mlp7_endpoint_cap_ridge10",
+    "additive_endpoint_cap_ridge10",
+    "mlp7_saturation_reanchored_c48",
+    "gate_only_c48_calibrated",
+    "gate_shape_c48_calibrated",
+    "gate_shape_clean_proxy_calibrated",
+    "capped_mlp_additive_ensemble_c48",
+    "analytic_hub_star_c48",
+    "analytic_control_star_c48"
+  ],
+  "primary_method": "gate_shape_c48_calibrated",
+  "secondary_methods": [
+    "gate_shape_clean_proxy_calibrated",
+    "gate_only_c48_calibrated"
+  ],
+  "star_comparisons": {
+    "methods": [
+      "analytic_hub_star_c48",
+      "analytic_control_star_c48"
+    ],
+    "role": "secondary_report_only_no_hard_pass"
+  },
+  "ridge": 10.0,
+  "branch_shape_scales": {
+    "confirmation_size24": {
+      "hub_off": 1.0,
+      "hub_on": 0.0
+    },
+    "confirmation_size32": {
+      "hub_off": 0.85,
+      "hub_on": 0.0
+    }
+  },
+  "prediction_splits": [
+    "confirmation_size24",
+    "confirmation_size32"
+  ],
+  "bootstrap": {
+    "seed": 31345,
+    "replicates": 5000
+  },
+  "scoring_gates": {
+    "primary_gate_shape_c48": {
+      "pooled_r2_min": 0.8,
+      "median_context_r2_min": 0.75,
+      "positive_context_r2_min_count": 12,
+      "all_template_r2_positive": true,
+      "baseline_mse_ratio_max_exclusive": 1.0,
+      "bootstrap_upper_95_max_exclusive_by_split": {
+        "confirmation_size24": null,
+        "confirmation_size32": 1.0
+      },
+      "joint_two_scale_bootstrap_upper_95_max_exclusive": 1.0,
+      "baselines": [
+        "additive_endpoint_cap_ridge10",
+        "mlp7_saturation_reanchored_c48"
+      ]
+    },
+    "matched_nongated_superiority": {
+      "primary_method": "gate_shape_c48_calibrated",
+      "baseline_method": "capped_mlp_additive_ensemble_c48",
+      "mse_ratio_max_exclusive": 1.0,
+      "bootstrap_upper_95_max_exclusive_by_split": {
+        "confirmation_size24": null,
+        "confirmation_size32": 1.0
+      },
+      "joint_two_scale_bootstrap_upper_95_max_exclusive": 1.0
+    },
+    "hub_off_shape": {
+      "primary_method": "gate_shape_c48_calibrated",
+      "matched_baseline_method": "gate_only_c48_calibrated",
+      "per_scale_mse_ratio_max_exclusive": 0.8,
+      "joint_context_centered_r2_min_exclusive": 0.0,
+      "joint_bootstrap_upper_95_max_exclusive": 1.0,
+      "equal_cell_weight_per_scale": true
+    },
+    "mechanistic_absorbing_hub": {
+      "component_1_mean_accuracy_rank_max": 1,
+      "pooled_ceiling_accuracy_min": 0.98,
+      "pooled_ceiling_f1_min": 0.97,
+      "hub_on_mean_response_over_clean_endpoint_min": 0.985,
+      "hub_on_mean_response_over_clean_endpoint_max": 1.01,
+      "ceiling_threshold_fraction_of_clean_endpoint": 0.99
+    },
+    "clean_proxy_secondary": {
+      "pooled_r2_min": 0.75,
+      "positive_context_r2_min_count": 12,
+      "mse_over_primary_max": 1.15
+    },
+    "gate_only_secondary": {
+      "pooled_r2_min": 0.75,
+      "positive_context_r2_min_count": 12
+    }
+  },
+  "diagnostic_roles": {
+    "all_components": "registered_c48_fit_stage_scale_calibration",
+    "all_minus_hub": "quarantined_report_only_never_fitter_or_gate_input"
+  },
+  "query_schedule": {
+    "fit_stage": {
+      "single_combined_patched_call": true,
+      "source_rows": 283,
+      "all_components_c48_calibration_rows": 1,
+      "all_minus_hub_quarantined_rows": 1,
+      "total_patched_rows": 285,
+      "patched_context_mask_cells": 3420,
+      "clean_forward_examples": 36
+    },
+    "held_stage": {
+      "joint_c24_c32_call": true,
+      "confirmation_size24_rows": 48,
+      "confirmation_size32_rows": 48,
+      "total_patched_rows": 96,
+      "patched_context_mask_cells": 1152,
+      "clean_forward_examples": 36
+    }
+  },
+  "query_budget": {
+    "contexts": 12,
+    "source_fit_rows": 283,
+    "held_rows": 96,
+    "diagnostic_rows": 2,
+    "total_mask_rows": 381,
+    "fit_stage_patched_rows": 285,
+    "held_stage_patched_rows": 96,
+    "source_fit_patched_context_mask_cells": 3396,
+    "diagnostic_patched_context_mask_cells": 24,
+    "fit_stage_patched_context_mask_cells": 3420,
+    "held_patched_context_mask_cells": 1152,
+    "total_patched_context_mask_cells": 4572,
+    "fit_clean_forward_examples": 36,
+    "held_clean_forward_examples": 36,
+    "total_clean_forward_examples": 72,
+    "maximum_logical_queries": 4644
+  },
+  "numerical_gates": {
+    "clean_logits_finite": true,
+    "clean_logit_absolute_max": 10000.0,
+    "response_finite": true,
+    "response_absolute_max": 10000.0,
+    "batch_size_smoke_reference": 1,
+    "batch_size_smoke_candidate": 32,
+    "batch_size_smoke_atol": 1e-09,
+    "batch_size_smoke_rtol": 1e-09
+  },
+  "outcome_custody": {
+    "registration_sha_required_for_fit_acquisition": true,
+    "fit_acquisition_is_one_registered_285_row_call": true,
+    "fit_acquisition_queries_only_source_plus_two_diagnostics": true,
+    "fit_acquisition_custody_sha_required_for_fitting": true,
+    "all_components_c48_is_registered_fitter_calibration": true,
+    "all_minus_hub_acquired_with_fit_but_quarantined_from_fitter": true,
+    "fitter_has_no_all_minus_hub_response_argument": true,
+    "all_held_predictions_hashed_before_either_held_scale_response": true,
+    "preparation_sha_required_for_joint_held_acquisition": true,
+    "held_acquisition_queries_both_registered_scales_in_one_call": true,
+    "held_acquisition_invokes_no_fitting_or_scoring_function": true,
+    "held_acquisition_deserializes_no_raw_fit_or_source_response_artifact": true,
+    "all_minus_hub_excluded_from_every_hard_gate": true,
+    "every_acquisition_repeats_base_and_donor_clean_gates": true
+  },
+  "source_code_sha256": {
+    "e29_13_absorbing_hub_protocol.py": "5028a63bb68fc5aae9a252ffead87a9108f5e0dc0d3f5da58fe35692ab7d553c",
+    "e29_13_prompt_panel.py": "fb3314ac496943c74650b736a41f8c0e66ad12a3e192b05de64fdc91937c84ad",
+    "e29_13_absorbing_hub_fitting.py": "fc202c5ced1ddc141da0c829a7c07e6d434ce0ef9d88942400b2c79234d851f2",
+    "e29_13_custody.py": "a50380485a3d1db4e58816cd487d6ababe433755577ffbcf6876667810f3baa3",
+    "register_e29_13_absorbing_hub.py": "fb4072f67abd5c0de439227cfec57d31654afe432e9f03957631ed17a0ad2d98",
+    "acquire_e29_13_fit.py": "1553b27ca1ebf8a7605961496f2ce8c98de0feada721af03e4f38561a42a55b1",
+    "fit_e29_13_absorbing_hub.py": "743b624baf1e74d5b6e5c2da0a2b01a5d8123a300d0eb2ae720a0f8541215646",
+    "acquire_e29_13_held.py": "077a0940cab9341b63f48359580c91677e923553711f14fca582f500c7458ef1",
+    "score_e29_13_absorbing_hub.py": "54397fe739c53c8bbb9e6d5f7ea06145900046444a13fa277e0538e3da5de348"
+  },
+  "protocol_deviations": []
+}

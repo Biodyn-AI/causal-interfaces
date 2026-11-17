@@ -1,0 +1,84 @@
+{
+  "schema_version": "e29_14b_component_position_acquisition_attempt_v1",
+  "status": "attempt_consumed_before_model_load",
+  "registration": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/notes/E29.14b-COMPONENT-POSITION-COMMUTATION-REGISTRATION.json",
+  "registration_sha256": "74f9a32093e50dec829f9a4d93da93b5d1db5e5f4f5a1c54e8a507d3deee18ad",
+  "expected_registration_sha256_supplied": "74f9a32093e50dec829f9a4d93da93b5d1db5e5f4f5a1c54e8a507d3deee18ad",
+  "source_code_sha256_verified_before_attempt": {
+    "acquire_e29_14b_component_position.py": "13d509068643c3302d20644c890d1cc01af4f67d2ea8ac8afad78f41ab7a39a5",
+    "e29_14b_component_position_custody.py": "efe5fde419df3201f20c92fc4df2d5b0612363e3c45d4c50c9b7fce1459d8b25",
+    "e29_14b_component_position_protocol.py": "58ebab0a94744f1bb3776cb65fd74d1e9c4ff32e06f8abed6757703f0826368a",
+    "e29_14b_component_position_runner.py": "4d05bfc50863b8a602bf1606988fb067d60a73e143485b939348e51c420cd04b",
+    "e29_14b_prompt_panel.py": "a97684df5e8f155b87ce36db4182e70b21d949e6dca803ff5078e01f4a6fa002",
+    "register_e29_14b_component_position.py": "95a36726d85250eed69ebac0e5acacddc9e4574ae3c16cb5c2b24c3e7ff9b493",
+    "score_e29_14b_component_position.py": "c872f717590ac10f8c439afbf2892c6bfc3b699314a89f0d81a2804b2a7d75b5",
+    "e29_8_prompt_panel.py": "68983938f80fd9dcb507ea23801af4fe74f4bfcebebb33f024703e9ec0f263a6",
+    "e29_9_seven_gate_protocol.py": "1686ca75b8f6bff63044c272366986cf1871465d10d4ddd540ba27a0dd269cd0",
+    "e29_10_float64_protocol.py": "c387c3ad19e0e8fb2f438ac61292b4124c973a1bfee725b9d06929d6347b4e3e",
+    "e29_11_multiscale_protocol.py": "cc1dcf7b88edf30cb701824b48d8f77749e407ce31f36224d2c60e5099ad3b99",
+    "e29_12_prompt_panel.py": "8f98203b88966c4cabae1bccd146f94dea17382c82277427251f3c4e2cdaed6a",
+    "e29_13_prompt_panel.py": "fb3314ac496943c74650b736a41f8c0e66ad12a3e192b05de64fdc91937c84ad",
+    "e29_14a_prompt_panel.py": "7fc61a8cac6ea843dd76ea8734805d29f2fea012d252d1660687c23aea6edca6",
+    "e29_14a_position_protocol.py": "a868366f93afa307a009fc4e6985c4e3711433ada5f93579496eaa5e29e36226",
+    "generalized_sublayer_patch.py": "fab05aa67a033d12b4d1ae09484e505009a888333fb3d40021a91395c98a2903"
+  },
+  "checkpoint_sha256_verified_before_attempt": {
+    "config.json": "ef1a44d889ad1a0acc7731c78134f1b87d2d222f110e97dd10fd4117331caf22",
+    "generation_config.json": "b90eadacf585a743a30ea51e8b5c88b8d282a2a34dc0c7e556d0987cdbd68805",
+    "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+    "model.safetensors": "fc5a354a19255ad494f3d71549390baca1ccf61d1d822b9408971705c687c9cd",
+    "tokenizer_config.json": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f",
+    "tokenizer.json": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6",
+    "vocab.json": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783"
+  },
+  "prior_protocol_masks_sha256_verified_before_attempt": "014b87e0ddf2cf913ff745e41e12bb6444420716753d0eb712bd465eaa0c83fd",
+  "prompt_panel_sha256": "2411d821fdc3599beb812ed8104bc86b7f53058b570dbdff7b89be6f71e29ef6",
+  "component_position_protocol_sha256": "f542b4f4b4d25a9e806a79abeeec225f9e5544de42a37eb6946684511fc9a71e",
+  "query_accounting": {
+    "contexts": 12,
+    "mask_rows_by_split": {
+      "confirmation_size24": 48,
+      "confirmation_size32": 48
+    },
+    "multi_component_masks": 96,
+    "position_scopes": 2,
+    "singleton_condition_rows_per_context": 2,
+    "multi_component_condition_rows_per_context": 192,
+    "patched_condition_rows_per_context": 194,
+    "patched_context_condition_cells": 2328,
+    "clean_forward_examples": 24,
+    "maximum_logical_queries": 2352
+  },
+  "physical_query_accounting": {
+    "contexts": 12,
+    "mask_rows_by_split": {
+      "confirmation_size24": 48,
+      "confirmation_size32": 48
+    },
+    "multi_component_masks": 96,
+    "position_scopes": 2,
+    "singleton_condition_rows_per_context": 2,
+    "multi_component_condition_rows_per_context": 192,
+    "patched_condition_rows_per_context": 194,
+    "patched_context_condition_cells": 2328,
+    "clean_forward_examples": 24,
+    "maximum_logical_queries": 2352,
+    "batch_smoke_unique_condition_rows": 194,
+    "batch_smoke_physical_condition_cells": 388,
+    "maximum_physical_model_examples": 2740
+  },
+  "environment": {
+    "python": "3.12.9",
+    "torch": "2.13.0",
+    "transformers": "5.14.1",
+    "safetensors": "0.8.0",
+    "platform": "macOS-26.3-arm64-arm-64bit"
+  },
+  "execution": {
+    "device": "cpu",
+    "model_dtype": "float64",
+    "attention_implementation": "eager",
+    "batch_size": 32,
+    "torch_num_threads_during_fitting": 1
+  }
+}

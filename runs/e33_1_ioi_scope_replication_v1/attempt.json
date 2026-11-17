@@ -1,0 +1,6 @@
+{
+  "registration_sha256": "39a5a589678c76d51da022e1847a99463a6e289e0ba39ebe94bd0a91756d583e",
+  "schema_version": "e33_1_ioi_scope_attempt_v1",
+  "started_unix_time": 1794855415.560396,
+  "status": "attempt_consumed_before_model_load"
+}

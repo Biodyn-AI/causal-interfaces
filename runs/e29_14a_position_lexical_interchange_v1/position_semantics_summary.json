@@ -1,0 +1,457 @@
+{
+  "schema_version": "e29_14a_position_semantics_score_v1",
+  "normalized_response_summaries": {
+    "forward": {
+      "hub_all_positions_alpha1": {
+        "mean": 0.9962632091102868,
+        "mean_absolute": 0.9962632091102867,
+        "minimum": 0.9909737620804046,
+        "maximum": 1.0027036574671588,
+        "per_context": [
+          0.9994384090424698,
+          0.9963055483344034,
+          1.0027036574671588,
+          0.9957286183913291,
+          0.9978735999188006,
+          0.9972133489824985,
+          0.9909737620804046,
+          0.9955727432959639,
+          0.9951086875985673,
+          0.9976125817755216,
+          0.993490576981118,
+          0.9931369754552046
+        ]
+      },
+      "hub_differing_lexical_alpha1": {
+        "mean": 0.9954187380611691,
+        "mean_absolute": 0.9954187380611693,
+        "minimum": 0.9763857271689605,
+        "maximum": 1.0049500098243167,
+        "per_context": [
+          0.9994957654836002,
+          0.9988662317071778,
+          1.0006362500137673,
+          0.9971126368463022,
+          0.9973562616275116,
+          1.0008197927337068,
+          0.9763857271689605,
+          1.0023876323859935,
+          1.0049500098243167,
+          0.9859284428246505,
+          0.9932978064284462,
+          0.9877882996895971
+        ]
+      },
+      "hub_shared_static_alpha1": {
+        "mean": 0.002992922366538071,
+        "mean_absolute": 0.004831784779789793,
+        "minimum": -0.0057899545273597565,
+        "maximum": 0.02957891786854234,
+        "per_context": [
+          -0.001862701486480584,
+          -0.0013111766775470233,
+          0.0010082316364772813,
+          -0.0020693417881229724,
+          0.0022376738079533426,
+          0.004006109722180849,
+          0.02957891786854234,
+          -0.0057899545273597565,
+          0.0008661729206184969,
+          0.003678551781487857,
+          0.0008132595450119842,
+          0.004759325595695031
+        ]
+      },
+      "hub_demonstration_target_alpha1": {
+        "mean": 0.8583520962143725,
+        "mean_absolute": 0.8583520962143725,
+        "minimum": 0.7617255403422265,
+        "maximum": 1.0741600011653896,
+        "per_context": [
+          1.017784697501101,
+          0.81420677765116,
+          0.779512969363074,
+          0.7636452499314609,
+          0.7785193041296662,
+          0.9299988141480728,
+          1.0741600011653896,
+          0.7660032852311808,
+          0.9922310847049596,
+          0.8136684575906706,
+          0.7617255403422265,
+          0.8087689728135082
+        ]
+      },
+      "hub_demonstration_prefix_alpha1": {
+        "mean": 0.27422652241134055,
+        "mean_absolute": 0.27422652241134055,
+        "minimum": 0.07384484504412567,
+        "maximum": 0.3455811590171771,
+        "per_context": [
+          0.28489456298413285,
+          0.31902243126632623,
+          0.07384484504412567,
+          0.3114296162623153,
+          0.3304066855322902,
+          0.3455811590171771,
+          0.31577345992259004,
+          0.21135085079368912,
+          0.31091526552568555,
+          0.2803636879832804,
+          0.2892009968634646,
+          0.21793470774100976
+        ]
+      },
+      "hub_repeated_query_alpha1": {
+        "mean": 0.4748316518127404,
+        "mean_absolute": 0.4748316518127403,
+        "minimum": 0.313619964353793,
+        "maximum": 0.6672897508010532,
+        "per_context": [
+          0.38177109940366033,
+          0.4419530734717185,
+          0.62057708025404,
+          0.47824075750510553,
+          0.6672897508010532,
+          0.5159873554049748,
+          0.32520471184836824,
+          0.313619964353793,
+          0.47702003231291024,
+          0.4046869606915925,
+          0.5239089118343412,
+          0.5477201238713265
+        ]
+      },
+      "hub_differing_except_target_alpha1": {
+        "mean": 0.09067833017911175,
+        "mean_absolute": 0.128039319040863,
+        "minimum": -0.19092471375719844,
+        "maximum": 0.30285070786862206,
+        "per_context": [
+          0.11965840757756291,
+          0.17916552509052686,
+          0.30285070786862206,
+          0.07730166322817121,
+          0.14486094955933634,
+          0.15477004552586887,
+          -0.0332412194133089,
+          0.0049729346132023535,
+          0.16595058776769214,
+          0.036311988420135735,
+          0.12646308566873,
+          -0.19092471375719844
+        ]
+      },
+      "hub_all_positions_alpha025": {
+        "mean": 0.051870120156722134,
+        "mean_absolute": 0.055350788332721355,
+        "minimum": -0.01999970931346611,
+        "maximum": 0.11287604457918357,
+        "per_context": [
+          0.10181642713342895,
+          0.05313951018023601,
+          -0.0008842997425292079,
+          0.0223535112884893,
+          0.0868851892360364,
+          0.09057739944852122,
+          0.11287604457918357,
+          -0.01999970931346611,
+          0.03498898642018788,
+          0.08077046818690173,
+          0.02493810112261854,
+          0.03497981334105732
+        ]
+      },
+      "hub_all_positions_alpha050": {
+        "mean": 0.5104280535279471,
+        "mean_absolute": 0.5104280535279471,
+        "minimum": 0.16859802732616094,
+        "maximum": 0.7620834466019405,
+        "per_context": [
+          0.7620834466019405,
+          0.3439186557788404,
+          0.5335119489966141,
+          0.48089153488502195,
+          0.554893709205823,
+          0.7383561553168637,
+          0.4190156974948691,
+          0.16859802732616094,
+          0.7158667963140933,
+          0.43494587793348743,
+          0.38509361490587546,
+          0.5879611775757749
+        ]
+      },
+      "hub_all_positions_alpha075": {
+        "mean": 0.9389757470997099,
+        "mean_absolute": 0.9389757470997099,
+        "minimum": 0.8236721112770857,
+        "maximum": 1.0518393383783988,
+        "per_context": [
+          0.9716994453935869,
+          0.8236721112770857,
+          0.9834399637903966,
+          0.9129109220670277,
+          0.9578684620951489,
+          0.9593128869865342,
+          0.8699902502593928,
+          1.0518393383783988,
+          0.963611059781831,
+          0.8940404104085379,
+          0.9312568647622036,
+          0.9480672499963749
+        ]
+      },
+      "control_all_positions_alpha1": {
+        "mean": 0.0036353767204180694,
+        "mean_absolute": 0.017171265262029684,
+        "minimum": -0.03131287944685619,
+        "maximum": 0.05300846708577918,
+        "per_context": [
+          0.015482734630754657,
+          -0.03131287944685619,
+          -0.024031584973488895,
+          -0.01571354245019952,
+          -0.004214062816474562,
+          0.003825162678640005,
+          0.05300846708577918,
+          0.00014243233107369475,
+          0.010898405368672832,
+          -0.005943261562650546,
+          0.010483320367788351,
+          0.030999329431977828
+        ]
+      },
+      "control_differing_lexical_alpha1": {
+        "mean": 0.0012447943518898465,
+        "mean_absolute": 0.016541051475007534,
+        "minimum": -0.03188418154803533,
+        "maximum": 0.037180003207064036,
+        "per_context": [
+          0.017586386755595575,
+          -0.03188418154803533,
+          -0.024854165305563985,
+          -0.013966779362013116,
+          -0.005533778014911674,
+          -0.0014299358929417648,
+          0.037180003207064036,
+          0.001972879086648015,
+          0.010793242630796984,
+          -0.014108702615240257,
+          0.011050774321079749,
+          0.02813178896019992
+        ]
+      }
+    },
+    "reverse": {
+      "hub_all_positions_alpha1": {
+        "mean": 0.9974675476550713,
+        "mean_absolute": 0.9974675476550713,
+        "minimum": 0.9905633169118,
+        "maximum": 1.0043328246401497,
+        "per_context": [
+          0.9972320975898641,
+          1.0001872632806879,
+          1.0003463746444405,
+          0.998188499953979,
+          0.9997711035486849,
+          0.997498624347684,
+          0.9905633169118,
+          0.9999499909034891,
+          0.99269290276111,
+          0.9962813559160071,
+          0.9925662173629594,
+          1.0043328246401497
+        ]
+      },
+      "hub_differing_lexical_alpha1": {
+        "mean": 0.9945069563759321,
+        "mean_absolute": 0.994506956375932,
+        "minimum": 0.9615889972471927,
+        "maximum": 1.0063569529067173,
+        "per_context": [
+          0.9991512288731739,
+          1.0013622746040989,
+          0.999209533218627,
+          1.00014579773615,
+          0.9976387824110098,
+          0.9932806692872013,
+          0.9615889972471927,
+          1.0063569529067173,
+          0.9914862455688666,
+          0.9923133146778836,
+          0.9919290336264726,
+          0.9996206463537911
+        ]
+      },
+      "hub_shared_static_alpha1": {
+        "mean": 0.0008451857243256166,
+        "mean_absolute": 0.004750662919276758,
+        "minimum": -0.009214287604496938,
+        "maximum": 0.0144994821746281,
+        "per_context": [
+          -3.6219815505461466e-05,
+          -0.002659828045051032,
+          0.0010920957760204761,
+          -0.0015503602069470773,
+          0.00034024502536022063,
+          -0.003572614928723221,
+          0.0144994821746281,
+          -0.006399552568983121,
+          -0.009214287604496938,
+          0.011894945644413516,
+          0.00028907647150377107,
+          0.005459246769688166
+        ]
+      },
+      "hub_demonstration_target_alpha1": {
+        "mean": 0.9060071704260378,
+        "mean_absolute": 0.9060071704260378,
+        "minimum": 0.7028162368861662,
+        "maximum": 1.1915914923938944,
+        "per_context": [
+          0.880792108747022,
+          0.820482283562814,
+          0.7028162368861662,
+          0.9207865753731305,
+          0.8405581351615645,
+          0.8447895729969562,
+          1.0196598424095564,
+          0.9945172691548254,
+          0.8202578686130284,
+          0.9610676216879521,
+          0.8747670381255437,
+          1.1915914923938944
+        ]
+      }
+    }
+  },
+  "claims": {
+    "replication": {
+      "forward_all_mean": 0.9962632091102868,
+      "forward_endpoint_absolute_gap_bootstrap": {
+        "point_estimate": 0.004187400467573117,
+        "lower_95": 0.0032759434733489463,
+        "upper_95": 0.004969745624525402,
+        "lower_quantile_descriptive": 0.025,
+        "upper_quantile_one_sided": 0.95,
+        "seed": 29141,
+        "replicates": 5000,
+        "resampling": "contexts_within_four_fixed_template_strata"
+      },
+      "passed": true
+    },
+    "forward_lexical_localization": {
+      "paired_absolute_gap_bootstrap": {
+        "point_estimate": 0.004888589938428343,
+        "lower_95": 0.0032294150109899696,
+        "upper_95": 0.006320635500296677,
+        "lower_quantile_descriptive": 0.025,
+        "upper_quantile_one_sided": 0.95,
+        "seed": 29141,
+        "replicates": 5000,
+        "resampling": "contexts_within_four_fixed_template_strata"
+      },
+      "shared_static_mean_absolute": 0.004831784779789793,
+      "passed": true
+    },
+    "component_specificity_control": {
+      "maximum_control_mean_absolute": 0.017171265262029684,
+      "passed": true
+    },
+    "bidirectional_switch": {
+      "reverse_all_mean": 0.9974675476550713,
+      "reverse_endpoint_absolute_gap_bootstrap": {
+        "point_estimate": 0.003343529439141716,
+        "lower_95": 0.002020092879027229,
+        "upper_95": 0.0043850475271744885,
+        "lower_quantile_descriptive": 0.025,
+        "upper_quantile_one_sided": 0.95,
+        "seed": 29141,
+        "replicates": 5000,
+        "resampling": "contexts_within_four_fixed_template_strata"
+      },
+      "forward_reverse_absolute_gap_bootstrap": {
+        "point_estimate": 0.00281190683796112,
+        "lower_95": 0.0015645262587391279,
+        "upper_95": 0.004087266221952775,
+        "lower_quantile_descriptive": 0.025,
+        "upper_quantile_one_sided": 0.95,
+        "seed": 29141,
+        "replicates": 5000,
+        "resampling": "contexts_within_four_fixed_template_strata"
+      },
+      "passed": true
+    },
+    "bidirectional_lexical_localization": {
+      "reverse_lexical_absolute_gap_bootstrap": {
+        "point_estimate": 0.004870325011159258,
+        "lower_95": 0.002111509075941373,
+        "upper_95": 0.0075417275708630094,
+        "lower_quantile_descriptive": 0.025,
+        "upper_quantile_one_sided": 0.95,
+        "seed": 29141,
+        "replicates": 5000,
+        "resampling": "contexts_within_four_fixed_template_strata"
+      },
+      "reverse_shared_static_mean_absolute": 0.004750662919276758,
+      "passed": true
+    },
+    "graded_dose_response": {
+      "alpha": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "mean": [
+        0.0,
+        0.051870120156722134,
+        0.5104280535279471,
+        0.9389757470997099,
+        0.9962632091102868
+      ],
+      "aggregate_strictly_monotone": true,
+      "strictly_monotone_context_count": 10,
+      "midpoint_mean": 0.5104280535279471,
+      "passed": true
+    }
+  },
+  "integrity_passed": true,
+  "recommended_interpretation": "component_specific_bidirectional_lexical_state_switch_with_graded_dose_response",
+  "all_registered_integrity_gates_passed": true,
+  "clean_summary": {
+    "positive_base_correctness_contexts": 12,
+    "positive_donor_correctness_contexts": 12,
+    "minimum_clean_endpoint": 18.620958666618492,
+    "maximum_clean_endpoint": 31.69782708186505
+  },
+  "query_accounting": {
+    "contexts": 12,
+    "forward_condition_rows_per_context": 12,
+    "reverse_condition_rows_per_context": 4,
+    "patched_context_condition_cells": 192,
+    "clean_forward_examples": 24,
+    "maximum_logical_queries": 216
+  },
+  "physical_query_accounting": {
+    "contexts": 12,
+    "forward_condition_rows_per_context": 12,
+    "reverse_condition_rows_per_context": 4,
+    "patched_context_condition_cells": 192,
+    "clean_forward_examples": 24,
+    "maximum_logical_queries": 216,
+    "batch_smoke_unique_condition_rows": 16,
+    "batch_smoke_physical_condition_cells": 32,
+    "maximum_physical_model_examples": 248
+  },
+  "custody": {
+    "registration": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/notes/E29.14a-POSITIONAL-LEXICAL-INTERCHANGE-REGISTRATION.json",
+    "registration_sha256": "f6ef1755bd6a4c3345a78fe180f00d7dd5e98086319348f34d9a1d9592ee23df",
+    "acquisition_custody": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/runs/e29_14a_position_lexical_interchange_v1/position_acquisition_custody.json",
+    "acquisition_custody_sha256": "0b34ccb2b682f5bb4fb4699bc5dad608811eb38dda283d0e6f2e2521c9a58c00",
+    "position_labels": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/runs/e29_14a_position_lexical_interchange_v1/position_labels.pt",
+    "position_labels_sha256": "4be512fce2f59822f305eb86c9a439b91912136c68c0b1841bec38913fdfe609"
+  }
+}

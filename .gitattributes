@@ -1,0 +1,8 @@
+*.pt binary
+*.pdf binary
+*.png binary
+*.tif binary
+*.zip binary
+* text=auto
+paper/sn-jnl.cls -text
+paper/sn-nature.bst -text

@@ -1,0 +1,3948 @@
+{
+  "context_records": [
+    {
+      "clean": {
+        "forward": {
+          "clean_endpoint_js": 0.3138977754518465,
+          "endpoint": 14.614653128045774,
+          "recipient_counterfactual_margin": -7.735173864036483,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 6.879479264009291,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        },
+        "reverse": {
+          "clean_endpoint_js": 0.3138977754518465,
+          "endpoint": 14.614653128045774,
+          "recipient_counterfactual_margin": -6.879479264009291,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 7.735173864036483,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        }
+      },
+      "context_id": "ioi_scope_00",
+      "directions": {
+        "forward": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 6.879479264009291
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9923186078162819,
+            "normalized_transfer": 0.9759377907009852,
+            "patched_counterfactual_margin": 6.5278184216097515
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.11071944292418745,
+            "normalized_transfer": 0.15238672649159382,
+            "patched_counterfactual_margin": -5.508094715043455
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9992757705764823,
+            "normalized_transfer": 0.9902564806900632,
+            "patched_counterfactual_margin": 6.737081109048148
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9932236516629641,
+            "normalized_transfer": 0.978833509729819,
+            "patched_counterfactual_margin": 6.570138350772439
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.8624242983537982,
+            "normalized_transfer": 0.7180820484407213,
+            "patched_counterfactual_margin": 2.759346191401221
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.8330900226947694,
+            "normalized_transfer": 0.7102209375104731,
+            "patched_counterfactual_margin": 2.6444587819545546
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.10652013902970625,
+            "normalized_transfer": 0.0460608543121916,
+            "patched_counterfactual_margin": -7.062010455482351
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.014140130032774367,
+            "normalized_transfer": 1.7098735991202978e-05,
+            "patched_counterfactual_margin": -7.734923971941043
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.027857646933421965,
+            "normalized_transfer": 0.0009288372003381063,
+            "patched_counterfactual_margin": -7.721599230541116
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.04987148282037901,
+            "normalized_transfer": -0.0013799546116186044,
+            "patched_counterfactual_margin": -7.755341422017736
+          }
+        },
+        "reverse": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 7.735173864036483
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9955078640918947,
+            "normalized_transfer": 0.9871044227716695,
+            "patched_counterfactual_margin": 7.546709475958508
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.0745005085135938,
+            "normalized_transfer": 0.14012726218857832,
+            "patched_counterfactual_margin": -4.831567933340494
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9993338015326912,
+            "normalized_transfer": 0.9909063244133709,
+            "patched_counterfactual_margin": 7.60227294967892
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9942899760628864,
+            "normalized_transfer": 0.9845598383968694,
+            "patched_counterfactual_margin": 7.509521257965758
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9558066510342131,
+            "normalized_transfer": 0.7815751440606716,
+            "patched_counterfactual_margin": 4.5429703599398295
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9653335388775404,
+            "normalized_transfer": 0.7828106241971383,
+            "patched_counterfactual_margin": 4.561026473580881
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.11862100701327871,
+            "normalized_transfer": 0.05428813972230078,
+            "patched_counterfactual_margin": -6.086076933000982
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.019631315371189118,
+            "normalized_transfer": 0.004226466967019426,
+            "patched_counterfactual_margin": -6.817710915329158
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.03143810862346763,
+            "normalized_transfer": 0.007085182704031488,
+            "patched_counterfactual_margin": -6.775931776441041
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.05899981017123035,
+            "normalized_transfer": 0.012787880574376045,
+            "patched_counterfactual_margin": -6.69258882517191
+          }
+        }
+      },
+      "position_scopes": {
+        "all_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "differing_lexical_positions": [
+          1,
+          3,
+          9
+        ],
+        "matched_static_a": [
+          4,
+          5,
+          11
+        ],
+        "matched_static_b": [
+          2,
+          4,
+          7
+        ],
+        "shared_static_positions": [
+          0,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "record": {
+        "base_name_a": "Alex",
+        "base_name_b": "Amber",
+        "base_prompt": "When Alex and Amber went to the market, Amber gave a book to",
+        "base_target": "Alex",
+        "context_id": "ioi_scope_00",
+        "donor_name_a": "Angela",
+        "donor_name_b": "Ann",
+        "donor_prompt": "When Angela and Ann went to the market, Ann gave a book to",
+        "donor_target": "Angela",
+        "stratum_id": "when_market",
+        "template": "When {a} and {b} went to the market, {b} gave a book to",
+        "template_id": "when_market"
+      },
+      "token_count": 14
+    },
+    {
+      "clean": {
+        "forward": {
+          "clean_endpoint_js": 0.2725705040430911,
+          "endpoint": 14.982433694014091,
+          "recipient_counterfactual_margin": -8.808698504133659,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 6.173735189880432,
+          "source_pairwise_correct": true,
+          "source_target_top1": false
+        },
+        "reverse": {
+          "clean_endpoint_js": 0.2725705040430911,
+          "endpoint": 14.982433694014091,
+          "recipient_counterfactual_margin": -6.173735189880432,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": false,
+          "source_counterfactual_margin": 8.808698504133659,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        }
+      },
+      "context_id": "ioi_scope_01",
+      "directions": {
+        "forward": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 6.173735189880432
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9921804411460399,
+            "normalized_transfer": 0.9987489091133439,
+            "patched_counterfactual_margin": 6.154990803625921
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.14656382544607105,
+            "normalized_transfer": 0.20332076740014626,
+            "patched_counterfactual_margin": -5.762458587944906
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9981883281446088,
+            "normalized_transfer": 0.9972288798487349,
+            "patched_counterfactual_margin": 6.132217065955956
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9936693083157324,
+            "normalized_transfer": 1.006619600432415,
+            "patched_counterfactual_margin": 6.2729129144399565
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9256651339482092,
+            "normalized_transfer": 0.8117609706824737,
+            "patched_counterfactual_margin": 3.3534564145050183
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9315265186989561,
+            "normalized_transfer": 0.8160542323375574,
+            "patched_counterfactual_margin": 3.417779922583364
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.18624266796594124,
+            "normalized_transfer": 0.08436247727187882,
+            "patched_counterfactual_margin": -7.544743282144964
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.016808984515761294,
+            "normalized_transfer": 0.0006382364199408578,
+            "patched_counterfactual_margin": -8.79913616929079
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.020020997581993383,
+            "normalized_transfer": -0.002002078622374412,
+            "patched_counterfactual_margin": -8.838694514343587
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.014871943770318197,
+            "normalized_transfer": -0.0026273598761872743,
+            "patched_counterfactual_margin": -8.848062749268948
+          }
+        },
+        "reverse": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 8.808698504133659
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.993612735471701,
+            "normalized_transfer": 0.9721015378281367,
+            "patched_counterfactual_margin": 8.390711644478756
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.14803663616393337,
+            "normalized_transfer": 0.1977508052356433,
+            "patched_counterfactual_margin": -3.2109468624995117
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9979797757967463,
+            "normalized_transfer": 0.9775078671461722,
+            "patched_counterfactual_margin": 8.471711615014229
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9922316478239707,
+            "normalized_transfer": 0.9688857376211375,
+            "patched_counterfactual_margin": 8.342531131104195
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.8949430602231557,
+            "normalized_transfer": 0.7524079164014904,
+            "patched_counterfactual_margin": 5.099166528456195
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.8972669319053594,
+            "normalized_transfer": 0.7537825937214714,
+            "patched_counterfactual_margin": 5.119762540253475
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.09778338281317223,
+            "normalized_transfer": 0.09158446455497771,
+            "patched_counterfactual_margin": -4.801577022283695
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.0021704844886035746,
+            "normalized_transfer": 0.0023182594510294382,
+            "patched_counterfactual_margin": -6.139002021369862
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.004445670102860566,
+            "normalized_transfer": 0.0034066348000528755,
+            "patched_counterfactual_margin": -6.122695509868919
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.018407583990428522,
+            "normalized_transfer": -0.008939278245523262,
+            "patched_counterfactual_margin": -6.307667333466327
+          }
+        }
+      },
+      "position_scopes": {
+        "all_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "differing_lexical_positions": [
+          1,
+          3,
+          9
+        ],
+        "matched_static_a": [
+          10,
+          12,
+          13
+        ],
+        "matched_static_b": [
+          2,
+          5,
+          12
+        ],
+        "shared_static_positions": [
+          0,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "record": {
+        "base_name_a": "Anna",
+        "base_name_b": "Anthony",
+        "base_prompt": "When Anna and Anthony went to the market, Anthony gave a book to",
+        "base_target": "Anna",
+        "context_id": "ioi_scope_01",
+        "donor_name_a": "Ashley",
+        "donor_name_b": "Austin",
+        "donor_prompt": "When Ashley and Austin went to the market, Austin gave a book to",
+        "donor_target": "Ashley",
+        "stratum_id": "when_market",
+        "template": "When {a} and {b} went to the market, {b} gave a book to",
+        "template_id": "when_market"
+      },
+      "token_count": 14
+    },
+    {
+      "clean": {
+        "forward": {
+          "clean_endpoint_js": 0.31063435128405054,
+          "endpoint": 13.790373431567957,
+          "recipient_counterfactual_margin": -7.33595281139668,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 6.454420620171277,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        },
+        "reverse": {
+          "clean_endpoint_js": 0.31063435128405054,
+          "endpoint": 13.790373431567957,
+          "recipient_counterfactual_margin": -6.454420620171277,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 7.33595281139668,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        }
+      },
+      "context_id": "ioi_scope_02",
+      "directions": {
+        "forward": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 6.454420620171277
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9950742400120907,
+            "normalized_transfer": 0.995530560476776,
+            "patched_counterfactual_margin": 6.392785380116209
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.15077759843785132,
+            "normalized_transfer": 0.17227635753682988,
+            "patched_counterfactual_margin": -4.960197507533479
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9978008046585468,
+            "normalized_transfer": 0.9833445952835711,
+            "patched_counterfactual_margin": 6.224736369477824
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9970323043105176,
+            "normalized_transfer": 0.9895793488511317,
+            "patched_counterfactual_margin": 6.310715949428285
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9405981013045411,
+            "normalized_transfer": 0.806396629173143,
+            "patched_counterfactual_margin": 3.784557838858589
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.946499913403304,
+            "normalized_transfer": 0.8089126953286099,
+            "patched_counterfactual_margin": 3.819255330721006
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.021229624524923052,
+            "normalized_transfer": -0.0007097185347483574,
+            "patched_counterfactual_margin": -7.345740095022165
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.003870786922314351,
+            "normalized_transfer": -0.0023498038965118176,
+            "patched_counterfactual_margin": -7.368357484620532
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.010308153392802888,
+            "normalized_transfer": 0.002533987451186166,
+            "patched_counterfactual_margin": -7.301008178173916
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.01147690348285646,
+            "normalized_transfer": -0.0016789835193552368,
+            "patched_counterfactual_margin": -7.359106621114037
+          }
+        },
+        "reverse": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 7.33595281139668
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.991734342473261,
+            "normalized_transfer": 0.9672431997018655,
+            "patched_counterfactual_margin": 6.884224302862108
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.1066792093018174,
+            "normalized_transfer": 0.1678130187895318,
+            "patched_counterfactual_margin": -4.140216424384903
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9995062871788373,
+            "normalized_transfer": 0.9841191227124528,
+            "patched_counterfactual_margin": 7.116949583180499
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9964881392246842,
+            "normalized_transfer": 0.9749436188893875,
+            "patched_counterfactual_margin": 6.990415959037648
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.941092979541719,
+            "normalized_transfer": 0.815434960784519,
+            "patched_counterfactual_margin": 4.7907319982032135
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9343380840767179,
+            "normalized_transfer": 0.8150264718687239,
+            "patched_counterfactual_margin": 4.785098783511742
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.10659354200469684,
+            "normalized_transfer": 0.03475273472289438,
+            "patched_counterfactual_margin": -5.975167430574345
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.013642530254331264,
+            "normalized_transfer": -0.0019402520398395596,
+            "patched_counterfactual_margin": -6.481177420352026
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.006974763056802447,
+            "normalized_transfer": -0.0022046510777167074,
+            "patched_counterfactual_margin": -6.484823581819299
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.02634793420307191,
+            "normalized_transfer": -0.004416286093857788,
+            "patched_counterfactual_margin": -6.515322854586216
+          }
+        }
+      },
+      "position_scopes": {
+        "all_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "differing_lexical_positions": [
+          1,
+          3,
+          9
+        ],
+        "matched_static_a": [
+          0,
+          7,
+          12
+        ],
+        "matched_static_b": [
+          2,
+          5,
+          6
+        ],
+        "shared_static_positions": [
+          0,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "record": {
+        "base_name_a": "Barry",
+        "base_name_b": "Ben",
+        "base_prompt": "When Barry and Ben went to the market, Ben gave a book to",
+        "base_target": "Barry",
+        "context_id": "ioi_scope_02",
+        "donor_name_a": "Beverly",
+        "donor_name_b": "Billy",
+        "donor_prompt": "When Beverly and Billy went to the market, Billy gave a book to",
+        "donor_target": "Beverly",
+        "stratum_id": "when_market",
+        "template": "When {a} and {b} went to the market, {b} gave a book to",
+        "template_id": "when_market"
+      },
+      "token_count": 14
+    },
+    {
+      "clean": {
+        "forward": {
+          "clean_endpoint_js": 0.27516216942682803,
+          "endpoint": 11.693141720543096,
+          "recipient_counterfactual_margin": -5.0524719630874415,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 6.640669757455655,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        },
+        "reverse": {
+          "clean_endpoint_js": 0.27516216942682803,
+          "endpoint": 11.693141720543096,
+          "recipient_counterfactual_margin": -6.640669757455655,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 5.0524719630874415,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        }
+      },
+      "context_id": "ioi_scope_03",
+      "directions": {
+        "forward": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 6.640669757455655
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9981665614640886,
+            "normalized_transfer": 0.9671507867585213,
+            "patched_counterfactual_margin": 6.2565592516147035
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.12880312263303706,
+            "normalized_transfer": 0.1782080134061339,
+            "patched_counterfactual_margin": -2.9686604065930737
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9993698542642094,
+            "normalized_transfer": 0.9833853826861821,
+            "patched_counterfactual_margin": 6.4463926825725935
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9982532480011141,
+            "normalized_transfer": 0.9678239357877637,
+            "patched_counterfactual_margin": 6.264430478612681
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.7943424459415753,
+            "normalized_transfer": 0.6415488015304147,
+            "patched_counterfactual_margin": 2.4492490938522735
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.8010578791210314,
+            "normalized_transfer": 0.6410813728969934,
+            "patched_counterfactual_margin": 2.443783384597438
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.04001996119629203,
+            "normalized_transfer": 0.002966220021667377,
+            "patched_counterfactual_margin": -5.0177875319997725
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.0031864699818462405,
+            "normalized_transfer": 0.0022707912169977417,
+            "patched_counterfactual_margin": -5.025919279569322
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.0011903087748099672,
+            "normalized_transfer": 0.0002928605383087629,
+            "patched_counterfactual_margin": -5.049047503308643
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.0021671278370343217,
+            "normalized_transfer": 0.007416000424062719,
+            "patched_counterfactual_margin": -4.965755619129268
+          }
+        },
+        "reverse": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 5.0524719630874415
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.996737292885741,
+            "normalized_transfer": 0.9638562087609671,
+            "patched_counterfactual_margin": 4.629837489811706
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.2784027439190675,
+            "normalized_transfer": 0.2308411117791681,
+            "patched_counterfactual_margin": -3.9414119224941118
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9992427454748863,
+            "normalized_transfer": 0.9769806122696985,
+            "patched_counterfactual_margin": 4.783303000036895
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9967790488282082,
+            "normalized_transfer": 0.9621681975542354,
+            "patched_counterfactual_margin": 4.610099335545527
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9435563527265707,
+            "normalized_transfer": 0.7828899669338951,
+            "patched_counterfactual_margin": 2.51377357749368
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9479757501764466,
+            "normalized_transfer": 0.7792575612186485,
+            "patched_counterfactual_margin": 2.4712993426787904
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.060147058808492804,
+            "normalized_transfer": 0.10832514446828438,
+            "patched_counterfactual_margin": -5.3740084912897
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.006992693902260205,
+            "normalized_transfer": -0.0019747697043352138,
+            "patched_counterfactual_margin": -6.663761019473881
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.0012479610138969033,
+            "normalized_transfer": -0.0008627329949595378,
+            "patched_counterfactual_margin": -6.650757816632705
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.007412883885659194,
+            "normalized_transfer": 0.0004617636278639858,
+            "patched_counterfactual_margin": -6.635270289913649
+          }
+        }
+      },
+      "position_scopes": {
+        "all_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "differing_lexical_positions": [
+          1,
+          3,
+          9
+        ],
+        "matched_static_a": [
+          0,
+          5,
+          6
+        ],
+        "matched_static_b": [
+          0,
+          10,
+          11
+        ],
+        "shared_static_positions": [
+          0,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "record": {
+        "base_name_a": "Bobby",
+        "base_name_b": "Brad",
+        "base_prompt": "When Bobby and Brad went to the market, Brad gave a book to",
+        "base_target": "Bobby",
+        "context_id": "ioi_scope_03",
+        "donor_name_a": "Brandon",
+        "donor_name_b": "Bryan",
+        "donor_prompt": "When Brandon and Bryan went to the market, Bryan gave a book to",
+        "donor_target": "Brandon",
+        "stratum_id": "when_market",
+        "template": "When {a} and {b} went to the market, {b} gave a book to",
+        "template_id": "when_market"
+      },
+      "token_count": 14
+    },
+    {
+      "clean": {
+        "forward": {
+          "clean_endpoint_js": 0.4036743922984955,
+          "endpoint": 16.94156634916436,
+          "recipient_counterfactual_margin": -9.688059065272668,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 7.253507283891693,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        },
+        "reverse": {
+          "clean_endpoint_js": 0.4036743922984955,
+          "endpoint": 16.94156634916436,
+          "recipient_counterfactual_margin": -7.253507283891693,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 9.688059065272668,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        }
+      },
+      "context_id": "ioi_scope_04",
+      "directions": {
+        "forward": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 7.253507283891693
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9957493223334153,
+            "normalized_transfer": 0.9833955750810379,
+            "patched_counterfactual_margin": 6.972202317437379
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.024534756374974154,
+            "normalized_transfer": 0.1168082842092901,
+            "patched_counterfactual_margin": -7.709143768208932
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9991871546113132,
+            "normalized_transfer": 0.9885569619534529,
+            "patched_counterfactual_margin": 7.059644295590104
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9959888792678717,
+            "normalized_transfer": 0.9725345054034944,
+            "patched_counterfactual_margin": 6.788198784872378
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.8641641630997288,
+            "normalized_transfer": 0.6722516903471379,
+            "patched_counterfactual_margin": 1.7009375500812638
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.8511836366705177,
+            "normalized_transfer": 0.6619511246335291,
+            "patched_counterfactual_margin": 1.5264298326102335
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.22129653268875982,
+            "normalized_transfer": 0.026336591898004892,
+            "patched_counterfactual_margin": -9.241875946221754
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.009109979141526336,
+            "normalized_transfer": 0.0009777276076991942,
+            "patched_counterfactual_margin": -9.671494828135422
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.014480796668971063,
+            "normalized_transfer": -0.0021827978603670794,
+            "patched_counterfactual_margin": -9.725039080050891
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.022054361022225466,
+            "normalized_transfer": -0.0009796323631141683,
+            "patched_counterfactual_margin": -9.704655571950155
+          }
+        },
+        "reverse": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 9.688059065272668
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.988223713973588,
+            "normalized_transfer": 0.9673729419919327,
+            "patched_counterfactual_margin": 9.135305597250962
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.14201294714127366,
+            "normalized_transfer": 0.2634240044420809,
+            "patched_counterfactual_margin": -2.7906920346736115
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9977804300115846,
+            "normalized_transfer": 0.9818673021866593,
+            "patched_counterfactual_margin": 9.380862762178609
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9935975052427679,
+            "normalized_transfer": 0.9719774078074533,
+            "patched_counterfactual_margin": 9.213312460367064
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9828669908748561,
+            "normalized_transfer": 0.8530476884206821,
+            "patched_counterfactual_margin": 7.19845672848858
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9825883727934552,
+            "normalized_transfer": 0.8500808196424448,
+            "patched_counterfactual_margin": 7.148193324232807
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.008174712796184092,
+            "normalized_transfer": 0.02703742182132164,
+            "patched_counterfactual_margin": -6.795451008195428
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.004868383904983786,
+            "normalized_transfer": 0.006288852892938367,
+            "patched_counterfactual_margin": -7.146964265345844
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.005430342971308955,
+            "normalized_transfer": 0.0033779954312329595,
+            "patched_counterfactual_margin": -7.196278750166286
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.009827383994261418,
+            "normalized_transfer": 0.01409511713316313,
+            "patched_counterfactual_margin": -7.014713921780967
+          }
+        }
+      },
+      "position_scopes": {
+        "all_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "differing_lexical_positions": [
+          1,
+          3,
+          9
+        ],
+        "matched_static_a": [
+          7,
+          10,
+          13
+        ],
+        "matched_static_b": [
+          6,
+          8,
+          13
+        ],
+        "shared_static_positions": [
+          0,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "record": {
+        "base_name_a": "Caleb",
+        "base_name_b": "Catherine",
+        "base_prompt": "After Caleb and Catherine arrived at the station, Catherine passed a drink to",
+        "base_target": "Caleb",
+        "context_id": "ioi_scope_04",
+        "donor_name_a": "Cheryl",
+        "donor_name_b": "Chloe",
+        "donor_prompt": "After Cheryl and Chloe arrived at the station, Chloe passed a drink to",
+        "donor_target": "Cheryl",
+        "stratum_id": "after_station",
+        "template": "After {a} and {b} arrived at the station, {b} passed a drink to",
+        "template_id": "after_station"
+      },
+      "token_count": 14
+    },
+    {
+      "clean": {
+        "forward": {
+          "clean_endpoint_js": 0.3025110027381055,
+          "endpoint": 11.224357824627276,
+          "recipient_counterfactual_margin": -6.329372129469476,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 4.8949856951578,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        },
+        "reverse": {
+          "clean_endpoint_js": 0.3025110027381055,
+          "endpoint": 11.224357824627276,
+          "recipient_counterfactual_margin": -4.8949856951578,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 6.329372129469476,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        }
+      },
+      "context_id": "ioi_scope_05",
+      "directions": {
+        "forward": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 4.8949856951578
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9975610820193537,
+            "normalized_transfer": 0.97152505812601,
+            "patched_counterfactual_margin": 4.5753727585286725
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.038195097337335726,
+            "normalized_transfer": 0.08816553885566233,
+            "patched_counterfactual_margin": -5.339770573552443
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9996020466488962,
+            "normalized_transfer": 0.9893625719778842,
+            "patched_counterfactual_margin": 4.775587396703855
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9986899895518566,
+            "normalized_transfer": 0.979318341840464,
+            "patched_counterfactual_margin": 4.662847363568545
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9637029469265458,
+            "normalized_transfer": 0.7652160145061703,
+            "patched_counterfactual_margin": 2.2596862304829557
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9629595267649296,
+            "normalized_transfer": 0.7627223904283472,
+            "patched_counterfactual_margin": 2.231696901553363
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.053204049470173875,
+            "normalized_transfer": 0.003876577040869092,
+            "patched_counterfactual_margin": -6.285860041628027
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.00244929731305088,
+            "normalized_transfer": -0.0002949542698356128,
+            "patched_counterfactual_margin": -6.332682801736013
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.0003536011663101135,
+            "normalized_transfer": -0.0008382738140567156,
+            "patched_counterfactual_margin": -6.338781214713464
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.005468223719198861,
+            "normalized_transfer": 0.0004449315495987377,
+            "patched_counterfactual_margin": -6.324378058549314
+          }
+        },
+        "reverse": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 6.329372129469476
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9981350014184616,
+            "normalized_transfer": 0.9955174439268252,
+            "patched_counterfactual_margin": 6.279058316135206
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.07184102251532265,
+            "normalized_transfer": 0.1552207365160949,
+            "patched_counterfactual_margin": -3.1527326066989616
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.999791142353941,
+            "normalized_transfer": 0.9960152050920278,
+            "patched_counterfactual_margin": 6.284645365564643
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9989650305283765,
+            "normalized_transfer": 0.9934524154524003,
+            "patched_counterfactual_margin": 6.255879697620216
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.97042645609792,
+            "normalized_transfer": 0.8269658827285247,
+            "patched_counterfactual_margin": 4.387175281345918
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9719623164370637,
+            "normalized_transfer": 0.8246325658468995,
+            "patched_counterfactual_margin": 4.360985297748314
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.0029707458762321393,
+            "normalized_transfer": -0.009517200477762718,
+            "patched_counterfactual_margin": -5.001810158808922
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.004783825793538421,
+            "normalized_transfer": -0.001501795422501689,
+            "patched_counterfactual_margin": -4.911842384359346
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.0007464809602470979,
+            "normalized_transfer": 0.00020076683515024392,
+            "patched_counterfactual_margin": -4.892732216360756
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.008003063574601343,
+            "normalized_transfer": 0.0018819645778089744,
+            "patched_counterfactual_margin": -4.873861851323198
+          }
+        }
+      },
+      "position_scopes": {
+        "all_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "differing_lexical_positions": [
+          1,
+          3,
+          9
+        ],
+        "matched_static_a": [
+          6,
+          11,
+          13
+        ],
+        "matched_static_b": [
+          2,
+          7,
+          11
+        ],
+        "shared_static_positions": [
+          0,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "record": {
+        "base_name_a": "Christian",
+        "base_name_b": "Christina",
+        "base_prompt": "After Christian and Christina arrived at the station, Christina passed a drink to",
+        "base_target": "Christian",
+        "context_id": "ioi_scope_05",
+        "donor_name_a": "Christopher",
+        "donor_name_b": "Cindy",
+        "donor_prompt": "After Christopher and Cindy arrived at the station, Cindy passed a drink to",
+        "donor_target": "Christopher",
+        "stratum_id": "after_station",
+        "template": "After {a} and {b} arrived at the station, {b} passed a drink to",
+        "template_id": "after_station"
+      },
+      "token_count": 14
+    },
+    {
+      "clean": {
+        "forward": {
+          "clean_endpoint_js": 0.35226316053504153,
+          "endpoint": 16.37845198354772,
+          "recipient_counterfactual_margin": -7.879755489222887,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 8.498696494324832,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        },
+        "reverse": {
+          "clean_endpoint_js": 0.35226316053504153,
+          "endpoint": 16.37845198354772,
+          "recipient_counterfactual_margin": -8.498696494324832,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 7.879755489222887,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        }
+      },
+      "context_id": "ioi_scope_06",
+      "directions": {
+        "forward": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 8.498696494324832
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9941829102171659,
+            "normalized_transfer": 0.9838329605814649,
+            "patched_counterfactual_margin": 8.23390541549223
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.14078943403963984,
+            "normalized_transfer": 0.19458704483358646,
+            "patched_counterfactual_margin": -4.692720918795544
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9988334391642146,
+            "normalized_transfer": 0.9815827687171347,
+            "patched_counterfactual_margin": 8.19705075608853
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9928925792908118,
+            "normalized_transfer": 0.9809687266443047,
+            "patched_counterfactual_margin": 8.186993697482805
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9595163092912559,
+            "normalized_transfer": 0.8465674137016901,
+            "patched_counterfactual_margin": 5.985708246926421
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9527231505893886,
+            "normalized_transfer": 0.8478132332620314,
+            "patched_counterfactual_margin": 6.006112842775636
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.09424439700716403,
+            "normalized_transfer": 0.0675603677439697,
+            "patched_counterfactual_margin": -6.773221250137453
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.0007820179192012944,
+            "normalized_transfer": 0.003081593105739143,
+            "patched_counterfactual_margin": -7.829283764507707
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.004661618036840398,
+            "normalized_transfer": 0.00067712973472725,
+            "patched_counterfactual_margin": -7.868665152376025
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.004450334283591428,
+            "normalized_transfer": 0.007683870448983756,
+            "patched_counterfactual_margin": -7.753905586026406
+          }
+        },
+        "reverse": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 7.879755489222887
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9947619889079296,
+            "normalized_transfer": 0.970712894218526,
+            "patched_counterfactual_margin": 7.400078033443933
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.09090940112837465,
+            "normalized_transfer": 0.11018853464599378,
+            "patched_counterfactual_margin": -6.693978870487939
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9994013348258189,
+            "normalized_transfer": 0.9858231025000839,
+            "patched_counterfactual_margin": 7.647559854244832
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9949242608169777,
+            "normalized_transfer": 0.9815029624878867,
+            "patched_counterfactual_margin": 7.576802648492858
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9089414351735877,
+            "normalized_transfer": 0.7600713936239116,
+            "patched_counterfactual_margin": 3.9500963302126024
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9097354874745402,
+            "normalized_transfer": 0.7556417214450339,
+            "patched_counterfactual_margin": 3.8775451571279973
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.12012013518085651,
+            "normalized_transfer": 0.041337117386461605,
+            "patched_counterfactual_margin": -7.821658502072395
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.006090252270405938,
+            "normalized_transfer": -0.0004964641190953563,
+            "patched_counterfactual_margin": -8.50682780806099
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.006270103399780624,
+            "normalized_transfer": 0.0013967467060484384,
+            "patched_counterfactual_margin": -8.47581994546664
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.007310980986937166,
+            "normalized_transfer": -0.001590479430347182,
+            "patched_counterfactual_margin": -8.524746085305594
+          }
+        }
+      },
+      "position_scopes": {
+        "all_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "differing_lexical_positions": [
+          1,
+          3,
+          9
+        ],
+        "matched_static_a": [
+          5,
+          7,
+          11
+        ],
+        "matched_static_b": [
+          7,
+          10,
+          13
+        ],
+        "shared_static_positions": [
+          0,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "record": {
+        "base_name_a": "Connor",
+        "base_name_b": "Craig",
+        "base_prompt": "After Connor and Craig arrived at the station, Craig passed a drink to",
+        "base_target": "Connor",
+        "context_id": "ioi_scope_06",
+        "donor_name_a": "Crystal",
+        "donor_name_b": "Dale",
+        "donor_prompt": "After Crystal and Dale arrived at the station, Dale passed a drink to",
+        "donor_target": "Crystal",
+        "stratum_id": "after_station",
+        "template": "After {a} and {b} arrived at the station, {b} passed a drink to",
+        "template_id": "after_station"
+      },
+      "token_count": 14
+    },
+    {
+      "clean": {
+        "forward": {
+          "clean_endpoint_js": 0.3357431181946464,
+          "endpoint": 13.801139630868619,
+          "recipient_counterfactual_margin": -6.293115914922424,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 7.508023715946194,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        },
+        "reverse": {
+          "clean_endpoint_js": 0.3357431181946464,
+          "endpoint": 13.801139630868619,
+          "recipient_counterfactual_margin": -7.508023715946194,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 6.293115914922424,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        }
+      },
+      "context_id": "ioi_scope_07",
+      "directions": {
+        "forward": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 7.508023715946194
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9970283190159748,
+            "normalized_transfer": 0.9693215378614854,
+            "patched_counterfactual_margin": 7.084625976312239
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.07837860854413892,
+            "normalized_transfer": 0.15460779269240804,
+            "patched_counterfactual_margin": -4.159352179954112
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9997094602788583,
+            "normalized_transfer": 0.9878907689422729,
+            "patched_counterfactual_margin": 7.340902527296052
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9987796842744449,
+            "normalized_transfer": 0.9776511212804168,
+            "patched_counterfactual_margin": 7.1995837201438775
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9792952237960788,
+            "normalized_transfer": 0.8173808979282391,
+            "patched_counterfactual_margin": 4.987671988989973
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9774666115404024,
+            "normalized_transfer": 0.819029108087416,
+            "patched_counterfactual_margin": 5.0104191675377905
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.15169836872309916,
+            "normalized_transfer": 0.08087731108333551,
+            "patched_counterfactual_margin": -5.176916851692113
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.004021434449383521,
+            "normalized_transfer": -0.0018137910606056218,
+            "patched_counterfactual_margin": -6.318148298611064
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.0073820598491078915,
+            "normalized_transfer": 0.0039107493315207265,
+            "patched_counterfactual_margin": -6.239143117336781
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.0032602680538128537,
+            "normalized_transfer": 0.0014028867324592596,
+            "patched_counterfactual_margin": -6.273754479241461
+          }
+        },
+        "reverse": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 6.293115914922424
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9988153978734844,
+            "normalized_transfer": 0.9826681560140377,
+            "patched_counterfactual_margin": 6.053916716011727
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.015201649477832202,
+            "normalized_transfer": 0.1457017227937144,
+            "patched_counterfactual_margin": -5.497173895212029
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9988758029061116,
+            "normalized_transfer": 0.9849803693949944,
+            "patched_counterfactual_margin": 6.085827895738674
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9982992704524365,
+            "normalized_transfer": 0.9790998924169315,
+            "patched_counterfactual_margin": 6.00467061186832
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9657357468376763,
+            "normalized_transfer": 0.8109112953627144,
+            "patched_counterfactual_margin": 3.6834762996031714
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9649284949134257,
+            "normalized_transfer": 0.8096971342431735,
+            "patched_counterfactual_margin": 3.6667194924580144
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.09578250167170799,
+            "normalized_transfer": 0.04769950302931396,
+            "patched_counterfactual_margin": -6.849716214315592
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.002114692513862204,
+            "normalized_transfer": 0.00031698074746226094,
+            "patched_counterfactual_margin": -7.503649020390171
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.007115775748917086,
+            "normalized_transfer": -0.0018737074450329903,
+            "patched_counterfactual_margin": -7.533883014022493
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.006932187670843248,
+            "normalized_transfer": -0.0006077872938827686,
+            "patched_counterfactual_margin": -7.516411873254938
+          }
+        }
+      },
+      "position_scopes": {
+        "all_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "differing_lexical_positions": [
+          1,
+          3,
+          9
+        ],
+        "matched_static_a": [
+          0,
+          7,
+          12
+        ],
+        "matched_static_b": [
+          2,
+          10,
+          12
+        ],
+        "shared_static_positions": [
+          0,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "record": {
+        "base_name_a": "Dana",
+        "base_name_b": "Dean",
+        "base_prompt": "After Dana and Dean arrived at the station, Dean passed a drink to",
+        "base_target": "Dana",
+        "context_id": "ioi_scope_07",
+        "donor_name_a": "Dennis",
+        "donor_name_b": "Douglas",
+        "donor_prompt": "After Dennis and Douglas arrived at the station, Douglas passed a drink to",
+        "donor_target": "Dennis",
+        "stratum_id": "after_station",
+        "template": "After {a} and {b} arrived at the station, {b} passed a drink to",
+        "template_id": "after_station"
+      },
+      "token_count": 14
+    },
+    {
+      "clean": {
+        "forward": {
+          "clean_endpoint_js": 0.3855634759586598,
+          "endpoint": 19.173515077842893,
+          "recipient_counterfactual_margin": -9.516435105959872,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 9.657079971883022,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        },
+        "reverse": {
+          "clean_endpoint_js": 0.3855634759586598,
+          "endpoint": 19.173515077842893,
+          "recipient_counterfactual_margin": -9.657079971883022,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 9.516435105959872,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        }
+      },
+      "context_id": "ioi_scope_08",
+      "directions": {
+        "forward": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 9.657079971883022
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9969956903126305,
+            "normalized_transfer": 0.9919525644425217,
+            "patched_counterfactual_margin": 9.502782344883741
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.28043938591132334,
+            "normalized_transfer": 0.21883649051414297,
+            "patched_counterfactual_margin": -5.320570355504728
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9996524315732328,
+            "normalized_transfer": 0.9932295778728123,
+            "patched_counterfactual_margin": 9.527267181144026
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9963791044774869,
+            "normalized_transfer": 0.994638583752714,
+            "patched_counterfactual_margin": 9.55428277662709
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.919287528099647,
+            "normalized_transfer": 0.9403178421567909,
+            "patched_counterfactual_margin": 8.512763218598053
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9203654402101533,
+            "normalized_transfer": 0.9359946138798442,
+            "patched_counterfactual_margin": 8.429871736045058
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.20491269037047155,
+            "normalized_transfer": 0.032600199385925684,
+            "patched_counterfactual_margin": -8.89137469149314
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.0022630681463261526,
+            "normalized_transfer": 0.0038999353494845648,
+            "patched_counterfactual_margin": -9.441659636733917
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.008409873154194836,
+            "normalized_transfer": -0.001474464114304631,
+            "patched_counterfactual_margin": -9.54470576588723
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.017523384834760125,
+            "normalized_transfer": 0.01134547914625922,
+            "patched_counterfactual_margin": -9.298902390483718
+          }
+        },
+        "reverse": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 9.516435105959872
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9930921189253762,
+            "normalized_transfer": 0.9610092425666183,
+            "patched_counterfactual_margin": 8.768845230414414
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.015141456022160549,
+            "normalized_transfer": 0.0805620073979276,
+            "patched_counterfactual_margin": -8.112423108337566
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9994429274549876,
+            "normalized_transfer": 0.9824902957062994,
+            "patched_counterfactual_margin": 9.180712526676032
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9961160078658032,
+            "normalized_transfer": 0.9647261398763896,
+            "patched_counterfactual_margin": 8.840111217026106
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.7878318835269209,
+            "normalized_transfer": 0.7533237733132575,
+            "patched_counterfactual_margin": 4.786784754236223
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.7767076408388792,
+            "normalized_transfer": 0.748841902366515,
+            "patched_counterfactual_margin": 4.700851534061911
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.08160419380014328,
+            "normalized_transfer": 0.07339594214141316,
+            "patched_counterfactual_margin": -8.249821768582152
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.0005377699326862828,
+            "normalized_transfer": -0.0057354677179409655,
+            "patched_counterfactual_margin": -9.767049048651444
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.002646120464201207,
+            "normalized_transfer": -0.00033487120325255,
+            "patched_counterfactual_margin": -9.66350062994772
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.007656888893859071,
+            "normalized_transfer": -0.0014547665531107997,
+            "patched_counterfactual_margin": -9.684972960323833
+          }
+        }
+      },
+      "position_scopes": {
+        "all_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "differing_lexical_positions": [
+          1,
+          3,
+          9
+        ],
+        "matched_static_a": [
+          10,
+          11,
+          12
+        ],
+        "matched_static_b": [
+          0,
+          11,
+          13
+        ],
+        "shared_static_positions": [
+          0,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "record": {
+        "base_name_a": "Dustin",
+        "base_name_b": "Earl",
+        "base_prompt": "While Dustin and Earl worked in the office, Earl sent a letter to",
+        "base_target": "Dustin",
+        "context_id": "ioi_scope_08",
+        "donor_name_a": "Eleanor",
+        "donor_name_b": "Elijah",
+        "donor_prompt": "While Eleanor and Elijah worked in the office, Elijah sent a letter to",
+        "donor_target": "Eleanor",
+        "stratum_id": "while_office",
+        "template": "While {a} and {b} worked in the office, {b} sent a letter to",
+        "template_id": "while_office"
+      },
+      "token_count": 14
+    },
+    {
+      "clean": {
+        "forward": {
+          "clean_endpoint_js": 0.2878866588808669,
+          "endpoint": 14.234997461051648,
+          "recipient_counterfactual_margin": -7.440630604620125,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": false,
+          "source_counterfactual_margin": 6.794366856431523,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        },
+        "reverse": {
+          "clean_endpoint_js": 0.2878866588808669,
+          "endpoint": 14.234997461051648,
+          "recipient_counterfactual_margin": -6.794366856431523,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 7.440630604620125,
+          "source_pairwise_correct": true,
+          "source_target_top1": false
+        }
+      },
+      "context_id": "ioi_scope_09",
+      "directions": {
+        "forward": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 6.794366856431523
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9666738952279341,
+            "normalized_transfer": 0.9564181468709597,
+            "patched_counterfactual_margin": 6.17397928779171
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.005664942704775577,
+            "normalized_transfer": 0.07595700287073785,
+            "patched_counterfactual_margin": -6.359382861606079
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.98671591291527,
+            "normalized_transfer": 0.9606072926874326,
+            "patched_counterfactual_margin": 6.233611767853176
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9615941811118276,
+            "normalized_transfer": 0.9499704437167432,
+            "patched_counterfactual_margin": 6.082196249761822
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.6769398291069331,
+            "normalized_transfer": 0.6910953177810752,
+            "patched_counterfactual_margin": 2.3971094893381633
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.6680475586705223,
+            "normalized_transfer": 0.6933289258593778,
+            "patched_counterfactual_margin": 2.428904894661784
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.042570437796702554,
+            "normalized_transfer": 0.01615795249192356,
+            "patched_counterfactual_margin": -7.2106221919218
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.0013969511164487747,
+            "normalized_transfer": 0.001237704894903913,
+            "patched_counterfactual_margin": -7.423011878583637
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.01533430086338794,
+            "normalized_transfer": -0.0037430251663747743,
+            "patched_counterfactual_margin": -7.4939125583601225
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.015618616662678164,
+            "normalized_transfer": -0.003883403660618006,
+            "patched_counterfactual_margin": -7.495910845869261
+          }
+        },
+        "reverse": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 7.440630604620125
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9896794388411202,
+            "normalized_transfer": 1.0005921447997592,
+            "patched_counterfactual_margin": 7.449059784341273
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.16557824166810242,
+            "normalized_transfer": 0.14361876836582488,
+            "patched_counterfactual_margin": -4.749954053384641
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9985592943774013,
+            "normalized_transfer": 0.9954487442991199,
+            "patched_counterfactual_margin": 7.3758434912735
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.989240465789871,
+            "normalized_transfer": 1.000950442148591,
+            "patched_counterfactual_margin": 7.454160146192194
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9475531360642178,
+            "normalized_transfer": 0.8568895088428988,
+            "patched_counterfactual_margin": 5.403453126348936
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.937431190088313,
+            "normalized_transfer": 0.8586796163609735,
+            "patched_counterfactual_margin": 5.428935302323737
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.1732971491425409,
+            "normalized_transfer": 0.0930029001352816,
+            "patched_counterfactual_margin": -5.4704708091353496
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.0007022447593232339,
+            "normalized_transfer": -0.0010633608913985675,
+            "patched_counterfactual_margin": -6.809503796020763
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.022483257504831156,
+            "normalized_transfer": 0.00117664665769589,
+            "patched_counterfactual_margin": -6.777617294246667
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.02299286033739767,
+            "normalized_transfer": -0.00021337176187724298,
+            "patched_counterfactual_margin": -6.797404202920106
+          }
+        }
+      },
+      "position_scopes": {
+        "all_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "differing_lexical_positions": [
+          1,
+          3,
+          9
+        ],
+        "matched_static_a": [
+          2,
+          7,
+          8
+        ],
+        "matched_static_b": [
+          7,
+          10,
+          13
+        ],
+        "shared_static_positions": [
+          0,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "record": {
+        "base_name_a": "Elizabeth",
+        "base_name_b": "Erin",
+        "base_prompt": "While Elizabeth and Erin worked in the office, Erin sent a letter to",
+        "base_target": "Elizabeth",
+        "context_id": "ioi_scope_09",
+        "donor_name_a": "Gabriel",
+        "donor_name_b": "James",
+        "donor_prompt": "While Gabriel and James worked in the office, James sent a letter to",
+        "donor_target": "Gabriel",
+        "stratum_id": "while_office",
+        "template": "While {a} and {b} worked in the office, {b} sent a letter to",
+        "template_id": "while_office"
+      },
+      "token_count": 14
+    },
+    {
+      "clean": {
+        "forward": {
+          "clean_endpoint_js": 0.29447550737291645,
+          "endpoint": 14.191838428590117,
+          "recipient_counterfactual_margin": -7.642618598360727,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 6.54921983022939,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        },
+        "reverse": {
+          "clean_endpoint_js": 0.29447550737291645,
+          "endpoint": 14.191838428590117,
+          "recipient_counterfactual_margin": -6.54921983022939,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 7.642618598360727,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        }
+      },
+      "context_id": "ioi_scope_10",
+      "directions": {
+        "forward": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 6.54921983022939
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9970870719936259,
+            "normalized_transfer": 0.9723718328893494,
+            "patched_counterfactual_margin": 6.157125346516949
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.09403879162168138,
+            "normalized_transfer": 0.09751348039762445,
+            "patched_counterfactual_margin": -6.258723039948151
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9993801849466377,
+            "normalized_transfer": 0.9819797259258786,
+            "patched_counterfactual_margin": 6.293479012130547
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9976770115329451,
+            "normalized_transfer": 0.97495289511269,
+            "patched_counterfactual_margin": 6.193755364564737
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.890374283658312,
+            "normalized_transfer": 0.7048737240053466,
+            "patched_counterfactual_margin": 2.360835405281776
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.8891944685441854,
+            "normalized_transfer": 0.7025248726886124,
+            "patched_counterfactual_margin": 2.327500886901902
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.10712399111482362,
+            "normalized_transfer": 0.06818467152124534,
+            "patched_counterfactual_margin": -6.674952756824723
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.0009571691722530806,
+            "normalized_transfer": 0.00043150645550311186,
+            "patched_counterfactual_margin": -7.636494728463333
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.0093548082295698,
+            "normalized_transfer": 0.0029682585003695935,
+            "patched_counterfactual_margin": -7.600493553309192
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.0033420504912389237,
+            "normalized_transfer": -0.00047096677696439583,
+            "patched_counterfactual_margin": -7.649302482764639
+          }
+        },
+        "reverse": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 7.642618598360727
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9980958931575626,
+            "normalized_transfer": 0.9804124215237074,
+            "patched_counterfactual_margin": 7.364634849417854
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.06233114027829567,
+            "normalized_transfer": 0.18673487214112108,
+            "patched_counterfactual_margin": -3.899108695819166
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9994969687063067,
+            "normalized_transfer": 0.9863172503055696,
+            "patched_counterfactual_margin": 7.44843522543853
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9982357708733798,
+            "normalized_transfer": 0.9802087124508719,
+            "patched_counterfactual_margin": 7.361743843169734
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9599073879442143,
+            "normalized_transfer": 0.8282828949407047,
+            "patched_counterfactual_margin": 5.205637187933974
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9602554629622042,
+            "normalized_transfer": 0.8291290572967627,
+            "patched_counterfactual_margin": 5.217645787375503
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.19538765719794782,
+            "normalized_transfer": 0.09629261727316703,
+            "patched_counterfactual_margin": -5.182650564022538
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.007553667077419668,
+            "normalized_transfer": 0.003972967234331141,
+            "patched_counterfactual_margin": -6.49283612115768
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.0037257429938846176,
+            "normalized_transfer": 0.0009788565905788035,
+            "patched_counterfactual_margin": -6.535328055651135
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.015831677962488522,
+            "normalized_transfer": 0.006527058284334628,
+            "patched_counterfactual_margin": -6.456588873644122
+          }
+        }
+      },
+      "position_scopes": {
+        "all_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "differing_lexical_positions": [
+          1,
+          3,
+          9
+        ],
+        "matched_static_a": [
+          4,
+          10,
+          12
+        ],
+        "matched_static_b": [
+          0,
+          7,
+          10
+        ],
+        "shared_static_positions": [
+          0,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "record": {
+        "base_name_a": "Jamie",
+        "base_name_b": "Jean",
+        "base_prompt": "While Jamie and Jean worked in the office, Jean sent a letter to",
+        "base_target": "Jamie",
+        "context_id": "ioi_scope_10",
+        "donor_name_a": "Jeffrey",
+        "donor_name_b": "Jeremy",
+        "donor_prompt": "While Jeffrey and Jeremy worked in the office, Jeremy sent a letter to",
+        "donor_target": "Jeffrey",
+        "stratum_id": "while_office",
+        "template": "While {a} and {b} worked in the office, {b} sent a letter to",
+        "template_id": "while_office"
+      },
+      "token_count": 14
+    },
+    {
+      "clean": {
+        "forward": {
+          "clean_endpoint_js": 0.4467474001035987,
+          "endpoint": 14.377897503192912,
+          "recipient_counterfactual_margin": -5.158150250741812,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 9.2197472524511,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        },
+        "reverse": {
+          "clean_endpoint_js": 0.4467474001035987,
+          "endpoint": 14.377897503192912,
+          "recipient_counterfactual_margin": -9.2197472524511,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": true,
+          "source_counterfactual_margin": 5.158150250741812,
+          "source_pairwise_correct": true,
+          "source_target_top1": true
+        }
+      },
+      "context_id": "ioi_scope_11",
+      "directions": {
+        "forward": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9999999999999999,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 9.2197472524511
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9928281125676819,
+            "normalized_transfer": 0.9811531102523452,
+            "patched_counterfactual_margin": 8.948768603405341
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.058879951657018315,
+            "normalized_transfer": 0.1252019817661619,
+            "patched_counterfactual_margin": -3.3580089897113083
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9998331754140908,
+            "normalized_transfer": 0.9929380205794998,
+            "patched_counterfactual_margin": 9.118210836173489
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9917285766427474,
+            "normalized_transfer": 0.984361901829498,
+            "patched_counterfactual_margin": 8.994904279810754
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9648296426493308,
+            "normalized_transfer": 0.8535994152020072,
+            "patched_counterfactual_margin": 7.114814649818058
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9379553248334304,
+            "normalized_transfer": 0.8377604676807828,
+            "patched_counterfactual_margin": 6.887083885799441
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.02642342943712994,
+            "normalized_transfer": 0.05503978571035154,
+            "patched_counterfactual_margin": -4.366793853200676
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.0013324639892628998,
+            "normalized_transfer": 0.0009487629163682763,
+            "patched_counterfactual_margin": -5.144509034775439
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.004442876600285639,
+            "normalized_transfer": 0.0060998137449651746,
+            "patched_counterfactual_margin": -5.070447753928136
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.00574000889097892,
+            "normalized_transfer": 0.01120160732080658,
+            "patched_counterfactual_margin": -4.99709468881224
+          }
+        },
+        "reverse": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 5.158150250741812
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9930304842380769,
+            "normalized_transfer": 0.9572707098353445,
+            "patched_counterfactual_margin": 4.543792896370206
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.14343646817075362,
+            "normalized_transfer": 0.12307733972872884,
+            "patched_counterfactual_margin": -7.450153876865784
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.998697978388093,
+            "normalized_transfer": 0.97910793669025,
+            "patched_counterfactual_margin": 4.8577663058440095
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9920959207868063,
+            "normalized_transfer": 0.9501456569721032,
+            "patched_counterfactual_margin": 4.441349616597691
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9523045314571974,
+            "normalized_transfer": 0.7789757873373004,
+            "patched_counterfactual_margin": 1.9802867753536049
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9307408934519836,
+            "normalized_transfer": 0.7560815229835733,
+            "patched_counterfactual_margin": 1.6511153890647137
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.01784887561973658,
+            "normalized_transfer": -0.009405613539430084,
+            "patched_counterfactual_margin": -9.35498019987567
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.007641404008828179,
+            "normalized_transfer": -0.0034487035365130606,
+            "patched_counterfactual_margin": -9.269332358417984
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.003655234042706068,
+            "normalized_transfer": -0.002150311949922244,
+            "patched_counterfactual_margin": -9.250664217266973
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.02403775774264416,
+            "normalized_transfer": -0.005972792600691752,
+            "patched_counterfactual_margin": -9.305623452271675
+          }
+        }
+      },
+      "position_scopes": {
+        "all_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "differing_lexical_positions": [
+          1,
+          3,
+          9
+        ],
+        "matched_static_a": [
+          2,
+          5,
+          7
+        ],
+        "matched_static_b": [
+          4,
+          7,
+          11
+        ],
+        "shared_static_positions": [
+          0,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "record": {
+        "base_name_a": "Jordan",
+        "base_name_b": "Jose",
+        "base_prompt": "While Jordan and Jose worked in the office, Jose sent a letter to",
+        "base_target": "Jordan",
+        "context_id": "ioi_scope_11",
+        "donor_name_a": "Joseph",
+        "donor_name_b": "Joshua",
+        "donor_prompt": "While Joseph and Joshua worked in the office, Joshua sent a letter to",
+        "donor_target": "Joseph",
+        "stratum_id": "while_office",
+        "template": "While {a} and {b} worked in the office, {b} sent a letter to",
+        "template_id": "while_office"
+      },
+      "token_count": 14
+    },
+    {
+      "clean": {
+        "forward": {
+          "clean_endpoint_js": 0.14021290607059667,
+          "endpoint": 12.760404747186882,
+          "recipient_counterfactual_margin": -6.135188485676522,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": false,
+          "source_counterfactual_margin": 6.62521626151036,
+          "source_pairwise_correct": true,
+          "source_target_top1": false
+        },
+        "reverse": {
+          "clean_endpoint_js": 0.14021290607059667,
+          "endpoint": 12.760404747186882,
+          "recipient_counterfactual_margin": -6.62521626151036,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": false,
+          "source_counterfactual_margin": 6.135188485676522,
+          "source_pairwise_correct": true,
+          "source_target_top1": false
+        }
+      },
+      "context_id": "ioi_scope_12",
+      "directions": {
+        "forward": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 6.62521626151036
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9847604258554749,
+            "normalized_transfer": 0.9887710246058677,
+            "patched_counterfactual_margin": 6.48192999058503
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.07349308296684975,
+            "normalized_transfer": 0.16182347822188964,
+            "patched_counterfactual_margin": -4.070255405967629
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9981495431585761,
+            "normalized_transfer": 0.9874490468539573,
+            "patched_counterfactual_margin": 6.465061019403876
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9849540825589577,
+            "normalized_transfer": 0.9853860258111118,
+            "patched_counterfactual_margin": 6.438736035895204
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9515793401282358,
+            "normalized_transfer": 0.8245725008280115,
+            "patched_counterfactual_margin": 4.3866903682889955
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": true,
+            "js_fidelity": 0.9359012673514625,
+            "normalized_transfer": 0.8314776803725341,
+            "patched_counterfactual_margin": 4.4748032541291
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.03064088738055948,
+            "normalized_transfer": 0.03407213348198631,
+            "patched_counterfactual_margin": -5.700414271846199
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.004336107429623315,
+            "normalized_transfer": 0.0013192590466249898,
+            "patched_counterfactual_margin": -6.1183542062752
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.004368965309963335,
+            "normalized_transfer": 0.0017055806187622898,
+            "patched_counterfactual_margin": -6.113424586652158
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.05138404368397942,
+            "normalized_transfer": 0.012676753305015402,
+            "patched_counterfactual_margin": -5.973427982624287
+          }
+        },
+        "reverse": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 6.135188485676522
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9772695777085278,
+            "normalized_transfer": 0.9595707130027754,
+            "patched_counterfactual_margin": 5.619294419951757
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.10603354709852386,
+            "normalized_transfer": 0.15863953929734415,
+            "patched_counterfactual_margin": -4.60091153116899
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9961714431238397,
+            "normalized_transfer": 0.9791043854750331,
+            "patched_counterfactual_margin": 5.8685519868967475
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9797471149447113,
+            "normalized_transfer": 0.960143844299138,
+            "patched_counterfactual_margin": 5.626607807266623
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9272990676137276,
+            "normalized_transfer": 0.7608557377881096,
+            "patched_counterfactual_margin": 3.0836109068854114
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9050997530244043,
+            "normalized_transfer": 0.7492276157016823,
+            "patched_counterfactual_margin": 2.935231362612896
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.24467431698724207,
+            "normalized_transfer": 0.15425333489691784,
+            "patched_counterfactual_margin": -4.656881274622322
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.0037747544460053906,
+            "normalized_transfer": -0.0010395886848481653,
+            "patched_counterfactual_margin": -6.638481833899618
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.0010102906264574107,
+            "normalized_transfer": -0.0010377125579123024,
+            "patched_counterfactual_margin": -6.63845789376056
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.10400915042894332,
+            "normalized_transfer": -0.01025376931048597,
+            "patched_counterfactual_margin": -6.756058508096444
+          }
+        }
+      },
+      "position_scopes": {
+        "all_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "differing_lexical_positions": [
+          1,
+          3,
+          9
+        ],
+        "matched_static_a": [
+          0,
+          2,
+          11
+        ],
+        "matched_static_b": [
+          0,
+          2,
+          5
+        ],
+        "shared_static_positions": [
+          0,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "record": {
+        "base_name_a": "Julie",
+        "base_name_b": "Justin",
+        "base_prompt": "Because Julie and Justin met at the school, Justin brought a gift to",
+        "base_target": "Julie",
+        "context_id": "ioi_scope_12",
+        "donor_name_a": "Katherine",
+        "donor_name_b": "Kathryn",
+        "donor_prompt": "Because Katherine and Kathryn met at the school, Kathryn brought a gift to",
+        "donor_target": "Katherine",
+        "stratum_id": "because_school",
+        "template": "Because {a} and {b} met at the school, {b} brought a gift to",
+        "template_id": "because_school"
+      },
+      "token_count": 14
+    },
+    {
+      "clean": {
+        "forward": {
+          "clean_endpoint_js": 0.13251861345942587,
+          "endpoint": 10.554030001127913,
+          "recipient_counterfactual_margin": -5.375840842513398,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": false,
+          "source_counterfactual_margin": 5.178189158614515,
+          "source_pairwise_correct": true,
+          "source_target_top1": false
+        },
+        "reverse": {
+          "clean_endpoint_js": 0.13251861345942587,
+          "endpoint": 10.554030001127913,
+          "recipient_counterfactual_margin": -5.178189158614515,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": false,
+          "source_counterfactual_margin": 5.375840842513398,
+          "source_pairwise_correct": true,
+          "source_target_top1": false
+        }
+      },
+      "context_id": "ioi_scope_13",
+      "directions": {
+        "forward": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 5.178189158614515
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9874108236279785,
+            "normalized_transfer": 0.9715985354708903,
+            "patched_counterfactual_margin": 4.878439249898321
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.08460416842906826,
+            "normalized_transfer": 0.14622264107014313,
+            "patched_counterfactual_margin": -3.832602701814949
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9984214901727465,
+            "normalized_transfer": 0.9866114991637248,
+            "patched_counterfactual_margin": 5.03688651911834
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9891806694203324,
+            "normalized_transfer": 0.9734051796947648,
+            "patched_counterfactual_margin": 4.897506627238457
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9318423913040834,
+            "normalized_transfer": 0.7730294299634889,
+            "patched_counterfactual_margin": 2.7827349530760728
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9272296890381522,
+            "normalized_transfer": 0.7652873667355706,
+            "patched_counterfactual_margin": 2.7010249854979946
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.026663733349083674,
+            "normalized_transfer": 0.037702744650978434,
+            "patched_counterfactual_margin": -4.9779249443421065
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.0035811351304460004,
+            "normalized_transfer": -7.04472063439883e-05,
+            "patched_counterfactual_margin": -5.376584344442648
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.0037778717202103795,
+            "normalized_transfer": -0.0011496830394664703,
+            "patched_counterfactual_margin": -5.387974631803715
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.017215003169385623,
+            "normalized_transfer": -0.0032046207306091947,
+            "patched_counterfactual_margin": -5.409662505846484
+          }
+        },
+        "reverse": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 5.375840842513398
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9969582402708239,
+            "normalized_transfer": 0.9824878448710839,
+            "patched_counterfactual_margin": 5.1910170318984115
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.1473451209167591,
+            "normalized_transfer": 0.1870004905255382,
+            "patched_counterfactual_margin": -3.204580371382349
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9989760958769459,
+            "normalized_transfer": 0.9952045044026175,
+            "patched_counterfactual_margin": 5.325229038108347
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9965045360712158,
+            "normalized_transfer": 0.9879906325653222,
+            "patched_counterfactual_margin": 5.249093618313239
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.953366863361096,
+            "normalized_transfer": 0.7994026069767574,
+            "patched_counterfactual_margin": 3.258729938398048
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9526989033760856,
+            "normalized_transfer": 0.8002590373939096,
+            "patched_counterfactual_margin": 3.2677687307145504
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.1668482177569579,
+            "normalized_transfer": 0.09643591560034438,
+            "patched_counterfactual_margin": -4.160401612182241
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.02427427619254452,
+            "normalized_transfer": 0.004181365915885893,
+            "patched_counterfactual_margin": -5.134058897292562
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.026280341272406083,
+            "normalized_transfer": 0.004700045686583159,
+            "patched_counterfactual_margin": -5.1285847354316445
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.04978918570023183,
+            "normalized_transfer": 0.008161003570890403,
+            "patched_counterfactual_margin": -5.092057682088026
+          }
+        }
+      },
+      "position_scopes": {
+        "all_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "differing_lexical_positions": [
+          1,
+          3,
+          9
+        ],
+        "matched_static_a": [
+          5,
+          7,
+          10
+        ],
+        "matched_static_b": [
+          7,
+          10,
+          11
+        ],
+        "shared_static_positions": [
+          0,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "record": {
+        "base_name_a": "Katie",
+        "base_name_b": "Kimberly",
+        "base_prompt": "Because Katie and Kimberly met at the school, Kimberly brought a gift to",
+        "base_target": "Katie",
+        "context_id": "ioi_scope_13",
+        "donor_name_a": "Larry",
+        "donor_name_b": "Lauren",
+        "donor_prompt": "Because Larry and Lauren met at the school, Lauren brought a gift to",
+        "donor_target": "Larry",
+        "stratum_id": "because_school",
+        "template": "Because {a} and {b} met at the school, {b} brought a gift to",
+        "template_id": "because_school"
+      },
+      "token_count": 14
+    },
+    {
+      "clean": {
+        "forward": {
+          "clean_endpoint_js": 0.1507135177930914,
+          "endpoint": 13.714364085854072,
+          "recipient_counterfactual_margin": -6.192604647551946,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": false,
+          "source_counterfactual_margin": 7.5217594383021265,
+          "source_pairwise_correct": true,
+          "source_target_top1": false
+        },
+        "reverse": {
+          "clean_endpoint_js": 0.1507135177930914,
+          "endpoint": 13.714364085854072,
+          "recipient_counterfactual_margin": -7.5217594383021265,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": false,
+          "source_counterfactual_margin": 6.192604647551946,
+          "source_pairwise_correct": true,
+          "source_target_top1": false
+        }
+      },
+      "context_id": "ioi_scope_14",
+      "directions": {
+        "forward": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 7.5217594383021265
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.989611908248524,
+            "normalized_transfer": 0.9660318642052849,
+            "patched_counterfactual_margin": 7.055908056695671
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.020585608719077775,
+            "normalized_transfer": 0.2024482488529496,
+            "patched_counterfactual_margin": -3.416155654239006
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9988717279991027,
+            "normalized_transfer": 0.9861858690881296,
+            "patched_counterfactual_margin": 7.332307417447083
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9940288630597115,
+            "normalized_transfer": 0.9727844338313613,
+            "patched_counterfactual_margin": 7.148515255062762
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9318025707395614,
+            "normalized_transfer": 0.8093496748895173,
+            "patched_counterfactual_margin": 4.90711146665052
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9402675156961509,
+            "normalized_transfer": 0.8110943997704464,
+            "patched_counterfactual_margin": 4.931039258897229
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.17961984767757588,
+            "normalized_transfer": 0.19951825034200146,
+            "patched_counterfactual_margin": -3.4563387205891587
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.013745768655820556,
+            "normalized_transfer": 0.00049312224511002,
+            "patched_counterfactual_margin": -6.185841789543673
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.011502541457375282,
+            "normalized_transfer": -0.0030485263740830837,
+            "patched_counterfactual_margin": -6.23441324817145
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.010492324632336292,
+            "normalized_transfer": -0.0050441428383441395,
+            "patched_counterfactual_margin": -6.2617818589380505
+          }
+        },
+        "reverse": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 6.192604647551946
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9893455833338205,
+            "normalized_transfer": 0.994372108639504,
+            "patched_counterfactual_margin": 6.115421696398471
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.0117104947854344,
+            "normalized_transfer": 0.12318120451136971,
+            "patched_counterfactual_margin": -5.832407551099152
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.996466598239564,
+            "normalized_transfer": 0.9919061562910501,
+            "patched_counterfactual_margin": 6.081602728073406
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9907423014028911,
+            "normalized_transfer": 0.9904490006700596,
+            "patched_counterfactual_margin": 6.0616187653573945
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9208954558104001,
+            "normalized_transfer": 0.7279688401981692,
+            "patched_counterfactual_margin": 2.461870279332487
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9227345714558085,
+            "normalized_transfer": 0.7341428443163608,
+            "patched_counterfactual_margin": 2.5465428196769295
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.005955548914373221,
+            "normalized_transfer": -0.004463195442448606,
+            "patched_counterfactual_margin": -7.582969325586191
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.00628431061141721,
+            "normalized_transfer": -0.0026615244176553467,
+            "patched_counterfactual_margin": -7.558260553189243
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.011699486918850588,
+            "normalized_transfer": 0.0023399103091775483,
+            "patched_counterfactual_margin": -7.489669056393822
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.006212418110502438,
+            "normalized_transfer": -0.0003797955650691451,
+            "patched_counterfactual_margin": -7.526968092959677
+          }
+        }
+      },
+      "position_scopes": {
+        "all_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "differing_lexical_positions": [
+          1,
+          3,
+          9
+        ],
+        "matched_static_a": [
+          8,
+          10,
+          12
+        ],
+        "matched_static_b": [
+          2,
+          4,
+          7
+        ],
+        "shared_static_positions": [
+          0,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "record": {
+        "base_name_a": "Lawrence",
+        "base_name_b": "Liam",
+        "base_prompt": "Because Lawrence and Liam met at the school, Liam brought a gift to",
+        "base_target": "Lawrence",
+        "context_id": "ioi_scope_14",
+        "donor_name_a": "Madison",
+        "donor_name_b": "Maria",
+        "donor_prompt": "Because Madison and Maria met at the school, Maria brought a gift to",
+        "donor_target": "Madison",
+        "stratum_id": "because_school",
+        "template": "Because {a} and {b} met at the school, {b} brought a gift to",
+        "template_id": "because_school"
+      },
+      "token_count": 14
+    },
+    {
+      "clean": {
+        "forward": {
+          "clean_endpoint_js": 0.12170618454360507,
+          "endpoint": 13.218531732156166,
+          "recipient_counterfactual_margin": -6.439371389075461,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": false,
+          "source_counterfactual_margin": 6.779160343080704,
+          "source_pairwise_correct": true,
+          "source_target_top1": false
+        },
+        "reverse": {
+          "clean_endpoint_js": 0.12170618454360507,
+          "endpoint": 13.218531732156166,
+          "recipient_counterfactual_margin": -6.779160343080704,
+          "recipient_pairwise_correct": true,
+          "recipient_target_top1": false,
+          "source_counterfactual_margin": 6.439371389075461,
+          "source_pairwise_correct": true,
+          "source_target_top1": false
+        }
+      },
+      "context_id": "ioi_scope_15",
+      "directions": {
+        "forward": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 6.779160343080704
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9603028590709553,
+            "normalized_transfer": 0.9808597598560297,
+            "patched_counterfactual_margin": 6.526154471376543
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.20352736600508126,
+            "normalized_transfer": 0.14903176212964905,
+            "patched_counterfactual_margin": -4.469390312265546
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9990316864037337,
+            "normalized_transfer": 0.9894901210754832,
+            "patched_counterfactual_margin": 6.64023517501586
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.95687985779449,
+            "normalized_transfer": 0.9753577589585952,
+            "patched_counterfactual_margin": 6.453426097923455
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.8967757542775049,
+            "normalized_transfer": 0.7852226297895589,
+            "patched_counterfactual_margin": 3.9401188596049366
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.8593858267429165,
+            "normalized_transfer": 0.7790818606459414,
+            "patched_counterfactual_margin": 3.858946907820183
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.032799920429422036,
+            "normalized_transfer": 0.09711545469293872,
+            "patched_counterfactual_margin": -5.155647669534076
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.008608185900351728,
+            "normalized_transfer": -0.012497585791660111,
+            "patched_counterfactual_margin": -6.604571123437864
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.010535192519179337,
+            "normalized_transfer": -0.013760907263275118,
+            "patched_counterfactual_margin": -6.6212703783983216
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.0358259143116777,
+            "normalized_transfer": -0.02809968709587056,
+            "patched_counterfactual_margin": -6.810807994615885
+          }
+        },
+        "reverse": {
+          "all24_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 1.0,
+            "normalized_transfer": 1.0,
+            "patched_counterfactual_margin": 6.439371389075461
+          },
+          "all24_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9674134094973491,
+            "normalized_transfer": 1.007340005878027,
+            "patched_counterfactual_margin": 6.536395489688374
+          },
+          "attention0_lexical": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.21644300817378992,
+            "normalized_transfer": 0.18188849100221222,
+            "patched_counterfactual_margin": -4.374861553053961
+          },
+          "first12_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.999223282500981,
+            "normalized_transfer": 0.9883234517896742,
+            "patched_counterfactual_margin": 6.285024566035219
+          },
+          "first12_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9636401704347118,
+            "normalized_transfer": 1.0152317169773604,
+            "patched_counterfactual_margin": 6.64071232327592
+          },
+          "mlp0_all": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.9089002190072407,
+            "normalized_transfer": 0.8566116115005066,
+            "patched_counterfactual_margin": 4.543987425672171
+          },
+          "mlp0_lexical": {
+            "counterfactual_pairwise_win": true,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.8674558504455718,
+            "normalized_transfer": 0.8798472850160914,
+            "patched_counterfactual_margin": 4.85112891335595
+          },
+          "mlp0_lexical_energy_scrambled": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": -0.05932361001845732,
+            "normalized_transfer": -0.04409196664651064,
+            "patched_counterfactual_margin": -7.3619914033307765
+          },
+          "mlp0_matched_static_a": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.036383129230690536,
+            "normalized_transfer": 0.005260383773318778,
+            "patched_counterfactual_margin": -6.709625793249771
+          },
+          "mlp0_matched_static_b": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.05756635056060477,
+            "normalized_transfer": 0.007102659297549328,
+            "patched_counterfactual_margin": -6.6852736157733545
+          },
+          "mlp0_shared_static": {
+            "counterfactual_pairwise_win": false,
+            "counterfactual_target_top1": false,
+            "js_fidelity": 0.10741431178086092,
+            "normalized_transfer": 0.018984826056822775,
+            "patched_counterfactual_margin": -6.528208817419127
+          }
+        }
+      },
+      "position_scopes": {
+        "all_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "differing_lexical_positions": [
+          1,
+          3,
+          9
+        ],
+        "matched_static_a": [
+          5,
+          12,
+          13
+        ],
+        "matched_static_b": [
+          2,
+          4,
+          5
+        ],
+        "shared_static_positions": [
+          0,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "record": {
+        "base_name_a": "Marie",
+        "base_name_b": "Marilyn",
+        "base_prompt": "Because Marie and Marilyn met at the school, Marilyn brought a gift to",
+        "base_target": "Marie",
+        "context_id": "ioi_scope_15",
+        "donor_name_a": "Mason",
+        "donor_name_b": "Michelle",
+        "donor_prompt": "Because Mason and Michelle met at the school, Michelle brought a gift to",
+        "donor_target": "Mason",
+        "stratum_id": "because_school",
+        "template": "Because {a} and {b} met at the school, {b} brought a gift to",
+        "template_id": "because_school"
+      },
+      "token_count": 14
+    }
+  ],
+  "protocol_sha256": "1e57265c19238dc0be9e78548a41a69e09efcccad8dd2893aecc025b72ec35f1",
+  "query_accounting": {
+    "clean_forward_examples": 32,
+    "patched_examples": 352,
+    "total_logical_examples": 384
+  },
+  "registration_sha256": "39a5a589678c76d51da022e1847a99463a6e289e0ba39ebe94bd0a91756d583e",
+  "schema_version": "e33_1_ioi_scope_labels_v1"
+}

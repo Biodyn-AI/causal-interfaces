@@ -1,0 +1,17 @@
+{
+  "parent_registration_sha256": "39a5a589678c76d51da022e1847a99463a6e289e0ba39ebe94bd0a91756d583e",
+  "prior_scoring_attempt_reached_scientific_values": false,
+  "registered_unix_time": 1794855503.347718,
+  "repair_scope": "Restore CONDITION_IDS dictionary order after sort_keys JSON serialization, then delegate all calculations and gates to the unchanged parent-registered scorer.",
+  "repair_sources_sha256": {
+    "protocol.py": "df3f84a2b0d86b837ce7f7354155eb1f295bbdf2428ceff578aee938773a790a",
+    "scoring.py": "dfb65ee0448d0668242f7809bf3aa2558bee6fa654245f0a17f8d2bd8afbbda8",
+    "scoring_json_repair.py": "6815c606d76ed1c35ecb5a530a1b7f25e09a0d118946cd7020429fc94430bfb5"
+  },
+  "schema_version": "e33_1_scoring_repair_registration_v1",
+  "scientific_calculations_changed": false,
+  "scientific_conditions_changed": false,
+  "scientific_thresholds_changed": false,
+  "sealed_labels_sha256": "2af40febecf96230ecad38ff39ef3913fc62558a22e6804308c971e8d93f8ee0",
+  "status": "registered_before_successful_scientific_scoring"
+}

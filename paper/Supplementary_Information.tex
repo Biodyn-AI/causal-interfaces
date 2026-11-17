@@ -1,0 +1,184 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{longtable}
+
+\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=blue}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{Supplementary Information\\[0.7em]
+\large Patching only changed tokens can match patching all tokens across dozens of transformer components}
+\author{Ihor Kendiukhov\\
+\small Institute of Medical Genetics and Applied Genomics, University of T\"ubingen, T\"ubingen, Germany\\
+\small \texttt{ihor.kendiukhov@student.uni-tuebingen.de}}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\clearpage
+
+\section{Supplementary Note 1: Evidence behind each claim}
+
+Table~\ref{tab:claim-ledger} links each main claim to its confirmation status,
+evidence, and explicit boundary. ``Fixed in advance'' means that prompts,
+conditions, thresholds, code hashes, and model-call limits were frozen before
+the reported model outputs were collected.
+
+\begin{table}[ht]
+\centering
+\caption{Claim-to-evidence ledger.}
+\label{tab:claim-ledger}
+\footnotesize
+\begin{tabularx}{\textwidth}{P{0.22\textwidth}P{0.15\textwidth}Y Y}
+\toprule
+Claim & Status & Main evidence & Explicit exclusion \\
+\midrule
+First-MLP changed-token effect & Fixed-in-advance pass & 12 new examples in
+both directions; unchanged-position and nearby-attention controls; patch-strength
+curve & Not an on/off switch, always necessary, task-general, or shown to be
+low-dimensional \\
+Changed-token agreement at 24 and 32 components & Fixed-in-advance pass & 96
+fixed component sets; matched position conditions; outputs below the ceiling &
+Not a claim about arbitrary component sets \\
+Large-scale agreement at 36--47 components & Fixed-in-advance pass & 47
+balanced nested sets at 36, 40, and 44 components; one 47-component set; matched
+position conditions & No claim about arbitrary 47-component sets \\
+Late-attention backup & Exploratory suggestion followed by fixed-in-advance
+test & 12 new examples; add-one and remove-one tests; matched MLP controls &
+Not head-level, identity-only, or always necessary \\
+Second-model and second-task replication & Fixed-in-advance pass & 16 new
+GPT-2 Small indirect-object pairs; both directions; unchanged-position,
+attention, and equal-energy controls; 12 and 24 components; full-distribution
+score & Not universal across model families, minimal, or an identified abstract
+variable \\
+Artifact replay and fresh-run reproduction & Pass with stated scope & Exact
+saved-label score replay for E29.14a--d; exact fresh inference-to-score match
+for E29.14a/b; 142 portable tests passed in the release checkout, and 11
+path-bound custody tests passed in the original acquisition checkout &
+E29.14c/d inference was not rerun in the first release audit \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Supplementary Note 2: Model-call accounting and integrity}
+
+\begin{table}[ht]
+\centering
+\caption{Model examples for the four GPT-2 Medium confirmation stages.
+``Logical'' counts distinct model inputs. ``Physical'' also includes repeated
+runs used to check that batching does not change the result. The GPT-2 Small
+replication uses 384 additional logical model examples.}
+\label{tab:model-calls}
+\begin{tabular}{@{}lrrl@{}}
+\toprule
+Stage & Logical & Physical & Scientific role \\
+\midrule
+E29.14a & 216 & 248 & Single-component localization \\
+E29.14b & 2,352 & 2,740 & 24/32-component scale bridge \\
+E29.14c & 3,456 & 4,028 & 36--47-component scale ladder \\
+E29.14d & 7,560 & 8,816 & Direct backup confirmation \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Each prospective registration records hashes of the prompts, model checkpoint, protocol,
+acquisition code, scoring code, runtime details, and maximum model calls. A run
+writes an attempt record before loading the model, then writes one result file
+and one integrity record. Scoring checks these hashes before writing one
+summary. An adversarial audit found a metadata-linking problem in E29.14c V1
+before the model ran; V2 fixed the link without changing the scientific design.
+
+Some sealed registration files contain historical absolute paths. These paths
+are inert provenance fields. They are preserved byte-for-byte because changing
+them would invalidate the registered SHA-256 hashes. The public replay
+manifests use portable repository-relative paths.
+
+\section{Supplementary Note 3: Reproducibility release}
+
+The release at
+\url{https://github.com/Biodyn-AI/causal-interfaces/releases/tag/v1.0.0}
+contains the exact registrations, protocol code, saved per-example outputs,
+scientific summaries, integrity manifests, focused tests, figure generator,
+and manuscript sources.
+
+All four GPT-2 Medium summaries were recomputed from saved per-example outputs.
+Every reported scientific value matched exactly. Fresh model inference and
+scoring for E29.14a and E29.14b were also repeated on Python 3.12.15 and macOS
+27 rather than the historical Python 3.12.9/macOS 26.3 environment, and again
+matched exactly. The longer E29.14c and E29.14d model runs were not repeated in
+that audit, although their saved outputs rescore exactly.
+
+The cross-model and cross-task GPT-2 Small replication has a separate fixed
+record. SHA-256 prefixes for its active prospective registration, saved
+outputs, scoring repair, and
+final score are, respectively, \texttt{39a5a589678c},
+\texttt{2af40febecf9}, \texttt{ed2a268cddad}, and
+\texttt{fe8a834c7434}. Its integrity record also hashes the checkpoint,
+data-collection code, and scoring code.
+
+The portable score replay makes no model calls. Optional fresh-inference
+commands download exact GPT-2 checkpoint revisions from Hugging Face and write
+to a new output directory. They never overwrite the published evidence. The
+repository README and \texttt{docs/REPRODUCIBILITY.md} give step-by-step
+commands and expected success fields.
+
+\section{Supplementary Note 4: Exact prompts and changed-token positions}
+
+The four sequence-completion templates are:
+\begin{enumerate}
+  \item \texttt{Replay the sequence: a b c d | a b c}
+  \item \texttt{Loop example: a b c d; continue a b c}
+  \item \texttt{After a b c d, repeat a b c}
+  \item \texttt{Pattern: a b c d. Continue: a b c}
+\end{enumerate}
+
+Tokenizer checks require one-token content words, equal recipient and donor
+lengths, different targets, and exact position records. The changed-token set
+includes the demonstration prefix, demonstrated target, and repeated query.
+Shared punctuation, spaces stored in nearby tokens, and fixed template text
+remain unchanged, as determined by exact token-identifier equality.
+
+The cross-model and cross-task replication uses four fixed indirect-object templates and
+16 unfiltered prompt pairs. Each pair changes exactly three aligned name-token
+positions. The complete prompt panel and token records are stored in the
+prospective registration and saved labels in the public release.
+
+\section{Supplementary Note 5: Why agreement is not only a ceiling effect}
+
+Two patches can appear to agree because both have pushed the output as far as
+it can go. Three checks address this concern. First, the 24- and 32-component
+sets without the first MLP were selected without looking at their responses and
+remain far from the donor output. Second, at 36 components the average distance
+from the donor is 0.10032, with one-sided 95\% lower bound 0.08614, while the
+one-sided 95\% upper bound on the difference between changed-position and
+all-position patches is only 0.00863. Third, each 24--44-component scale uses
+many component sets and reports checks by example, prompt template, and
+component set. The 47-component point is presented only as a final backup and
+position check, not as evidence of varied output behavior.
+
+\section{Supplementary Note 6: Transparent repair history}
+
+The E29.14c registration was revised before output creation, attempt
+consumption, model loading, or response because its first version did not link
+all metadata correctly. The second version changed no scientific condition or
+threshold.
+
+The GPT-2 Small replication also has two documented repairs. Registration V1
+was superseded before the model ran because a tuple/list JSON round-trip check
+failed. After labels were sealed, the original scorer stopped before reading
+any scientific value because JSON keys had been serialized alphabetically
+rather than in the registered order. A separately hash-sealed, outcome-blind
+adapter restored that order and delegated all calculations and
+gates to the unchanged scorer. No prompt, condition, threshold, scientific
+value, or calculation changed.
+
+\end{document}

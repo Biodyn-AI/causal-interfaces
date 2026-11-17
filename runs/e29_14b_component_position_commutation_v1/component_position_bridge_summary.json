@@ -1,0 +1,455 @@
+{
+  "schema_version": "e29_14b_component_position_bridge_score_v1",
+  "integrity_passed": true,
+  "claims": {
+    "singleton_transfer": {
+      "all_position_mean": 0.999041917293987,
+      "lexical_position_mean": 1.004202439738295,
+      "all_position_endpoint_absolute_gap_bootstrap": {
+        "point_estimate": 0.0024293652165212898,
+        "lower_95": 0.0016293967722873389,
+        "upper_95": 0.0031707336341359102,
+        "lower_quantile_one_sided": 0.05,
+        "upper_quantile_one_sided": 0.95,
+        "seed": 29142,
+        "replicates": 5000,
+        "resampling": "contexts_within_four_fixed_template_strata"
+      },
+      "lexical_position_endpoint_absolute_gap_bootstrap": {
+        "point_estimate": 0.0077381412246076975,
+        "lower_95": 0.002119344705543739,
+        "upper_95": 0.013643315039983174,
+        "lower_quantile_one_sided": 0.05,
+        "upper_quantile_one_sided": 0.95,
+        "seed": 29142,
+        "replicates": 5000,
+        "resampling": "contexts_within_four_fixed_template_strata"
+      },
+      "paired_absolute_gap_bootstrap": {
+        "point_estimate": 0.006800312583384066,
+        "lower_95": 0.001995650123314508,
+        "upper_95": 0.011757999512862305,
+        "lower_quantile_one_sided": 0.05,
+        "upper_quantile_one_sided": 0.95,
+        "seed": 29142,
+        "replicates": 5000,
+        "resampling": "contexts_within_four_fixed_template_strata"
+      },
+      "passed": true
+    },
+    "all_position_anchor_by_scale": {
+      "confirmation_size24": {
+        "hub_on_all_position_mean": 0.9976823872115221,
+        "hub_on_endpoint_absolute_gap_bootstrap": {
+          "point_estimate": 0.002505219649979368,
+          "lower_95": 0.001943357740622874,
+          "upper_95": 0.0031716683918869143,
+          "lower_quantile_one_sided": 0.05,
+          "upper_quantile_one_sided": 0.95,
+          "seed": 29142,
+          "replicates": 5000,
+          "resampling": "masks_within_scale_and_hub_state_crossed_with_contexts_within_four_fixed_template_strata"
+        },
+        "hub_off_endpoint_absolute_gap_bootstrap": {
+          "point_estimate": 0.2677994768088622,
+          "lower_95": 0.24500575342343722,
+          "upper_95": 0.290215171097609,
+          "lower_quantile_one_sided": 0.05,
+          "upper_quantile_one_sided": 0.95,
+          "seed": 29142,
+          "replicates": 5000,
+          "resampling": "masks_within_scale_and_hub_state_crossed_with_contexts_within_four_fixed_template_strata"
+        },
+        "passed": true
+      },
+      "confirmation_size32": {
+        "hub_on_all_position_mean": 0.9968694663099055,
+        "hub_on_endpoint_absolute_gap_bootstrap": {
+          "point_estimate": 0.003224642330979371,
+          "lower_95": 0.0026417985303075074,
+          "upper_95": 0.003815217081381531,
+          "lower_quantile_one_sided": 0.05,
+          "upper_quantile_one_sided": 0.95,
+          "seed": 29142,
+          "replicates": 5000,
+          "resampling": "masks_within_scale_and_hub_state_crossed_with_contexts_within_four_fixed_template_strata"
+        },
+        "hub_off_endpoint_absolute_gap_bootstrap": {
+          "point_estimate": 0.14335950265878283,
+          "lower_95": 0.12242836821271887,
+          "upper_95": 0.16569467207168947,
+          "lower_quantile_one_sided": 0.05,
+          "upper_quantile_one_sided": 0.95,
+          "seed": 29142,
+          "replicates": 5000,
+          "resampling": "masks_within_scale_and_hub_state_crossed_with_contexts_within_four_fixed_template_strata"
+        },
+        "passed": true
+      }
+    },
+    "hub_off_scope_bridge_by_scale": {
+      "confirmation_size24": {
+        "paired_absolute_gap_bootstrap": {
+          "point_estimate": 0.01341515766280462,
+          "lower_95": 0.00968755291056316,
+          "upper_95": 0.01752774542250703,
+          "lower_quantile_one_sided": 0.05,
+          "upper_quantile_one_sided": 0.95,
+          "seed": 29142,
+          "replicates": 5000,
+          "resampling": "masks_within_scale_and_hub_state_crossed_with_contexts_within_four_fixed_template_strata"
+        },
+        "context_mae": [
+          0.008378131672767986,
+          0.010357420813632104,
+          0.017380850715256815,
+          0.007522924861358203,
+          0.01074820504594016,
+          0.008729189352742875,
+          0.014111080895580693,
+          0.04133741492232605,
+          0.007073446355666531,
+          0.01753109815170287,
+          0.01063574295574525,
+          0.0071763862109359144
+        ],
+        "passing_contexts": 12,
+        "template_mae": [
+          0.012038801067218968,
+          0.009000106420013747,
+          0.02084064739119109,
+          0.01178107577279468
+        ],
+        "passing_templates": 4,
+        "mask_mae": [
+          0.01236953692315527,
+          0.014659051013124674,
+          0.011891139252412938,
+          0.005261447843998318,
+          0.013262329965542477,
+          0.01311816817005923,
+          0.020425771546756826,
+          0.01230368328262967,
+          0.012095583239920235,
+          0.012332522845031696,
+          0.010422090571319431,
+          0.01687510779977321,
+          0.012947051808590876,
+          0.01596984202463318,
+          0.012484217035817813,
+          0.014761809498332334,
+          0.01832091024004674,
+          0.009884156640630304,
+          0.011020258027797178,
+          0.012785536765890523,
+          0.012888836497104705,
+          0.018964113675824294,
+          0.011774736082383988,
+          0.015145883156535006
+        ],
+        "passing_masks": 24,
+        "mask_count": 24,
+        "passed": true
+      },
+      "confirmation_size32": {
+        "paired_absolute_gap_bootstrap": {
+          "point_estimate": 0.009471579037851096,
+          "lower_95": 0.0065696730434560225,
+          "upper_95": 0.013016759056347423,
+          "lower_quantile_one_sided": 0.05,
+          "upper_quantile_one_sided": 0.95,
+          "seed": 29142,
+          "replicates": 5000,
+          "resampling": "masks_within_scale_and_hub_state_crossed_with_contexts_within_four_fixed_template_strata"
+        },
+        "context_mae": [
+          0.006915857942947259,
+          0.007815088294006511,
+          0.010511043691792996,
+          0.0060007495902236335,
+          0.005889306555761566,
+          0.007832241030308836,
+          0.009316458661566898,
+          0.03169561197238776,
+          0.004008225225699817,
+          0.011512607878716927,
+          0.006705523519276238,
+          0.005456234091524716
+        ],
+        "passing_contexts": 12,
+        "template_mae": [
+          0.008413996642915589,
+          0.006574099058764678,
+          0.015006765286551491,
+          0.007891455163172627
+        ],
+        "passing_templates": 4,
+        "mask_mae": [
+          0.008718677589414045,
+          0.01092637066081086,
+          0.008547646161370307,
+          0.009198290250535646,
+          0.006112786008484185,
+          0.008202015758652084,
+          0.005354618656296828,
+          0.012481364295201433,
+          0.0165409836565866,
+          0.012070924367439636,
+          0.008042832485246823,
+          0.00740746087164305,
+          0.010287606317519377,
+          0.004824367654153579,
+          0.013418115325097152,
+          0.009411204547165939
+        ],
+        "passing_masks": 16,
+        "mask_count": 16,
+        "passed": true
+      }
+    },
+    "hub_on_scope_control_by_scale": {
+      "confirmation_size24": {
+        "paired_absolute_gap_bootstrap": {
+          "point_estimate": 0.002416216071680535,
+          "lower_95": 0.001395907068078042,
+          "upper_95": 0.003694878683384615,
+          "lower_quantile_one_sided": 0.05,
+          "upper_quantile_one_sided": 0.95,
+          "seed": 29142,
+          "replicates": 5000,
+          "resampling": "masks_within_scale_and_hub_state_crossed_with_contexts_within_four_fixed_template_strata"
+        },
+        "context_mae": [
+          0.0007576855424311126,
+          0.0036764170982569225,
+          0.001400234769094219,
+          0.0014892407763842837,
+          0.0015956277061502933,
+          0.0010329354650792887,
+          0.003246166670079103,
+          0.011775062805563818,
+          0.0017922615229585687,
+          0.0008183236067908541,
+          0.0005904244970718389,
+          0.0008202124003061176
+        ],
+        "passing_contexts": 12,
+        "template_mae": [
+          0.0019447791365940848,
+          0.0013726013158712885,
+          0.0056044969995338294,
+          0.0007429868347229369
+        ],
+        "passing_templates": 4,
+        "mask_mae": [
+          0.002190173799838093,
+          0.001844447100765469,
+          0.0017090075455782339,
+          0.0012300588713327436,
+          0.002114677946557795,
+          0.00301193533122715,
+          0.0018974411678372254,
+          0.0012223287011077406,
+          0.002027677282365951,
+          0.0018384315021233628,
+          0.001608637681711202,
+          0.002243351208083333,
+          0.0021645101496185113,
+          0.004368919673590238,
+          0.004794638235279656,
+          0.0015970970295631954,
+          0.0026905370841020606,
+          0.0033428532632363006,
+          0.004522382787342831,
+          0.004140629203318406,
+          0.0018042974100241638,
+          0.0026411123159611285,
+          0.001733654987646253,
+          0.0012503854421217948
+        ],
+        "passing_masks": 24,
+        "mask_count": 24,
+        "passed": true,
+        "lexical_endpoint_mean": 0.9982022757894577,
+        "lexical_endpoint_absolute_gap_bootstrap": {
+          "point_estimate": 0.00379337345294783,
+          "lower_95": 0.002751306701110991,
+          "upper_95": 0.004997695636350022,
+          "lower_quantile_one_sided": 0.05,
+          "upper_quantile_one_sided": 0.95,
+          "seed": 29142,
+          "replicates": 5000,
+          "resampling": "masks_within_scale_and_hub_state_crossed_with_contexts_within_four_fixed_template_strata"
+        }
+      },
+      "confirmation_size32": {
+        "paired_absolute_gap_bootstrap": {
+          "point_estimate": 0.001356622992022432,
+          "lower_95": 0.0010324908602173388,
+          "upper_95": 0.001709910250944111,
+          "lower_quantile_one_sided": 0.05,
+          "upper_quantile_one_sided": 0.95,
+          "seed": 29142,
+          "replicates": 5000,
+          "resampling": "masks_within_scale_and_hub_state_crossed_with_contexts_within_four_fixed_template_strata"
+        },
+        "context_mae": [
+          0.0007378178249286584,
+          0.002575859310353198,
+          0.001228409269144557,
+          0.0009131372136803734,
+          0.0010709512072303723,
+          0.0007355778754950526,
+          0.0019002654781842786,
+          0.003865304811864402,
+          0.0013784062315646411,
+          0.0005997453031078188,
+          0.0005161059997851603,
+          0.0007578953789306696
+        ],
+        "passing_contexts": 12,
+        "template_mae": [
+          0.001514028801475471,
+          0.0009065554321352661,
+          0.0023813255072044404,
+          0.0006245822272745496
+        ],
+        "passing_templates": 4,
+        "mask_mae": [
+          0.0015480994614203898,
+          0.0014887726244751376,
+          0.001168766369864932,
+          0.0023443176565246895,
+          0.0021859534865754557,
+          0.0012707733542406303,
+          0.0014284680689197564,
+          0.0015937698304182752,
+          0.0016488894863743626,
+          0.0007716973783960986,
+          0.0013519944322701223,
+          0.0010707011223491196,
+          0.001242358956912391,
+          0.0017936609201750682,
+          0.0009785567885650566,
+          0.0010265647629524866,
+          0.000766979472163809,
+          0.0009795011364425084,
+          0.0014619976717220873,
+          0.001487867270177005,
+          0.001461727327886131,
+          0.0013734810499818988,
+          0.0016245312333285449,
+          0.001129525332514203,
+          0.0008844422300455049,
+          0.001494128933290817,
+          0.0013959262931536505,
+          0.0006849732571503342,
+          0.0015239801856238948,
+          0.0014406945947338008,
+          0.0015536597223917703,
+          0.0012351753336778866
+        ],
+        "passing_masks": 32,
+        "mask_count": 32,
+        "passed": true,
+        "lexical_endpoint_mean": 0.9968470300935536,
+        "lexical_endpoint_absolute_gap_bootstrap": {
+          "point_estimate": 0.0036579361828440993,
+          "lower_95": 0.0028697109447196356,
+          "upper_95": 0.004467810843818873,
+          "lower_quantile_one_sided": 0.05,
+          "upper_quantile_one_sided": 0.95,
+          "seed": 29142,
+          "replicates": 5000,
+          "resampling": "masks_within_scale_and_hub_state_crossed_with_contexts_within_four_fixed_template_strata"
+        }
+      }
+    },
+    "joint_hub_off_scope_bridge": {
+      "paired_absolute_gap_bootstrap": {
+        "point_estimate": 0.01144336835032786,
+        "lower_95": 0.008228556774481739,
+        "upper_95": 0.015174575615278657,
+        "lower_quantile_one_sided": 0.05,
+        "upper_quantile_one_sided": 0.95,
+        "seed": 29142,
+        "replicates": 5000,
+        "resampling": "masks_within_scale_and_hub_state_crossed_with_contexts_within_four_fixed_template_strata",
+        "scale_weighting": "equal_one_half_weight_per_scale"
+      },
+      "passed": true
+    },
+    "joint_hub_on_scope_control": {
+      "paired_absolute_gap_bootstrap": {
+        "point_estimate": 0.0018864195318514833,
+        "lower_95": 0.0012288999730187215,
+        "upper_95": 0.002671300555660376,
+        "lower_quantile_one_sided": 0.05,
+        "upper_quantile_one_sided": 0.95,
+        "seed": 29142,
+        "replicates": 5000,
+        "resampling": "masks_within_scale_and_hub_state_crossed_with_contexts_within_four_fixed_template_strata",
+        "scale_weighting": "equal_one_half_weight_per_scale"
+      },
+      "passed": true
+    },
+    "hub_off_scale_promotion_authorized": {
+      "passed": true
+    },
+    "full_component_position_bridge": {
+      "passed": true
+    }
+  },
+  "query_accounting": {
+    "contexts": 12,
+    "mask_rows_by_split": {
+      "confirmation_size24": 48,
+      "confirmation_size32": 48
+    },
+    "multi_component_masks": 96,
+    "position_scopes": 2,
+    "singleton_condition_rows_per_context": 2,
+    "multi_component_condition_rows_per_context": 192,
+    "patched_condition_rows_per_context": 194,
+    "patched_context_condition_cells": 2328,
+    "clean_forward_examples": 24,
+    "maximum_logical_queries": 2352
+  },
+  "recommended_interpretation": "fresh_context_c24_c32_component_position_bridge_confirmed",
+  "all_registered_integrity_gates_passed": true,
+  "clean_summary": {
+    "positive_base_correctness_contexts": 12,
+    "positive_donor_correctness_contexts": 12,
+    "minimum_clean_endpoint": 17.985687876698996,
+    "maximum_clean_endpoint": 33.338325886504975
+  },
+  "physical_query_accounting": {
+    "contexts": 12,
+    "mask_rows_by_split": {
+      "confirmation_size24": 48,
+      "confirmation_size32": 48
+    },
+    "multi_component_masks": 96,
+    "position_scopes": 2,
+    "singleton_condition_rows_per_context": 2,
+    "multi_component_condition_rows_per_context": 192,
+    "patched_condition_rows_per_context": 194,
+    "patched_context_condition_cells": 2328,
+    "clean_forward_examples": 24,
+    "maximum_logical_queries": 2352,
+    "batch_smoke_unique_condition_rows": 194,
+    "batch_smoke_physical_condition_cells": 388,
+    "maximum_physical_model_examples": 2740
+  },
+  "custody": {
+    "registration": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/notes/E29.14b-COMPONENT-POSITION-COMMUTATION-REGISTRATION.json",
+    "registration_sha256": "74f9a32093e50dec829f9a4d93da93b5d1db5e5f4f5a1c54e8a507d3deee18ad",
+    "acquisition_attempt": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/runs/e29_14b_component_position_commutation_v1/component_position_acquisition_attempt.json",
+    "acquisition_attempt_sha256": "9c95887ae55bbdeecf383ff7faef02522d4a93ec32c78d26026062fb8930d942",
+    "acquisition_custody": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/runs/e29_14b_component_position_commutation_v1/component_position_acquisition_custody.json",
+    "acquisition_custody_sha256": "94a902d14fd57576050f32983010e03e3a803eb0edd211e95bbb582eedbdc43f",
+    "component_position_labels": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/runs/e29_14b_component_position_commutation_v1/component_position_labels.pt",
+    "component_position_labels_sha256": "a58620152b15148207f8c8942500f68d679ebfaacb2668a3c4088430f877c0a5",
+    "prior_protocol_masks_sha256": "014b87e0ddf2cf913ff745e41e12bb6444420716753d0eb712bd465eaa0c83fd"
+  }
+}

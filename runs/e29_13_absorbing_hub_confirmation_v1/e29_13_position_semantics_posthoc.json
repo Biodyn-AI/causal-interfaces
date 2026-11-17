@@ -1,0 +1,1878 @@
+{
+  "schema_version": "e29_13_position_semantics_posthoc_v1",
+  "status": "posthoc_development_only_new_queries_on_opened_e29_13_prompts",
+  "confirmatory_status": "not_confirmatory_and_cannot_change_any_sealed_e29_13_verdict",
+  "question": "Is the apparent layer-0 MLP hub an abstract binary gate, or a position-bound continuous lexical-state rewrite?",
+  "sealed_input_hashes": {
+    "notes/E29.13-ABSORBING-HUB-CONFIRMATION-REGISTRATION.json": "5ac67250844bfa84797b7fbb1263a290f371a96b47446415523a6e3a444b5b4d",
+    "runs/e29_13_absorbing_hub_confirmation_v1/fit_labels.pt": "397591a27d983fcb6aa9375f0471af27f9044a51ec01aaa06aa8e4b0d83c41e8",
+    "runs/e29_13_absorbing_hub_confirmation_v1/held_labels.pt": "8a3e6668b66631736b3129235b8f329a3ce21f4035852c99da08a9666a9df965",
+    "runs/e29_13_absorbing_hub_confirmation_v1/absorbing_hub_summary.json": "809981febbe125b5ec2d282b6d31dd946c21c552bbb9278ea4d12ef90707816e"
+  },
+  "analysis_source": {
+    "path": "experiments/e29_gpt2_stable_head_interactions/analyze_e29_13_position_semantics_posthoc.py",
+    "sha256": "cfd953a54f9315c9c4f2d598f2131430e3b9480baf9fed28424be2a44016c9a8"
+  },
+  "model": {
+    "snapshot": "/Users/ihorkendiukhov/.cache/huggingface/hub/models--openai-community--gpt2-medium/snapshots/6dcaa7a952f72f9298047fd5137cd6e4f05f41da",
+    "revision": "6dcaa7a952f72f9298047fd5137cd6e4f05f41da",
+    "checkpoint_sha256": {
+      "config.json": "ef1a44d889ad1a0acc7731c78134f1b87d2d222f110e97dd10fd4117331caf22",
+      "generation_config.json": "b90eadacf585a743a30ea51e8b5c88b8d282a2a34dc0c7e556d0987cdbd68805",
+      "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "model.safetensors": "fc5a354a19255ad494f3d71549390baca1ccf61d1d822b9408971705c687c9cd",
+      "tokenizer_config.json": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f",
+      "tokenizer.json": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6",
+      "vocab.json": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783"
+    },
+    "device": "cpu",
+    "dtype": "float64",
+    "attention_implementation": "eager"
+  },
+  "components": {
+    "hub": {
+      "index": 1,
+      "layer": 0,
+      "kind": "mlp"
+    },
+    "matched_control": {
+      "index": 0,
+      "layer": 0,
+      "kind": "attention"
+    }
+  },
+  "position_definitions": {
+    "all_positions": "every aligned input position",
+    "differing_lexical_positions": "positions whose aligned base and donor token ids differ",
+    "shared_static_positions": "positions whose aligned base and donor token ids are identical",
+    "demonstration_target_position": "the unique first-sequence base target token position",
+    "demonstration_prefix_positions": "differing lexical positions before the demonstration target",
+    "repeated_query_positions": "differing lexical positions after the demonstration target",
+    "prediction_last_position": "the final input-token position",
+    "differing_except_demonstration_target": "all differing lexical positions except the demonstration target",
+    "per_context_indices": [
+      {
+        "context_index": 0,
+        "token_length": 13,
+        "scope_indices_zero_based": {
+          "all_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "differing_lexical_positions": [
+            5,
+            6,
+            7,
+            8,
+            10,
+            11,
+            12
+          ],
+          "shared_static_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            9
+          ],
+          "demonstration_target_position": [
+            8
+          ],
+          "demonstration_prefix_positions": [
+            5,
+            6,
+            7
+          ],
+          "repeated_query_positions": [
+            10,
+            11,
+            12
+          ],
+          "prediction_last_position": [
+            12
+          ],
+          "differing_except_demonstration_target": [
+            5,
+            6,
+            7,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "context_index": 1,
+        "token_length": 13,
+        "scope_indices_zero_based": {
+          "all_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "differing_lexical_positions": [
+            5,
+            6,
+            7,
+            8,
+            10,
+            11,
+            12
+          ],
+          "shared_static_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            9
+          ],
+          "demonstration_target_position": [
+            8
+          ],
+          "demonstration_prefix_positions": [
+            5,
+            6,
+            7
+          ],
+          "repeated_query_positions": [
+            10,
+            11,
+            12
+          ],
+          "prediction_last_position": [
+            12
+          ],
+          "differing_except_demonstration_target": [
+            5,
+            6,
+            7,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "context_index": 2,
+        "token_length": 13,
+        "scope_indices_zero_based": {
+          "all_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "differing_lexical_positions": [
+            5,
+            6,
+            7,
+            8,
+            10,
+            11,
+            12
+          ],
+          "shared_static_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            9
+          ],
+          "demonstration_target_position": [
+            8
+          ],
+          "demonstration_prefix_positions": [
+            5,
+            6,
+            7
+          ],
+          "repeated_query_positions": [
+            10,
+            11,
+            12
+          ],
+          "prediction_last_position": [
+            12
+          ],
+          "differing_except_demonstration_target": [
+            5,
+            6,
+            7,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "context_index": 3,
+        "token_length": 12,
+        "scope_indices_zero_based": {
+          "all_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "differing_lexical_positions": [
+            3,
+            4,
+            5,
+            6,
+            9,
+            10,
+            11
+          ],
+          "shared_static_positions": [
+            0,
+            1,
+            2,
+            7,
+            8
+          ],
+          "demonstration_target_position": [
+            6
+          ],
+          "demonstration_prefix_positions": [
+            3,
+            4,
+            5
+          ],
+          "repeated_query_positions": [
+            9,
+            10,
+            11
+          ],
+          "prediction_last_position": [
+            11
+          ],
+          "differing_except_demonstration_target": [
+            3,
+            4,
+            5,
+            9,
+            10,
+            11
+          ]
+        }
+      },
+      {
+        "context_index": 4,
+        "token_length": 12,
+        "scope_indices_zero_based": {
+          "all_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "differing_lexical_positions": [
+            3,
+            4,
+            5,
+            6,
+            9,
+            10,
+            11
+          ],
+          "shared_static_positions": [
+            0,
+            1,
+            2,
+            7,
+            8
+          ],
+          "demonstration_target_position": [
+            6
+          ],
+          "demonstration_prefix_positions": [
+            3,
+            4,
+            5
+          ],
+          "repeated_query_positions": [
+            9,
+            10,
+            11
+          ],
+          "prediction_last_position": [
+            11
+          ],
+          "differing_except_demonstration_target": [
+            3,
+            4,
+            5,
+            9,
+            10,
+            11
+          ]
+        }
+      },
+      {
+        "context_index": 5,
+        "token_length": 12,
+        "scope_indices_zero_based": {
+          "all_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "differing_lexical_positions": [
+            3,
+            4,
+            5,
+            6,
+            9,
+            10,
+            11
+          ],
+          "shared_static_positions": [
+            0,
+            1,
+            2,
+            7,
+            8
+          ],
+          "demonstration_target_position": [
+            6
+          ],
+          "demonstration_prefix_positions": [
+            3,
+            4,
+            5
+          ],
+          "repeated_query_positions": [
+            9,
+            10,
+            11
+          ],
+          "prediction_last_position": [
+            11
+          ],
+          "differing_except_demonstration_target": [
+            3,
+            4,
+            5,
+            9,
+            10,
+            11
+          ]
+        }
+      },
+      {
+        "context_index": 6,
+        "token_length": 10,
+        "scope_indices_zero_based": {
+          "all_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "differing_lexical_positions": [
+            1,
+            2,
+            3,
+            4,
+            7,
+            8,
+            9
+          ],
+          "shared_static_positions": [
+            0,
+            5,
+            6
+          ],
+          "demonstration_target_position": [
+            4
+          ],
+          "demonstration_prefix_positions": [
+            1,
+            2,
+            3
+          ],
+          "repeated_query_positions": [
+            7,
+            8,
+            9
+          ],
+          "prediction_last_position": [
+            9
+          ],
+          "differing_except_demonstration_target": [
+            1,
+            2,
+            3,
+            7,
+            8,
+            9
+          ]
+        }
+      },
+      {
+        "context_index": 7,
+        "token_length": 10,
+        "scope_indices_zero_based": {
+          "all_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "differing_lexical_positions": [
+            1,
+            2,
+            3,
+            4,
+            7,
+            8,
+            9
+          ],
+          "shared_static_positions": [
+            0,
+            5,
+            6
+          ],
+          "demonstration_target_position": [
+            4
+          ],
+          "demonstration_prefix_positions": [
+            1,
+            2,
+            3
+          ],
+          "repeated_query_positions": [
+            7,
+            8,
+            9
+          ],
+          "prediction_last_position": [
+            9
+          ],
+          "differing_except_demonstration_target": [
+            1,
+            2,
+            3,
+            7,
+            8,
+            9
+          ]
+        }
+      },
+      {
+        "context_index": 8,
+        "token_length": 10,
+        "scope_indices_zero_based": {
+          "all_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "differing_lexical_positions": [
+            1,
+            2,
+            3,
+            4,
+            7,
+            8,
+            9
+          ],
+          "shared_static_positions": [
+            0,
+            5,
+            6
+          ],
+          "demonstration_target_position": [
+            4
+          ],
+          "demonstration_prefix_positions": [
+            1,
+            2,
+            3
+          ],
+          "repeated_query_positions": [
+            7,
+            8,
+            9
+          ],
+          "prediction_last_position": [
+            9
+          ],
+          "differing_except_demonstration_target": [
+            1,
+            2,
+            3,
+            7,
+            8,
+            9
+          ]
+        }
+      },
+      {
+        "context_index": 9,
+        "token_length": 12,
+        "scope_indices_zero_based": {
+          "all_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "differing_lexical_positions": [
+            2,
+            3,
+            4,
+            5,
+            9,
+            10,
+            11
+          ],
+          "shared_static_positions": [
+            0,
+            1,
+            6,
+            7,
+            8
+          ],
+          "demonstration_target_position": [
+            5
+          ],
+          "demonstration_prefix_positions": [
+            2,
+            3,
+            4
+          ],
+          "repeated_query_positions": [
+            9,
+            10,
+            11
+          ],
+          "prediction_last_position": [
+            11
+          ],
+          "differing_except_demonstration_target": [
+            2,
+            3,
+            4,
+            9,
+            10,
+            11
+          ]
+        }
+      },
+      {
+        "context_index": 10,
+        "token_length": 12,
+        "scope_indices_zero_based": {
+          "all_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "differing_lexical_positions": [
+            2,
+            3,
+            4,
+            5,
+            9,
+            10,
+            11
+          ],
+          "shared_static_positions": [
+            0,
+            1,
+            6,
+            7,
+            8
+          ],
+          "demonstration_target_position": [
+            5
+          ],
+          "demonstration_prefix_positions": [
+            2,
+            3,
+            4
+          ],
+          "repeated_query_positions": [
+            9,
+            10,
+            11
+          ],
+          "prediction_last_position": [
+            11
+          ],
+          "differing_except_demonstration_target": [
+            2,
+            3,
+            4,
+            9,
+            10,
+            11
+          ]
+        }
+      },
+      {
+        "context_index": 11,
+        "token_length": 12,
+        "scope_indices_zero_based": {
+          "all_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "differing_lexical_positions": [
+            2,
+            3,
+            4,
+            5,
+            9,
+            10,
+            11
+          ],
+          "shared_static_positions": [
+            0,
+            1,
+            6,
+            7,
+            8
+          ],
+          "demonstration_target_position": [
+            5
+          ],
+          "demonstration_prefix_positions": [
+            2,
+            3,
+            4
+          ],
+          "repeated_query_positions": [
+            9,
+            10,
+            11
+          ],
+          "prediction_last_position": [
+            11
+          ],
+          "differing_except_demonstration_target": [
+            2,
+            3,
+            4,
+            9,
+            10,
+            11
+          ]
+        }
+      }
+    ]
+  },
+  "interpolation": "recipient_update + alpha * position_mask * (source_clean_update - recipient_update)",
+  "forward_direction": {
+    "recipient": "base_prompt",
+    "source_updates": "clean_donor_prompt",
+    "response": "change in donor-target-minus-base-target logit margin",
+    "conditions": [
+      {
+        "name": "hub_all_positions_alpha1",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_differing_lexical_alpha1",
+        "component": 1,
+        "scope": "differing_lexical_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_shared_static_alpha1",
+        "component": 1,
+        "scope": "shared_static_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_demonstration_target_alpha1",
+        "component": 1,
+        "scope": "demonstration_target_position",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_demonstration_prefix_alpha1",
+        "component": 1,
+        "scope": "demonstration_prefix_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_repeated_query_alpha1",
+        "component": 1,
+        "scope": "repeated_query_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_prediction_last_alpha1",
+        "component": 1,
+        "scope": "prediction_last_position",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_differing_except_target_alpha1",
+        "component": 1,
+        "scope": "differing_except_demonstration_target",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_all_positions_alpha025",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 0.25
+      },
+      {
+        "name": "hub_all_positions_alpha050",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 0.5
+      },
+      {
+        "name": "hub_all_positions_alpha075",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 0.75
+      },
+      {
+        "name": "hub_demonstration_target_alpha025",
+        "component": 1,
+        "scope": "demonstration_target_position",
+        "alpha": 0.25
+      },
+      {
+        "name": "hub_demonstration_target_alpha050",
+        "component": 1,
+        "scope": "demonstration_target_position",
+        "alpha": 0.5
+      },
+      {
+        "name": "hub_demonstration_target_alpha075",
+        "component": 1,
+        "scope": "demonstration_target_position",
+        "alpha": 0.75
+      },
+      {
+        "name": "control_all_positions_alpha1",
+        "component": 0,
+        "scope": "all_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "control_differing_lexical_alpha1",
+        "component": 0,
+        "scope": "differing_lexical_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "control_demonstration_target_alpha1",
+        "component": 0,
+        "scope": "demonstration_target_position",
+        "alpha": 1.0
+      }
+    ],
+    "summaries": {
+      "hub_all_positions_alpha1": {
+        "definition": {
+          "name": "hub_all_positions_alpha1",
+          "component": 1,
+          "scope": "all_positions",
+          "alpha": 1.0
+        },
+        "context_count": 12,
+        "mean": 0.9982155225724861,
+        "median": 0.9976349324134322,
+        "minimum": 0.9940635376421099,
+        "maximum": 1.0030280934412907,
+        "standard_deviation": 0.002543853676698315,
+        "per_context": [
+          0.9967405907522465,
+          0.9946886070380608,
+          0.9970674544753745,
+          0.9984217159124279,
+          0.9998672976952684,
+          1.0006952808462597,
+          0.9992252467278916,
+          0.9976349324134322,
+          0.9940635376421099,
+          1.0030280934412907,
+          0.9962546698113851,
+          1.0008988441140843
+        ]
+      },
+      "hub_differing_lexical_alpha1": {
+        "definition": {
+          "name": "hub_differing_lexical_alpha1",
+          "component": 1,
+          "scope": "differing_lexical_positions",
+          "alpha": 1.0
+        },
+        "context_count": 12,
+        "mean": 0.9996378750234465,
+        "median": 0.9976313029448592,
+        "minimum": 0.9918105946036513,
+        "maximum": 1.0125537788823342,
+        "standard_deviation": 0.005535804787448986,
+        "per_context": [
+          0.9999451251768687,
+          0.9961139461799381,
+          0.9971320543936969,
+          1.0022085653099624,
+          0.9976313029448592,
+          0.9918105946036513,
+          1.0125537788823342,
+          1.0079969976860157,
+          0.9939852353018176,
+          0.9987067257223946,
+          0.9970415949953819,
+          1.0005285790844374
+        ]
+      },
+      "hub_shared_static_alpha1": {
+        "definition": {
+          "name": "hub_shared_static_alpha1",
+          "component": 1,
+          "scope": "shared_static_positions",
+          "alpha": 1.0
+        },
+        "context_count": 12,
+        "mean": 0.0014118875874664612,
+        "median": 0.0003076972935063781,
+        "minimum": -0.0074426235633516125,
+        "maximum": 0.015070193183094679,
+        "standard_deviation": 0.00528162193134879,
+        "per_context": [
+          0.0003076972935063781,
+          0.0019326688850850248,
+          0.0004339105075713655,
+          -0.00030131370784312796,
+          0.003949105610438951,
+          -0.0024375886410582396,
+          0.015070193183094679,
+          -0.0074426235633516125,
+          0.0040887034564867026,
+          0.005098061541657406,
+          -0.0024928074273908862,
+          -0.0012633560885991024
+        ]
+      },
+      "hub_demonstration_target_alpha1": {
+        "definition": {
+          "name": "hub_demonstration_target_alpha1",
+          "component": 1,
+          "scope": "demonstration_target_position",
+          "alpha": 1.0
+        },
+        "context_count": 12,
+        "mean": 0.8359993910933735,
+        "median": 0.8359258317600154,
+        "minimum": 0.5871464929523095,
+        "maximum": 1.1253347832536162,
+        "standard_deviation": 0.1381959593054877,
+        "per_context": [
+          0.7624540293334668,
+          0.8598873414188614,
+          0.6837379850524568,
+          0.9033105823883463,
+          0.8721896275799278,
+          0.8196539031302152,
+          1.0182641377686883,
+          1.1253347832536162,
+          0.8499451491616007,
+          0.8359258317600154,
+          0.7141428293209774,
+          0.5871464929523095
+        ]
+      },
+      "hub_demonstration_prefix_alpha1": {
+        "definition": {
+          "name": "hub_demonstration_prefix_alpha1",
+          "component": 1,
+          "scope": "demonstration_prefix_positions",
+          "alpha": 1.0
+        },
+        "context_count": 12,
+        "mean": 0.3591667245475259,
+        "median": 0.35216740933493423,
+        "minimum": 0.12037357042268858,
+        "maximum": 0.5427310411879557,
+        "standard_deviation": 0.10409280734993785,
+        "per_context": [
+          0.3604318337543854,
+          0.3260295203417363,
+          0.25084249868323744,
+          0.3419735749611301,
+          0.4375915600603662,
+          0.4149705648159569,
+          0.47864825226313273,
+          0.5427310411879557,
+          0.3737890567577236,
+          0.35216740933493423,
+          0.310451811987064,
+          0.12037357042268858
+        ]
+      },
+      "hub_repeated_query_alpha1": {
+        "definition": {
+          "name": "hub_repeated_query_alpha1",
+          "component": 1,
+          "scope": "repeated_query_positions",
+          "alpha": 1.0
+        },
+        "context_count": 12,
+        "mean": 0.542909405623047,
+        "median": 0.5746230715745317,
+        "minimum": -0.00793885474886567,
+        "maximum": 0.7436421282373518,
+        "standard_deviation": 0.18205070299322457,
+        "per_context": [
+          0.7436421282373518,
+          0.6624095011044032,
+          0.6817530157824663,
+          0.5531118478946178,
+          0.6007998189990152,
+          0.47184521274716246,
+          0.4762745647602176,
+          -0.00793885474886567,
+          0.609861766283821,
+          0.5746230715745317,
+          0.577712553814887,
+          0.5708182410269561
+        ]
+      },
+      "hub_prediction_last_alpha1": {
+        "definition": {
+          "name": "hub_prediction_last_alpha1",
+          "component": 1,
+          "scope": "prediction_last_position",
+          "alpha": 1.0
+        },
+        "context_count": 12,
+        "mean": 0.24583500012860937,
+        "median": 0.28302898235999907,
+        "minimum": -0.2003890053206835,
+        "maximum": 0.44509779843139835,
+        "standard_deviation": 0.1524897594938371,
+        "per_context": [
+          0.35761072047662695,
+          0.44509779843139835,
+          0.28302898235999907,
+          0.1501608768826516,
+          0.22574096234793978,
+          0.19926392385899266,
+          0.3208530657332375,
+          -0.2003890053206835,
+          0.2918977863010212,
+          0.2760967275418257,
+          0.29831098049707594,
+          0.3023471824332275
+        ]
+      },
+      "hub_differing_except_target_alpha1": {
+        "definition": {
+          "name": "hub_differing_except_target_alpha1",
+          "component": 1,
+          "scope": "differing_except_demonstration_target",
+          "alpha": 1.0
+        },
+        "context_count": 12,
+        "mean": 0.14109890097957004,
+        "median": 0.14486389905790154,
+        "minimum": -0.41730474664380846,
+        "maximum": 0.36888773793713664,
+        "standard_deviation": 0.1969214679480151,
+        "per_context": [
+          0.3675189665627158,
+          0.27481506797393257,
+          0.36888773793713664,
+          0.1001101841545489,
+          0.016686299255992937,
+          0.09593153766359463,
+          0.13924697400334313,
+          -0.41730474664380846,
+          0.2304635720036602,
+          0.1609164142377413,
+          0.2110509055480814,
+          0.14486389905790154
+        ]
+      },
+      "hub_all_positions_alpha025": {
+        "definition": {
+          "name": "hub_all_positions_alpha025",
+          "component": 1,
+          "scope": "all_positions",
+          "alpha": 0.25
+        },
+        "context_count": 12,
+        "mean": 0.03762733645795511,
+        "median": 0.05884856612904168,
+        "minimum": -0.10859740476450148,
+        "maximum": 0.1144622160909235,
+        "standard_deviation": 0.05228560904485552,
+        "per_context": [
+          0.1144622160909235,
+          0.06299028492671886,
+          0.05909481864248835,
+          0.02023744903259991,
+          0.05884856612904168,
+          0.03806364123001802,
+          0.05903654683926942,
+          -0.10859740476450148,
+          0.015790287282488956,
+          0.06539639215147673,
+          0.06405255231208741,
+          0.002152687622850039
+        ]
+      },
+      "hub_all_positions_alpha050": {
+        "definition": {
+          "name": "hub_all_positions_alpha050",
+          "component": 1,
+          "scope": "all_positions",
+          "alpha": 0.5
+        },
+        "context_count": 12,
+        "mean": 0.43903249003861594,
+        "median": 0.4560593119182464,
+        "minimum": -0.057512033022192544,
+        "maximum": 0.7900116876327931,
+        "standard_deviation": 0.2078145618280639,
+        "per_context": [
+          0.47429173363768257,
+          0.37374352862310306,
+          0.4560593119182464,
+          0.3741061287349558,
+          0.5661066965280998,
+          0.694221679290796,
+          0.7900116876327931,
+          -0.057512033022192544,
+          0.2827563789026146,
+          0.5009986842075043,
+          0.522733525338212,
+          0.2908725586715758
+        ]
+      },
+      "hub_all_positions_alpha075": {
+        "definition": {
+          "name": "hub_all_positions_alpha075",
+          "component": 1,
+          "scope": "all_positions",
+          "alpha": 0.75
+        },
+        "context_count": 12,
+        "mean": 0.9446069882340439,
+        "median": 0.9543554067038276,
+        "minimum": 0.8819293894104253,
+        "maximum": 1.0012343348688633,
+        "standard_deviation": 0.0353476282877315,
+        "per_context": [
+          0.9382258999391907,
+          0.8870076942400015,
+          0.9543554067038276,
+          0.9596170616738844,
+          0.9546556340317618,
+          0.9796707454831288,
+          0.9716013734055491,
+          0.8819293894104253,
+          0.9200531798684489,
+          1.0012343348688633,
+          0.9159442204763697,
+          0.9709889187070749
+        ]
+      },
+      "hub_demonstration_target_alpha025": {
+        "definition": {
+          "name": "hub_demonstration_target_alpha025",
+          "component": 1,
+          "scope": "demonstration_target_position",
+          "alpha": 0.25
+        },
+        "context_count": 12,
+        "mean": 0.05302511448518831,
+        "median": 0.05103764179772949,
+        "minimum": 0.005274432476539178,
+        "maximum": 0.11182070323051982,
+        "standard_deviation": 0.028353476346925567,
+        "per_context": [
+          0.11182070323051982,
+          0.05980466248640459,
+          0.061304347896307024,
+          0.028520083141581692,
+          0.04899670264074814,
+          0.05106013158066221,
+          0.05103764179772949,
+          0.09538041260523819,
+          0.022698967464970857,
+          0.035346472131399825,
+          0.06505681637015873,
+          0.005274432476539178
+        ]
+      },
+      "hub_demonstration_target_alpha050": {
+        "definition": {
+          "name": "hub_demonstration_target_alpha050",
+          "component": 1,
+          "scope": "demonstration_target_position",
+          "alpha": 0.5
+        },
+        "context_count": 12,
+        "mean": 0.38871073617226154,
+        "median": 0.3575792910990265,
+        "minimum": 0.15558234076691713,
+        "maximum": 0.7853373072569303,
+        "standard_deviation": 0.16162213175930182,
+        "per_context": [
+          0.3928578394453838,
+          0.3250497431348759,
+          0.3307655932658775,
+          0.4144228732950439,
+          0.3596247838191198,
+          0.6292457453509133,
+          0.7853373072569303,
+          0.3815554651014102,
+          0.22155709643012653,
+          0.3575792910990265,
+          0.3109507551015135,
+          0.15558234076691713
+        ]
+      },
+      "hub_demonstration_target_alpha075": {
+        "definition": {
+          "name": "hub_demonstration_target_alpha075",
+          "component": 1,
+          "scope": "demonstration_target_position",
+          "alpha": 0.75
+        },
+        "context_count": 12,
+        "mean": 0.7916766448255647,
+        "median": 0.7593054396808868,
+        "minimum": 0.575365398230642,
+        "maximum": 1.1128422579521107,
+        "standard_deviation": 0.14681906278437776,
+        "per_context": [
+          0.7011278967648523,
+          0.7512532196251526,
+          0.6591863837081964,
+          0.8922803063268014,
+          0.8112566740494564,
+          0.7949663021841551,
+          1.0086025265751088,
+          1.1128422579521107,
+          0.7593054396808868,
+          0.7930000491682213,
+          0.640933283641193,
+          0.575365398230642
+        ]
+      },
+      "control_all_positions_alpha1": {
+        "definition": {
+          "name": "control_all_positions_alpha1",
+          "component": 0,
+          "scope": "all_positions",
+          "alpha": 1.0
+        },
+        "context_count": 12,
+        "mean": 0.0032293953181549762,
+        "median": 0.0014585013506321445,
+        "minimum": -0.03321435364155724,
+        "maximum": 0.04793095526984103,
+        "standard_deviation": 0.02286078414705182,
+        "per_context": [
+          -0.011829407832157126,
+          0.0014585013506321445,
+          -0.019152295398339167,
+          0.002191009969489744,
+          -0.005228235513192713,
+          -0.03321435364155724,
+          0.00897528634967444,
+          0.04793095526984103,
+          0.004776637921358957,
+          0.013568726600460958,
+          0.04412468518675416,
+          -0.01484876644510547
+        ]
+      },
+      "control_differing_lexical_alpha1": {
+        "definition": {
+          "name": "control_differing_lexical_alpha1",
+          "component": 0,
+          "scope": "differing_lexical_positions",
+          "alpha": 1.0
+        },
+        "context_count": 12,
+        "mean": 0.003010693878837486,
+        "median": -0.0013109668470182765,
+        "minimum": -0.03245854656905244,
+        "maximum": 0.05585804817161523,
+        "standard_deviation": 0.024672802940627358,
+        "per_context": [
+          -0.011682259355388932,
+          -0.0009586930628893646,
+          -0.019937827152834688,
+          0.0024966815663964416,
+          -0.011963367523863252,
+          -0.03245854656905244,
+          0.013588621364077937,
+          0.05585804817161523,
+          -0.0013109668470182765,
+          0.009894679361723356,
+          0.045797371804051266,
+          -0.01319541521076745
+        ]
+      },
+      "control_demonstration_target_alpha1": {
+        "definition": {
+          "name": "control_demonstration_target_alpha1",
+          "component": 0,
+          "scope": "demonstration_target_position",
+          "alpha": 1.0
+        },
+        "context_count": 12,
+        "mean": 0.0030526268548145712,
+        "median": -0.006107941248610346,
+        "minimum": -0.009356316290680193,
+        "maximum": 0.07163168366862592,
+        "standard_deviation": 0.021455178556015062,
+        "per_context": [
+          -0.0029928493176851305,
+          -0.008210204573311558,
+          -0.008334840481107162,
+          -0.0012360025261223026,
+          -0.007328155756046239,
+          -0.009356316290680193,
+          -0.006680368904343716,
+          0.07163168366862592,
+          -0.00011190917314782866,
+          0.004839435817976618,
+          0.010518991042226792,
+          -0.006107941248610346
+        ]
+      }
+    }
+  },
+  "reverse_direction": {
+    "recipient": "donor_prompt",
+    "source_updates": "clean_base_prompt",
+    "response": "change in base-target-minus-donor-target logit margin",
+    "conditions": [
+      {
+        "name": "hub_all_positions_alpha1",
+        "component": 1,
+        "scope": "all_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_differing_lexical_alpha1",
+        "component": 1,
+        "scope": "differing_lexical_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_shared_static_alpha1",
+        "component": 1,
+        "scope": "shared_static_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_demonstration_target_alpha1",
+        "component": 1,
+        "scope": "demonstration_target_position",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_differing_except_target_alpha1",
+        "component": 1,
+        "scope": "differing_except_demonstration_target",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_repeated_query_alpha1",
+        "component": 1,
+        "scope": "repeated_query_positions",
+        "alpha": 1.0
+      },
+      {
+        "name": "hub_demonstration_prefix_alpha1",
+        "component": 1,
+        "scope": "demonstration_prefix_positions",
+        "alpha": 1.0
+      }
+    ],
+    "summaries": {
+      "hub_all_positions_alpha1": {
+        "definition": {
+          "name": "hub_all_positions_alpha1",
+          "component": 1,
+          "scope": "all_positions",
+          "alpha": 1.0
+        },
+        "context_count": 12,
+        "mean": 1.0004019113941258,
+        "median": 0.9991135770337092,
+        "minimum": 0.9948920713098288,
+        "maximum": 1.0194490549796487,
+        "standard_deviation": 0.005966008769609928,
+        "per_context": [
+          0.9961303648201678,
+          0.9985431337856611,
+          0.9993301960004687,
+          0.9995674593748956,
+          0.9984520556834986,
+          0.9948920713098288,
+          0.9982816178184369,
+          1.0194490549796487,
+          1.000805978477349,
+          0.9991135770337092,
+          0.9998538218790732,
+          1.0004036055667729
+        ]
+      },
+      "hub_differing_lexical_alpha1": {
+        "definition": {
+          "name": "hub_differing_lexical_alpha1",
+          "component": 1,
+          "scope": "differing_lexical_positions",
+          "alpha": 1.0
+        },
+        "context_count": 12,
+        "mean": 0.99869431675633,
+        "median": 0.9965374362162546,
+        "minimum": 0.9829612523670056,
+        "maximum": 1.023892831994839,
+        "standard_deviation": 0.008980420764915635,
+        "per_context": [
+          0.995802585629269,
+          0.9965374362162546,
+          0.9988444770328296,
+          0.9999051776189486,
+          0.9943761992600308,
+          0.9975685767674017,
+          0.9829612523670056,
+          1.023892831994839,
+          0.9962605714270779,
+          0.9940374781125461,
+          1.00253609374054,
+          1.0016091209092168
+        ]
+      },
+      "hub_shared_static_alpha1": {
+        "definition": {
+          "name": "hub_shared_static_alpha1",
+          "component": 1,
+          "scope": "shared_static_positions",
+          "alpha": 1.0
+        },
+        "context_count": 12,
+        "mean": -0.001540065693380003,
+        "median": -0.0008690159054524415,
+        "minimum": -0.013532051037905684,
+        "maximum": 0.008928524787010082,
+        "standard_deviation": 0.005961451462264624,
+        "per_context": [
+          -0.0032341987164199674,
+          -0.0015395491888384619,
+          -0.0001838363374874417,
+          -0.003252195595681856,
+          0.0020944313698826266,
+          0.008928524787010082,
+          -0.013532051037905684,
+          -0.01204689549688041,
+          0.0006054893933246616,
+          0.004232835454536059,
+          -0.0008690159054524415,
+          0.00031567295335279587
+        ]
+      },
+      "hub_demonstration_target_alpha1": {
+        "definition": {
+          "name": "hub_demonstration_target_alpha1",
+          "component": 1,
+          "scope": "demonstration_target_position",
+          "alpha": 1.0
+        },
+        "context_count": 12,
+        "mean": 0.856624072860618,
+        "median": 0.8474996855116759,
+        "minimum": 0.6273925757452858,
+        "maximum": 1.3937832093839535,
+        "standard_deviation": 0.1921921189071964,
+        "per_context": [
+          0.6273925757452858,
+          0.7232214863817483,
+          0.6348932699803781,
+          0.9053124586332807,
+          0.9773434982410558,
+          0.9100337581516302,
+          0.860023757111906,
+          1.3937832093839535,
+          0.7538058987381487,
+          0.8474996855116759,
+          0.7877762434660439,
+          0.8584030329823094
+        ]
+      },
+      "hub_differing_except_target_alpha1": {
+        "definition": {
+          "name": "hub_differing_except_target_alpha1",
+          "component": 1,
+          "scope": "differing_except_demonstration_target",
+          "alpha": 1.0
+        },
+        "context_count": 12,
+        "mean": 0.16117573738220314,
+        "median": 0.13668068286200988,
+        "minimum": -0.12470380177198503,
+        "maximum": 0.41006280578044096,
+        "standard_deviation": 0.13542953899657914,
+        "per_context": [
+          0.2326938165817064,
+          0.13668068286200988,
+          0.31289335538002183,
+          0.10120589378901491,
+          0.12979837736263442,
+          0.17859102317774972,
+          -0.00044610583024432704,
+          -0.12470380177198503,
+          0.11474698713010983,
+          0.1608803775841644,
+          0.2817054365408148,
+          0.41006280578044096
+        ]
+      },
+      "hub_repeated_query_alpha1": {
+        "definition": {
+          "name": "hub_repeated_query_alpha1",
+          "component": 1,
+          "scope": "repeated_query_positions",
+          "alpha": 1.0
+        },
+        "context_count": 12,
+        "mean": 0.49881691235489894,
+        "median": 0.49850698052078857,
+        "minimum": 0.17521446008813474,
+        "maximum": 0.7713920668750338,
+        "standard_deviation": 0.17017086995008177,
+        "per_context": [
+          0.6011703547511916,
+          0.49988527410264266,
+          0.7160588091386919,
+          0.5992206548660032,
+          0.3418171469856712,
+          0.49850698052078857,
+          0.17521446008813474,
+          0.24443348821445798,
+          0.48223505462214805,
+          0.4593819359168001,
+          0.5964867221772229,
+          0.7713920668750338
+        ]
+      },
+      "hub_demonstration_prefix_alpha1": {
+        "definition": {
+          "name": "hub_demonstration_prefix_alpha1",
+          "component": 1,
+          "scope": "demonstration_prefix_positions",
+          "alpha": 1.0
+        },
+        "context_count": 12,
+        "mean": 0.3271853021319799,
+        "median": 0.3048931490790606,
+        "minimum": 0.2120815432862328,
+        "maximum": 0.6632572717643777,
+        "standard_deviation": 0.11663055822754487,
+        "per_context": [
+          0.3048931490790606,
+          0.2598383747570575,
+          0.31553470387833965,
+          0.41932622091005384,
+          0.26532141604301873,
+          0.380369998615903,
+          0.2120815432862328,
+          0.6632572717643777,
+          0.21449878653995733,
+          0.26852783022729876,
+          0.30494037285200837,
+          0.31763395763045055
+        ]
+      }
+    }
+  },
+  "dose_curves": {
+    "forward_all_positions": {
+      "alpha": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "mean_response_over_clean_endpoint": [
+        0.0,
+        0.03762733645795511,
+        0.43903249003861594,
+        0.9446069882340439,
+        0.9982155225724861
+      ]
+    },
+    "forward_demonstration_target": {
+      "alpha": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "mean_response_over_clean_endpoint": [
+        0.0,
+        0.05302511448518831,
+        0.38871073617226154,
+        0.7916766448255647,
+        0.8359993910933735
+      ]
+    }
+  },
+  "derived_descriptive_contrasts": {
+    "differing_lexical_minus_all_positions": {
+      "context_count": 12,
+      "mean": 0.0014223524509605439,
+      "median": 6.459991832241663e-05,
+      "minimum": -0.008884686242608408,
+      "maximum": 0.01332853215444263,
+      "standard_deviation": 0.005706459658685899,
+      "per_context": [
+        0.0032045344246222074,
+        0.0014253391418772576,
+        6.459991832241663e-05,
+        0.0037868493975344864,
+        -0.0022359947504091426,
+        -0.008884686242608408,
+        0.01332853215444263,
+        0.010362065272583543,
+        -7.83023402922689e-05,
+        -0.00432136771889613,
+        0.0007869251839968117,
+        -0.0003702650296468768
+      ]
+    },
+    "demonstration_target_over_all_positions": {
+      "context_count": 12,
+      "mean": 0.8375191432204213,
+      "median": 0.8334022119879376,
+      "minimum": 0.5866192137248442,
+      "maximum": 1.1280025856063987,
+      "standard_deviation": 0.1385255540032313,
+      "per_context": [
+        0.7649473056555647,
+        0.8644789287165914,
+        0.6857489751405216,
+        0.9047385167928139,
+        0.8723053845148827,
+        0.8190844094288694,
+        1.0190536529207426,
+        1.1280025856063987,
+        0.8550209488395945,
+        0.8334022119879376,
+        0.7168275853162944,
+        0.5866192137248442
+      ]
+    },
+    "lexical_combination_synergy": {
+      "context_count": 12,
+      "mean": 0.02253958295050297,
+      "median": -0.0012122012329327941,
+      "minimum": -0.1449573328896972,
+      "maximum": 0.2999669610762079,
+      "standard_deviation": 0.1433137791061053,
+      "per_context": [
+        -0.13002787071931393,
+        -0.13858846321285584,
+        -0.055493668595896495,
+        -0.0012122012329327941,
+        0.10875537610893851,
+        0.0762251538098414,
+        -0.1449573328896972,
+        0.2999669610762079,
+        -0.08642348586344328,
+        0.001864479724637852,
+        0.07184786012632313,
+        0.26851818707422637
+      ]
+    },
+    "forward_all_minus_reverse_all": {
+      "context_count": 12,
+      "mean": -0.0021863888216399154,
+      "median": -0.0011457434624676521,
+      "minimum": -0.02181412256621651,
+      "maximum": 0.0058032095364308756,
+      "standard_deviation": 0.006774391486509477,
+      "per_context": [
+        0.0006102259320787118,
+        -0.0038545267476002287,
+        -0.002262741525094203,
+        -0.0011457434624676521,
+        0.0014152420117697906,
+        0.0058032095364308756,
+        0.0009436289094546524,
+        -0.02181412256621651,
+        -0.006742440835239227,
+        0.003914516407581559,
+        -0.0035991520676881272,
+        0.0004952385473113718
+      ]
+    }
+  },
+  "clean_and_numerical_gates": {
+    "clean_contexts": [
+      {
+        "context_index": 0,
+        "base_prompt": "Replay the sequence: red blue green yellow | red blue green",
+        "donor_prompt": "Replay the sequence: wolf bear lion tiger | wolf bear lion",
+        "base_target": "yellow",
+        "donor_target": "tiger",
+        "clean_forward_donor_minus_base_margin": -11.392239674344083,
+        "clean_reverse_base_minus_donor_margin": -10.640622194917484,
+        "clean_endpoint": 22.032861869261566
+      },
+      {
+        "context_index": 1,
+        "base_prompt": "Replay the sequence: apple pear peach grape | apple pear peach",
+        "donor_prompt": "Replay the sequence: table chair desk lamp | table chair desk",
+        "base_target": "grape",
+        "donor_target": "lamp",
+        "clean_forward_donor_minus_base_margin": -13.473263243059723,
+        "clean_reverse_base_minus_donor_margin": -10.90762685659507,
+        "clean_endpoint": 24.380890099654792
+      },
+      {
+        "context_index": 2,
+        "base_prompt": "Replay the sequence: spring summer autumn winter | spring summer autumn",
+        "donor_prompt": "Replay the sequence: gold lead tin nickel | gold lead tin",
+        "base_target": "winter",
+        "donor_target": "nickel",
+        "clean_forward_donor_minus_base_margin": -17.19384661776445,
+        "clean_reverse_base_minus_donor_margin": -12.712449530704616,
+        "clean_endpoint": 29.906296148469067
+      },
+      {
+        "context_index": 3,
+        "base_prompt": "Loop example: rain snow cloud wind; continue rain snow cloud",
+        "donor_prompt": "Loop example: hand foot arm head; continue hand foot arm",
+        "base_target": "wind",
+        "donor_target": "head",
+        "clean_forward_donor_minus_base_margin": -9.227371725819207,
+        "clean_reverse_base_minus_donor_margin": -9.174749654304385,
+        "clean_endpoint": 18.402121380123592
+      },
+      {
+        "context_index": 4,
+        "base_prompt": "Loop example: doctor nurse editor dancer; continue doctor nurse editor",
+        "donor_prompt": "Loop example: bread rice salad cheese; continue bread rice salad",
+        "base_target": "dancer",
+        "donor_target": "cheese",
+        "clean_forward_donor_minus_base_margin": -12.061582065185489,
+        "clean_reverse_base_minus_donor_margin": -16.64543904178186,
+        "clean_endpoint": 28.707021106967346
+      },
+      {
+        "context_index": 5,
+        "base_prompt": "Loop example: hospital prison garage factory; continue hospital prison garage",
+        "donor_prompt": "Loop example: shirt coat sock shoe; continue shirt coat sock",
+        "base_target": "factory",
+        "donor_target": "shoe",
+        "clean_forward_donor_minus_base_margin": -12.637468798026017,
+        "clean_reverse_base_minus_donor_margin": -11.934397524861922,
+        "clean_endpoint": 24.57186632288794
+      },
+      {
+        "context_index": 6,
+        "base_prompt": "After train bus car plane, repeat train bus car",
+        "donor_prompt": "After pen key ruler brush, repeat pen key ruler",
+        "base_target": "plane",
+        "donor_target": "brush",
+        "clean_forward_donor_minus_base_margin": -10.00631514658501,
+        "clean_reverse_base_minus_donor_margin": -8.712925439375823,
+        "clean_endpoint": 18.719240585960833
+      },
+      {
+        "context_index": 7,
+        "base_prompt": "After cricket poker racing hunting, repeat cricket poker racing",
+        "donor_prompt": "After morning evening night day, repeat morning evening night",
+        "base_target": "hunting",
+        "donor_target": "day",
+        "clean_forward_donor_minus_base_margin": -2.05508931745473,
+        "clean_reverse_base_minus_donor_margin": -10.377485535957078,
+        "clean_endpoint": 12.432574853411808
+      },
+      {
+        "context_index": 8,
+        "base_prompt": "After walk run jump dance, repeat walk run jump",
+        "donor_prompt": "After anger fear hope love, repeat anger fear hope",
+        "base_target": "dance",
+        "donor_target": "love",
+        "clean_forward_donor_minus_base_margin": -12.612695231566297,
+        "clean_reverse_base_minus_donor_margin": -7.833995749500978,
+        "clean_endpoint": 20.446690981067277
+      },
+      {
+        "context_index": 9,
+        "base_prompt": "Pattern: wood glass stone paper. Continue: wood glass stone",
+        "donor_prompt": "Pattern: river lake ocean beach. Continue: river lake ocean",
+        "base_target": "paper",
+        "donor_target": "beach",
+        "clean_forward_donor_minus_base_margin": -9.96529154381963,
+        "clean_reverse_base_minus_donor_margin": -12.455881328791577,
+        "clean_endpoint": 22.42117287261121
+      },
+      {
+        "context_index": 10,
+        "base_prompt": "Pattern: opera jazz rock blues. Continue: opera jazz rock",
+        "donor_prompt": "Pattern: king queen prince princess. Continue: king queen prince",
+        "base_target": "blues",
+        "donor_target": "princess",
+        "clean_forward_donor_minus_base_margin": -14.833737618271392,
+        "clean_reverse_base_minus_donor_margin": -14.418074039335105,
+        "clean_endpoint": 29.251811657606495
+      },
+      {
+        "context_index": 11,
+        "base_prompt": "Pattern: one two three four. Continue: one two three",
+        "donor_prompt": "Pattern: hot cold warm fresh. Continue: hot cold warm",
+        "base_target": "four",
+        "donor_target": "fresh",
+        "clean_forward_donor_minus_base_margin": -12.856907723270233,
+        "clean_reverse_base_minus_donor_margin": -10.974976468042094,
+        "clean_endpoint": 23.831884191312326
+      }
+    ],
+    "all_base_clean_margins_positive": true,
+    "all_donor_clean_margins_positive": true,
+    "clean_endpoints_repeated_bit_exactly": true,
+    "all_outputs_finite": true,
+    "maximum_logit_absolute": 129.34235749298398,
+    "registered_clean_logit_absolute_limit": 10000.0,
+    "clean_logit_gate_passed": true,
+    "response_absolute_maximum_conservative_bound": 41.68289342660018,
+    "registered_response_absolute_limit": 10000.0,
+    "response_magnitude_gate_passed": true,
+    "hub_all_position_repeat_maximum_absolute_difference": 7.105427357601002e-14,
+    "control_all_position_repeat_maximum_absolute_difference": 8.526512829121202e-14
+  },
+  "query_accounting": {
+    "contexts": 12,
+    "clean_forward_examples": 24,
+    "forward_condition_rows_per_context": 17,
+    "reverse_condition_rows_per_context": 7,
+    "patched_context_condition_cells": 288,
+    "alpha_zero_is_derived_from_the_clean_recipient_and_not_requeried": true
+  },
+  "runtime_seconds": 17.850019500008784,
+  "interpretation": {
+    "allowed": "development evidence about position localization, continuous dose, direction symmetry, and a matched component control",
+    "not_allowed": "prospective confirmation, modification of E29.13, or calling the component a discrete logical gate"
+  }
+}

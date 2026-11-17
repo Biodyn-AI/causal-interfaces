@@ -1,0 +1,8 @@
+# Tested portable scoring and CPU inference environment (2026-11-16).
+# Python itself is pinned by .python-version in this directory.
+torch==2.13.0
+numpy==2.5.1
+einops==0.8.2
+transformers==5.14.1
+safetensors==0.8.0
+pytest==9.1.1
